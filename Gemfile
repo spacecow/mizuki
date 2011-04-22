@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.5'
 gem 'mysql2'
 gem 'formtastic' #rails g formtastic:install
-gem 'compass' #compass init rails /path/to/myrailsproject --using blueprint/semantic
+#gem 'compass' #compass init rails /path/to/myrailsproject --using blueprint/semantic
 gem 'cancan' #rails g cancan:ability
 gem "bcrypt-ruby", :require => "bcrypt"
 gem "mocha", :group => :test
