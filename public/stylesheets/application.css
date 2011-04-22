@@ -121,34 +121,35 @@ div#container div#contents div#star4 {
 /* line 108, ../../app/stylesheets/application.sass */
 div#container div#contents div#user_nav {
   float: right;
+  color: white;
 }
-/* line 110, ../../app/stylesheets/application.sass */
-div#container div#contents form.formtastic {
+/* line 111, ../../app/stylesheets/application.sass */
+div#container div#contents div#form {
   color: white;
   float: right;
 }
-/* line 115, ../../app/stylesheets/application.sass */
+/* line 117, ../../app/stylesheets/application.sass */
 div#container div#contents form.formtastic li.error p.inline-errors {
   margin-left: 160px;
   color: #cd4d10;
   text-shadow: 1px 1px 1px black;
 }
-/* line 119, ../../app/stylesheets/application.sass */
+/* line 121, ../../app/stylesheets/application.sass */
 div#container div#contents form.formtastic li {
   list-style-type: none;
 }
-/* line 121, ../../app/stylesheets/application.sass */
+/* line 123, ../../app/stylesheets/application.sass */
 div#container div#contents form.formtastic li label {
   float: left;
   width: 150px;
   text-align: right;
   margin: 2px 10px 0 0;
 }
-/* line 126, ../../app/stylesheets/application.sass */
+/* line 128, ../../app/stylesheets/application.sass */
 div#container div#contents form.formtastic input.submit {
   margin: 10px 0 0 160px;
 }
-/* line 128, ../../app/stylesheets/application.sass */
+/* line 130, ../../app/stylesheets/application.sass */
 div#container div#contents form.formtastic input.small_submit {
   margin-top: 10px;
 }

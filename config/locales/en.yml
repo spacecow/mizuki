@@ -46,6 +46,8 @@ en:
   success:
     created: "Successfully created %{obj}."
     deleted: "Successfully deleted %{obj}."
+    logged_in: "Successfully logged in."
+    logged_out: "You are now logged out."
     updated: "Successfully updated %{obj}."  
   formtastic:
     labels:
