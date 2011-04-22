@@ -1,0 +1,16 @@
+<% title "Event" %>
+
+<p>
+  <strong><%= t('formtastic.labels.name') %>:</strong>
+  <%= @event.name %>
+</p>
+
+<div id="bottom_links">
+  <% if can? :edit, @event %>
+    <%= link_to t(:edit), edit_event_path(@event) %> |
+  <% end %>
+  <% if can? :delete, @event %>
+    <%= link_to t(:delete), @event, :confirm => 'Are you sure?', :method => :delete %> |
+  <% end %>
+  <%= link_to view(:event), events_path if can? :index, Event %>
+</div>

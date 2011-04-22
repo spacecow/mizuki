@@ -1,0 +1,10 @@
+<% title edit(:event) %>
+
+<%= render 'form' %>
+
+<div id="bottom_links">
+  <% if can? :show, @event -%>
+    <%= link_to t(:show), @event %> |
+  <% end %>
+  <%= link_to view(:event), events_path if can? :index, Event %>
+</div>
