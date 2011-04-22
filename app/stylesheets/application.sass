@@ -52,9 +52,9 @@ div#flash_alert
   border: 1px solid black
   +custom_gradient($alert_light,$alert_dark)
 
-$star_base_y: 50px
-$star_base_x: 550px
-$star1_y: $star_base_y + 52px
+$star_base_y: 0px
+$star_base_x: 40px
+$star1_y: $star_base_y + 162px
 $star2_y: $star_base_y + 427px
 $star3_y: $star_base_y + 77px
 $star4_y: $star_base_y + 0
@@ -67,6 +67,7 @@ div#container
   width: $main_width
   margin: 4*$spacing auto
   div#contents
+    position: relative
     div#star1
       top: $star1_y
       left: $star1_x 
