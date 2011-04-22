@@ -13,7 +13,7 @@ $h1_size: $font_size * 2
 
 $bg_colour: #ddd
 $link_colour: #4B7399
-$alert_dark: #933
+$alert_dark: #cd4d10
 $notice_dark: #396
 $alert_light: #f33
 $notice_light: #4CC417
@@ -107,11 +107,13 @@ div#container
     div#user_nav
       float: right
     form.formtastic
+      color: white
+      float: right
       li.error
-        +linear-gradient(color-stops(white, $alert_dark 33%, white), left)
+        //+linear-gradient(color-stops(white, $alert_dark 33%, white), left)
         p.inline-errors
           margin-left: $label_full_width
-          color: white
+          color: $alert_dark
           text-shadow: 1px 1px 1px black
       li
         list-style-type: none
