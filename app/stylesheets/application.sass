@@ -7,16 +7,34 @@ $label_width: 150px
 $label_margin: $spacing
 $label_full_width: $label_width + $label_margin
 
-$font_size: 14px
+$font_size: 18px
 $a_size: $font_size - 2px
 $h1_size: $font_size * 2
 
 $bg_colour: #ddd
+$alert_dark: #933
+$error_colour: #cd4d10
 $link_colour: #4B7399
-$alert_dark: #cd4d10
 $notice_dark: #396
 $alert_light: #f33
 $notice_light: #4CC417
+
+@mixin star-base($x, $y, $w: 47px, $h: 47px)
+  left: $x
+  top: $y
+  position: absolute
+  background-color: transparent
+  width: $w
+  height: $h
+  z-index: 1
+  display: block
+
+@mixin red-gradient
+  color: white
+  font-weight: bold
+  padding: 5px
+  +border-radius(10px)
+  +linear-gradient(color-stops(gray, black))
 
 @mixin custom_gradient($light, $dark, $corner: 10px)
   color: white
@@ -69,33 +87,13 @@ div#container
   div#contents
     position: relative
     div#star1
-      top: $star1_y
-      left: $star1_x 
-      position: absolute
-      background-color: transparent
-      width: 47px
-      height: 47px
+      +star-base($star1_x,$star1_y)
     div#star2
-      top: $star2_y
-      left: $star2_x
-      position: absolute
-      background-color: transparent
-      width: 47px
-      height: 47px
+      +star-base($star2_x,$star2_y)
     div#star3
-      top: $star3_y
-      left: $star3_x
-      position: absolute
-      background-color: transparent
-      width: 47px
-      height: 47px
+      +star-base($star3_x,$star3_y)
     div#star4
-      top: $star4_y
-      left: $star4_x
-      position: absolute
-      background-color: transparent
-      width: 71px
-      height: 64px
+      +star-base($star4_x,$star4_y,71px,64px)
 
 
 
@@ -111,21 +109,28 @@ div#container
     div#form
       color: white
       float: right
-    form.formtastic
-      li.error
-        //+linear-gradient(color-stops(white, $alert_dark 33%, white), left)
-        p.inline-errors
-          margin-left: $label_full_width
-          color: $alert_dark
-          text-shadow: 1px 1px 1px black
-      li
-        list-style-type: none
-        label
-          float: left
-          width: $label_width
-          text-align: right
-          margin: 2px $label_margin 0 0
-      input.submit
-        margin: $spacing 0 0 $label_full_width
-      input.small_submit
-        margin-top: $spacing
+      form
+        float: right
+        input.submit
+          margin-top: $spacing
+        input
+          +red_gradient
+      form.formtastic
+        li.error
+          //+linear-gradient(color-stops(white, $alert_dark 33%, white), left)
+          p.inline-errors
+            margin-left: $label_full_width
+            color: $error_colour
+            text-shadow: 1px 1px 1px black
+        li
+          list-style-type: none
+          label
+            float: left
+            width: $label_width
+            text-align: right
+            margin: 2px $label_margin 0 0
+        input.submit
+          margin: $spacing 0 0 $label_full_width
+        input.small_submit
+          margin-top: $spacing
+              

@@ -30,6 +30,7 @@ ja:
     view: "すべとの%{obj}"
     view_own: "自分の%{obj}"
   message:
+    no_account?: "アカウントを持っていませんか"
     not_you?: "違いますか？"
     sure?: "本当に削除してよろしいですか"
     welcome: "ようこそ%{user}さん。"

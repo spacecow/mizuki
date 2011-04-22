@@ -25,7 +25,9 @@
             <%= t('message.not_you?') %>
             <%= link_to t(:log_out), logout_path %>
           <% else %>
-            <%= link_to t(:sign_up), signup_path %><%= t(:or) %><%= link_to t(:log_in), login_path %>
+            <%= link_to t(:sign_up), signup_path %>
+            <%= t(:or) %>
+            <%= link_to t(:log_in), login_path %>
           <% end %>
         </div>
         <%= content_tag :h1, yield(:title) if show_title? %>

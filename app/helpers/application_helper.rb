@@ -5,6 +5,7 @@ module ApplicationHelper
   def edit(s); t2(:edit,s) end
   def edit_p(s); tp2(:edit,s) end
   def lbl(s); chain(:label,s) end
+  def message(s); t(chain(:message,s)) end
   def new(s); t2(:new,s) end
   def pl(s); t(s).match(/\w/) ? t(s).pluralize : t(s) end
   def sure?; t('message.sure?') end
