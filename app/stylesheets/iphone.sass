@@ -1,7 +1,13 @@
-$star_base_x: 30%
-$star_base_y: 40%
+$star_base_x: 20%
+$star_base_y: 30%
 $star1_x: $star_base_x + 10%
 $star1_y: $star_base_y + 10%
+$star2_x: $star_base_x + 40%
+$star2_y: $star_base_y + 50%
+$star3_x: $star_base_x + 10%
+$star3_y: $star_base_y + 30%
+$star4_x: $star_base_x + 60%
+$star4_y: $star_base_y + 10%
 
 @mixin star-base($x, $y, $w: 47px, $h: 47px)
   left: $x
@@ -17,4 +23,10 @@ div.current
   background: black url('/images/red_moon_mizuki_iphone.png') no-repeat fixed center center
   div#star1
     +star-base($star1_x,$star1_y)
+  div#star2
+    +star-base($star2_x,$star2_y)
+  div#star3
+    +star-base($star3_x,$star3_y)
+  div#star4
+    +star-base($star4_x,$star4_y)
 

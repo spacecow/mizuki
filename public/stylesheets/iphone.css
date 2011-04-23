@@ -1,11 +1,44 @@
-/* line 16, ../../app/stylesheets/iphone.sass */
+/* line 22, ../../app/stylesheets/iphone.sass */
 div.current {
   background: black url("/images/red_moon_mizuki_iphone.png") no-repeat fixed center center;
 }
-/* line 18, ../../app/stylesheets/iphone.sass */
+/* line 24, ../../app/stylesheets/iphone.sass */
 div.current div#star1 {
-  left: 40%;
-  top: 50%;
+  left: 30%;
+  top: 40%;
+  position: absolute;
+  background-color: transparent;
+  width: 47px;
+  height: 47px;
+  z-index: 1;
+  display: block;
+}
+/* line 26, ../../app/stylesheets/iphone.sass */
+div.current div#star2 {
+  left: 60%;
+  top: 80%;
+  position: absolute;
+  background-color: transparent;
+  width: 47px;
+  height: 47px;
+  z-index: 1;
+  display: block;
+}
+/* line 28, ../../app/stylesheets/iphone.sass */
+div.current div#star3 {
+  left: 30%;
+  top: 60%;
+  position: absolute;
+  background-color: transparent;
+  width: 47px;
+  height: 47px;
+  z-index: 1;
+  display: block;
+}
+/* line 30, ../../app/stylesheets/iphone.sass */
+div.current div#star4 {
+  left: 80%;
+  top: 40%;
   position: absolute;
   background-color: transparent;
   width: 47px;
