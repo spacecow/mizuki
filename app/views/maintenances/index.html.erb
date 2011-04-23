@@ -4,6 +4,7 @@
     <tr>
       <td><%= m.ip %></td>
       <td><%= m.place %></td>
+      <td><%= truncate(m.agent,:length => 20) %></td>
       <td><%= link_to t(:edit), edit_maintenance_path(m) %></td>
       <td><%= link_to t(:del), m, :confirm => sure?, :method => :delete %></td>
     </tr>

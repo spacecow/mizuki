@@ -1,3 +1,7 @@
 --- 
-395dc7: !ruby/object:Dooby::Task 
-  todo: sparkle effect :doing
+8173a3: !ruby/object:Dooby::Task 
+  todo: sparkle effect :done
+6c6244: !ruby/object:Dooby::Task 
+  todo: responsive web design
+ae1652: !ruby/object:Dooby::Task 
+  todo: show function for maintenance

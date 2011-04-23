@@ -1,0 +1,12 @@
+<% title "Events" %>
+
+<ul>
+  <% @events.each do |event| %>
+    <li class="arrow">
+      <%= link_to h(event.name), event %>
+      <small class="counter"><%= 4 %></small>
+    </li>
+  <% end %>
+</ul>
+
+<ul><li class="arrow"><%= link_to "New Event", new_event_path %></li></ul>

@@ -8,8 +8,11 @@ class ApplicationController < ActionController::Base
     end
   end
   protect_from_forgery
+  
   before_filter :set_language
-  helper_method :current_user, :english?, :ft
+  before_filter :prepare_for_iphone
+  
+  helper_method :current_user, :english?, :ft, :iphone?, :god?
 
   def alert(act); t("alert.#{act}") end
   def alert2(act,obj); t("alert.#{act}",:obj=>obj) end
@@ -19,7 +22,8 @@ class ApplicationController < ActionController::Base
   def dp(s); pl(s).downcase end
   def english?; session[:language] == 'en' end
   def ft(s); t("formtastic.labels.#{s.to_s}") end
-  def ftd(s); d("formtastic.labels.#{s.to_s}") end  
+  def ftd(s); d("formtastic.labels.#{s.to_s}") end
+  def god?; current_user && current_user.role?(:god) end
   def notify(act); t("notice.#{act}") end
   def pl(s); t(s).match(/\w/) ? t(s).pluralize : t(s) end  
   def success(act,mdl); t("success.#{act}",:obj=>d(mdl)) end
@@ -43,6 +47,19 @@ class ApplicationController < ActionController::Base
     def current_user_name; current_user && current_user.name end
     def current_user_email; current_user && current_user.email end
     def current_user_affiliation; current_user && current_user.affiliation end
+
+    def iphone?
+      if session[:iphone]
+        session[:iphone] == "1"
+      else
+        request.user_agent =~ /Mobile|webOS/
+      end
+    end
+
+    def prepare_for_iphone
+      session[:iphone] = params[:iphone] if params[:iphone]
+      request.format = :iphone if iphone?
+    end
     
     def set_language
       I18n.locale = session[:language] || I18n.default_locale

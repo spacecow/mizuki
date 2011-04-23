@@ -1,0 +1,15 @@
+/* line 16, ../../app/stylesheets/iphone.sass */
+div.current {
+  background: black url("/images/red_moon_mizuki.png") no-repeat scroll top left;
+}
+/* line 18, ../../app/stylesheets/iphone.sass */
+div.current div#star1 {
+  left: 57px;
+  top: 162px;
+  position: absolute;
+  background-color: transparent;
+  width: 47px;
+  height: 47px;
+  z-index: 1;
+  display: block;
+}

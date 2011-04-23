@@ -1,0 +1,20 @@
+$star_base_x: 40px
+$star_base_y: 0px
+$star1_x: $star_base_x + 17px
+$star1_y: $star_base_y + 162px
+
+@mixin star-base($x, $y, $w: 47px, $h: 47px)
+  left: $x
+  top: $y
+  position: absolute
+  background-color: transparent
+  width: $w
+  height: $h
+  z-index: 1
+  display: block
+
+div.current
+  background: black url('/images/red_moon_mizuki.png') no-repeat scroll top left
+  div#star1
+    +star-base($star1_x,$star1_y)
+

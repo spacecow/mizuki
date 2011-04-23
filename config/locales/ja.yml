@@ -53,6 +53,7 @@ ja:
       password_confirmation: "パスワード確認"
       username: "ユーザー名"
 
+  event: "イベント"
   maintenance: "Maintenance"
 
   date:

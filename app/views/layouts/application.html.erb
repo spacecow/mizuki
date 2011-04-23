@@ -8,6 +8,7 @@
       <%= stylesheet_link_tag 'ie.css', :media => 'screen, projection' %>
     <![endif]-->   
     <%= stylesheet_link_tag "application", "formtastic" %>
+    <%= stylesheet_link_tag "iphone" if iphone? %>
     <%= javascript_include_tag 'jquery', 'rails', 'application' %>
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
@@ -19,6 +20,13 @@
       <% end %>
       <div class="clear"></div>
       <div id="contents">
+        <div id="site_nav">
+          <% if god? && iphone? %>
+            <%= link_to "Full Site", :iphone => 0 %>
+          <% else %>
+            <%= link_to "Mobile Site", :iphone => 1 %>
+          <% end %>
+        </div>
         <div id="user_nav">
           <% if current_user %>
             <%= t('message.welcome',:user=>current_user.username) %>
