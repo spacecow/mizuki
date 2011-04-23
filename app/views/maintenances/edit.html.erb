@@ -1,0 +1,15 @@
+<div id="form">
+  <%= semantic_form_for @maintenance do |f| %>
+    <%= f.input :ip %>
+    <%= f.input :place %>
+    <%= f.submit t(:update), :class => :submit %>
+  <% end %>
+  <div class="clear"></div>
+
+  <div id="bottom_links">
+    <% if can? :destroy, @maintenance %>
+      <%= link_to t(:delete), @maintenance, :confirm => sure?, :method => :delete %> |
+    <% end %>
+    <%= link_to t(:view_all), maintenances_path %>
+  </div>
+</div>

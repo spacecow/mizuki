@@ -1,0 +1,12 @@
+<div id="table">
+  <table>
+    <% @maintenances.each do |m| %>
+    <tr>
+      <td><%= m.ip %></td>
+      <td><%= m.place %></td>
+      <td><%= link_to t(:edit), edit_maintenance_path(m) %></td>
+      <td><%= link_to t(:del), m, :confirm => sure?, :method => :delete %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
