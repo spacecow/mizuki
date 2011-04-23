@@ -14,3 +14,6 @@ rails g nifty:authentication --rspec
 rails g nifty:scaffold event name:string
 rake db:migrate
 rake db:test:clone
+rm -rf spec/fixtures
+rm -rf spec/views
+rm -rf spec/helpers

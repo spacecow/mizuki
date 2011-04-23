@@ -15,6 +15,8 @@ ja:
   role: "役割"
   show: "情報"
   sign_up: "登録"
+  update: "更新"
+  view_all: "すべて"
   alert:
     invalid_login_or_password: "無効パスワードかユーザー名"
   notice:
@@ -45,10 +47,13 @@ ja:
       affiliation: "所属"
       content: "コメント"
       email: "Eメール"
+      ip: "IP"
       name: "名前"
       password: "パスワード"
       password_confirmation: "パスワード確認"
       username: "ユーザー名"
+
+  maintenance: "Maintenance"
 
   date:
     formats:

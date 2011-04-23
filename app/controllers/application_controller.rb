@@ -1,13 +1,12 @@
 class ApplicationController < ActionController::Base
   include ControllerAuthentication
-  # include ControllerAuthentication
-  # rescue_from CanCan::AccessDenied do |exception|
-  #   if current_user
-  #     redirect_to root_url, :alert => exception.message
-  #   else
-  #     redirect_to login_url, :alert => exception.message
-  #   end
-  # end
+  rescue_from CanCan::AccessDenied do |exception|
+    if current_user
+      redirect_to welcome_url, :alert => exception.message
+    else
+      redirect_to login_url, :alert => exception.message
+    end
+  end
   protect_from_forgery
   before_filter :set_language
   helper_method :current_user, :english?, :ft

@@ -1,8 +1,13 @@
 #!/bin/sh
 cp app/controllers/users_controller.rb ../nifty-generators/lib/generators/nifty/authentication/templates/users_controller.rb
 cp app/models/user.rb ../nifty-generators/lib/generators/nifty/authentication/templates/user.rb
-cp app/views/users/new.html.erb ../nifty-generators/lib/generators/nifty/authentication/templates/views/erb/signup.html.erb
 cp app/views/sessions/new.html.erb ../nifty-generators/lib/generators/nifty/authentication/templates/views/erb/login.html.erb
+cp app/views/users/new.html.erb ../nifty-generators/lib/generators/nifty/authentication/templates/views/erb/signup.html.erb
+
+cp features/maintenances/index.feature ../nifty-generators/lib/generators/nifty/authentication/templates/tests/rspec/maintenance_index.feature
+cp features/maintenances/ip.feature ../nifty-generators/lib/generators/nifty/authentication/templates/tests/rspec/maintenance_ip.feature
+cp features/maintenances/edit.feature ../nifty-generators/lib/generators/nifty/authentication/templates/tests/rspec/maintenance_edit.feature
+
 cp features/users/index.feature ../nifty-generators/lib/generators/nifty/authentication/templates/tests/rspec/index.feature
 cp features/users/roles.feature ../nifty-generators/lib/generators/nifty/authentication/templates/tests/rspec/roles.feature
 cp features/users/login.feature ../nifty-generators/lib/generators/nifty/authentication/templates/tests/rspec/login.feature

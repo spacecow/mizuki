@@ -44,12 +44,12 @@ describe EventsController do
       if %w(new create show index).include?(action)
         it "should reach the #{action} page" do
           send("#{req}", "#{action}", :id => @event.id)
-          response.redirect_url.should_not eq(root_url)
+          response.redirect_url.should_not eq(welcome_url)
         end
       else
         it "should not reach the #{action} page" do
           send("#{req}", "#{action}", :id => @event.id)
-          response.redirect_url.should eq(root_url)
+          response.redirect_url.should eq(welcome_url)
         end
       end
     end    
@@ -65,12 +65,12 @@ describe EventsController do
       if %w(new create show index edit update).include?(action)
         it "should reach the #{action} page" do
           send("#{req}", "#{action}", :id => @event.id)
-          response.redirect_url.should_not eq(root_url)
+          response.redirect_url.should_not eq(welcome_url)
         end
       else
         it "should not reach the #{action} page" do
           send("#{req}", "#{action}", :id => @event.id)
-          response.redirect_url.should eq(root_url)
+          response.redirect_url.should eq(welcome_url)
         end
       end
     end    
@@ -85,7 +85,7 @@ describe EventsController do
     events_controller_actions.each do |action,req|
       it "should reach the #{action} page" do
         send("#{req}", "#{action}", :id => @event.id)
-        response.redirect_url.should_not eq(root_url)
+        response.redirect_url.should_not eq(welcome_url)
       end
     end    
   end
@@ -99,7 +99,7 @@ describe EventsController do
     events_controller_actions.each do |action,req|
       it "should reach the #{action} page" do
         send("#{req}", "#{action}", :id => @event.id)
-        response.redirect_url.should_not eq(root_url)
+        response.redirect_url.should_not eq(welcome_url)
       end
     end    
   end  

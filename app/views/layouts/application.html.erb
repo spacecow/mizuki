@@ -30,6 +30,7 @@
             <%= link_to t(:log_in), login_path %>
           <% end %>
         </div>
+        <div class="clear"></div>
         <%= content_tag :h1, yield(:title) if show_title? %>
         <%= yield %>
       </div>

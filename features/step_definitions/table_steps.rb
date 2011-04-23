@@ -12,6 +12,10 @@ end
 Then /^I should not see "([^"]*)" within the (\w+) table row$/ do |txt,order|
   Then %(I should not see "#{txt}" within "#{table_row order}")
 end
+Then /^I should see "([^"]*)" and "([^"]*)" within the (\w+) table row$/ do |txt1,txt2,order|
+  Then %(I should see "#{txt1}" within "#{table_row order}")
+  And %(I should see "#{txt2}" within "#{table_row order}")
+end
 
 Then /^I should see no (\w+) "([^"]*)" table row$/ do |order,tbl|
   page.should have_no_css("#{table_row(tbl,order)}")

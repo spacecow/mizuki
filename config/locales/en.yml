@@ -16,6 +16,7 @@ en:
   sign_up: "Sign up"
   role: "Role"
   update: "Update"
+  view_all: "View All"
   label:
     add: "Add %{obj}"
     create: "Create %{obj}"
@@ -55,6 +56,7 @@ en:
       affiliation: "Affiliation"
       content: "Content"
       email: "Email"
+      ip: "IP"
       name: "Name"
       password: "Password"
       password_confirmation: "Password confirmation"
@@ -62,3 +64,4 @@ en:
 
   anonymous: "Anonymous"
   comment: "Comment"
+  maintenance: "Maintenance"
