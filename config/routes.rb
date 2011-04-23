@@ -5,7 +5,8 @@ Mizuki::Application.routes.draw do
   match 'signup' => 'users#new', :as => :signup
   match 'logout' => 'sessions#destroy', :as => :logout
   match 'login' => 'sessions#new', :as => :login
-
+  match 'welcome' => 'operator#welcome'
+  
   resources :sessions
   resources :events
   resources :users do

@@ -10,17 +10,17 @@ gem "mocha", :group => :test
 
 group :development do
   gem 'jquery-rails'
-  # gem 'nifty-generators', :path => "~/ruby/rails/nifty-generators"
-  # gem "rspec-rails" #rails g rspec:install
+  gem 'nifty-generators', :path => "~/ruby/rails/nifty-generators"
+  gem "rspec-rails" #rails g rspec:install
 end
 
 group :test do
-  # gem 'spork'
-  # gem 'cucumber-rails' #rails g cucumber:install --capybara --rspec
-  # gem 'capybara'
-  # gem 'database_cleaner'
-  # gem 'pickle' #rails g pickle --paths --email
-  # gem 'launchy'
-  # gem 'factory_girl'
-  # gem 'gherkin'
+  gem 'spork'
+  gem 'cucumber-rails' #rails g cucumber:install --capybara --rspec
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'pickle' #rails g pickle --paths --email
+  gem 'launchy'
+  gem 'factory_girl'
+  gem 'gherkin'
 end

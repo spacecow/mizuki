@@ -4,5 +4,5 @@ Factory.define :user do |f|
   f.password "abc123"
 end
 
-Factory.define :cat do
+Factory.define :maintenance do |f|
 end
