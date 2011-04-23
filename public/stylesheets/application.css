@@ -16,9 +16,11 @@ a {
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: white;
+  text-align: right;
 }
 
-/* line 60, ../../app/stylesheets/application.sass */
+/* line 62, ../../app/stylesheets/application.sass */
 div#flash_notice {
   float: left;
   margin-bottom: 5px;
@@ -40,7 +42,7 @@ div#flash_notice {
   background-image: linear-gradient(top, #4cc417, #339966);
 }
 
-/* line 66, ../../app/stylesheets/application.sass */
+/* line 68, ../../app/stylesheets/application.sass */
 div#flash_alert {
   float: left;
   margin-bottom: 5px;
@@ -62,13 +64,13 @@ div#flash_alert {
   background-image: linear-gradient(top, #ff3333, #993333);
 }
 
-/* line 83, ../../app/stylesheets/application.sass */
+/* line 85, ../../app/stylesheets/application.sass */
 div#container {
   font: normal 18px "Helvetica Neue", Arial, Helvetica, sans-serif;
   width: 900px;
   margin: 40px auto;
 }
-/* line 87, ../../app/stylesheets/application.sass */
+/* line 89, ../../app/stylesheets/application.sass */
 div#container div#contents {
   position: relative;
   height: 500px;
@@ -82,7 +84,7 @@ div#container div#contents {
   border-radius: 10px;
   background: black url("/images/red_moon_mizuki.png") no-repeat scroll top left;
 }
-/* line 89, ../../app/stylesheets/application.sass */
+/* line 91, ../../app/stylesheets/application.sass */
 div#container div#contents div#star1 {
   left: 57px;
   top: 162px;
@@ -93,7 +95,7 @@ div#container div#contents div#star1 {
   z-index: 1;
   display: block;
 }
-/* line 91, ../../app/stylesheets/application.sass */
+/* line 93, ../../app/stylesheets/application.sass */
 div#container div#contents div#star2 {
   left: 392px;
   top: 427px;
@@ -104,7 +106,7 @@ div#container div#contents div#star2 {
   z-index: 1;
   display: block;
 }
-/* line 93, ../../app/stylesheets/application.sass */
+/* line 95, ../../app/stylesheets/application.sass */
 div#container div#contents div#star3 {
   left: 601px;
   top: 77px;
@@ -115,7 +117,7 @@ div#container div#contents div#star3 {
   z-index: 1;
   display: block;
 }
-/* line 95, ../../app/stylesheets/application.sass */
+/* line 97, ../../app/stylesheets/application.sass */
 div#container div#contents div#star4 {
   left: 840px;
   top: 0px;
@@ -126,34 +128,36 @@ div#container div#contents div#star4 {
   z-index: 1;
   display: block;
 }
-/* line 106, ../../app/stylesheets/application.sass */
+/* line 108, ../../app/stylesheets/application.sass */
 div#container div#contents div#user_nav {
   float: right;
   color: white;
 }
-/* line 109, ../../app/stylesheets/application.sass */
+/* line 111, ../../app/stylesheets/application.sass */
 div#container div#contents div#table {
-  color: white;
-  float: right;
-}
-/* line 112, ../../app/stylesheets/application.sass */
-div#container div#contents div#form {
+  margin-top: 20px;
   color: white;
   float: right;
 }
 /* line 115, ../../app/stylesheets/application.sass */
-div#container div#contents div#form div#bottom_links {
-  float: right;
-}
-/* line 117, ../../app/stylesheets/application.sass */
-div#container div#contents div#form form {
+div#container div#contents div#form {
+  margin-top: 20px;
+  color: white;
   float: right;
 }
 /* line 119, ../../app/stylesheets/application.sass */
+div#container div#contents div#form div#bottom_links {
+  float: right;
+}
+/* line 121, ../../app/stylesheets/application.sass */
+div#container div#contents div#form form {
+  float: right;
+}
+/* line 123, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form input.submit {
   margin-top: 10px;
 }
-/* line 121, ../../app/stylesheets/application.sass */
+/* line 125, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form input {
   color: white;
   font-weight: bold;
@@ -170,28 +174,28 @@ div#container div#contents div#form form input {
   background-image: -o-linear-gradient(top, #808080, #000000);
   background-image: linear-gradient(top, #808080, #000000);
 }
-/* line 126, ../../app/stylesheets/application.sass */
+/* line 130, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic li.error p.inline-errors {
   margin-left: 160px;
   color: #cd4d10;
   text-shadow: 1px 1px 1px black;
 }
-/* line 130, ../../app/stylesheets/application.sass */
+/* line 134, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic li {
   list-style-type: none;
 }
-/* line 132, ../../app/stylesheets/application.sass */
+/* line 136, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic li label {
   float: left;
   width: 150px;
   text-align: right;
   margin: 2px 10px 0 0;
 }
-/* line 137, ../../app/stylesheets/application.sass */
+/* line 141, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic input.submit {
   margin: 10px 0 0 160px;
 }
-/* line 139, ../../app/stylesheets/application.sass */
+/* line 143, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic input.small_submit {
   margin-top: 10px;
 }
