@@ -1,6 +1,6 @@
 /* line 16, ../../app/stylesheets/iphone.sass */
 div.current {
-  background: black url("/images/red_moon_mizuki_iphone.png") no-repeat fixed top center;
+  background: black url("/images/red_moon_mizuki_iphone.png") no-repeat fixed center center;
 }
 /* line 18, ../../app/stylesheets/iphone.sass */
 div.current div#star1 {
