@@ -4,8 +4,8 @@ div.current {
 }
 /* line 18, ../../app/stylesheets/iphone.sass */
 div.current div#star1 {
-  left: 57px;
-  top: 162px;
+  left: 40%;
+  top: 50%;
   position: absolute;
   background-color: transparent;
   width: 47px;
