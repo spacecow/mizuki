@@ -52,7 +52,7 @@ class ApplicationController < ActionController::Base
       if session[:iphone]
         session[:iphone] == "1"
       else
-        request.user_agent =~ /Mobile|webOS/
+        #request.user_agent =~ /Mobile|webOS/
       end
     end
 
