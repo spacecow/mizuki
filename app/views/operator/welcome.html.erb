@@ -1,57 +1,60 @@
-<!-- <script> -->
-<!-- var pause1 = 5500; -->
-<!-- var pause2 = 3500; -->
-<!-- var pause3 = 8000; -->
-<!-- var pause4 = 12000; -->
-<!-- var sparkle1 = null; -->
-<!-- var sparkle2 = null; -->
-<!-- var sparkle3 = null; -->
-<!-- var sparkle4 = null; -->
+<div id="star1"><%= image_tag "/images/star1.png" %></div>
+<div id="star2"><%= image_tag "/images/star2.png" %></div>
+<div id="star3"><%= image_tag "/images/star3.png" %></div>
+<div id="star4"><%= image_tag"/images/star4.png" %></div>
+<div id="star5"><%= image_tag"/images/star2.png" %></div>
+<div id="star6"><%= image_tag"/images/star4.png" %></div>
 
-<!-- jQuery('div#star1').load( -->
-<!--   'nothing', function(){ -->
-<!--     sparkle1 = setInterval(hoverfade1, pause1); -->
-<!--     sparkle2 = setInterval(hoverfade2, pause2); -->
-<!--     sparkle3 = setInterval(hoverfade3, pause3); -->
-<!--     sparkle4 = setInterval(hoverfade4, pause4); -->
-<!--   }, -->
-<!--   function(){ -->
-<!--     clearInterval(sparkle1, sparkle2, sparkle3, sparkle4); -->
-<!--   } -->
-<!-- ); -->
+<div id="side_menu_container">
+  <div id="side_bar_container">
+    <div id="side_bar">
+      <ul>
+        <li><%= link_to "Events" %></li>
+        <li><%= link_to "Gallery" %></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div id="tweet_container">
+    <h1>Mama Tweets</h1>
+    <div class="tweet">
+      <div id="content">
+        沖縄楽しかったにょ~
+      </div>
+      <div id="ago">2 hours ago</div>
+    </div>
+    <div class="tweet">
+      <div id="content">
+        毎日蟹ちゃん食てる
+      </div>
+      <div id="ago">2 days ago</div>
+    </div>
+  </div>
+</div>
 
-<!-- function hoverfade1(){ -->
-<!--     jQuery('div#star1').fadeOut(1000).fadeIn(1000); -->
-<!-- } -->
-<!-- function hoverfade2(){ -->
-<!--     jQuery('div#star2').fadeOut(1500).fadeIn(1500); -->
-<!-- } -->
-<!-- function hoverfade3(){ -->
-<!--     jQuery('div#star3').fadeOut(1200).fadeIn(1200); -->
-<!-- } -->
-<!-- function hoverfade4(){ -->
-<!--     jQuery('div#star4').fadeOut(1500).fadeIn(1500); -->
-<!-- } -->
-<!-- </script> -->
+<div id="news_flow_container">
+  <div id="news_flow">
+    <div class="feed">
+      <h1>Shop Open</h1>
+      <div id="time">4月25日</div>
+      <div id="content">大西洋ではニューファンドランド島とグリーンランド
+        の沖からノルウェー北部沖にかけて、日本海、オホーツク海、太平洋では
+        ベーリング海、アメリカ合衆国アラスカ州のアラスカ湾とノートン湾に分
+        布する。<br />
+        <span id="continue"><%= link_to "つづく..." %></span>
+      </div>
+    </div>
 
-<div id="stiqr-id-57635"
-     style="top: 12px; left: 891.5px; position: absolute;
-            background-color: transparent; width: 103px; height:
-            116px; z-index: 1;"><span></span></div>
-
-<div id="star1"><img border="0" width="100%"
-                                              height="100%"
-                                              src="/images/star1.png"></div>
-
-<div id="star2"><img border="0" width="100%"
-                                              height="100%"
-                                              src="/images/star2.png"></div>
-
-<div id="star3"><img border="0" width="100%"
-                                              height="100%"
-                                              src="/images/star3.png"></div>
-
-<div id="star4"><img border="0" width="100%"
-                                              height="100%"
-                                              src="/images/star4.png"></div>
+    <div class="feed">
+      <h1>Mama back from Okinawa</h1>
+      <div id="time">4月22日</div>
+      <div id="content">日本ではヤシガニのその名前や言い伝えから、「ヤシ
+        の木に登りヤシの実を落として食べるカニ」としてのイメージが定着して
+        いる。実際には、ヤシガニの食性は口に入るものなら腐敗した死肉でも食
+        べる雑食性で、必ずしもその主食にヤシの実があるわけではない。<br />
+        <span id="continue"><%= link_to "つづく..." %></span>
+      </div>
+    </div>
+  </div>
+</div>
 

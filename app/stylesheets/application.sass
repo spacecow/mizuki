@@ -11,6 +11,8 @@ $font_size: 18px
 $a_size: $font_size - 2px
 $h1_size: $font_size * 2
 
+$menu_colour: #932710
+$title_colour: #cd7f12
 $bg_colour: #ddd
 $alert_dark: #933
 $error_colour: #cd4d10
@@ -74,19 +76,31 @@ div#flash_alert
 
 $star_base_y: 0px
 $star_base_x: 40px
-$star1_y: $star_base_y + 162px
-$star2_y: $star_base_y + 427px
-$star3_y: $star_base_y + 77px
-$star4_y: $star_base_y + 0
 $star1_x: $star_base_x + 17px
+$star1_y: $star_base_y + 162px
 $star2_x: $star_base_x + 352px
+$star2_y: $star_base_y + 427px
 $star3_x: $star_base_x + 561px
+$star3_y: $star_base_y + 77px
 $star4_x: $star_base_x + 800
+$star4_y: $star_base_y + 0
+$star5_x: $star_base_x + 650
+$star5_y: $star_base_y + 400
+$star6_x: $star_base_x + 600
+$star6_y: $star_base_y + 400
+$news_flow_container_width: 300px
+$news_flow_container_height: 400px
+$news_flow_width: 250px
+$side_menu_container_width: 200px
+$side_menu_container_height: $news_flow_container_height
+$side_bar_container_width: 170px
+$tweet_container_width: $side_bar_container_width
 div#container
   font: normal $font_size "Helvetica Neue", Arial, Helvetica, sans-serif
   width: $main_width
   margin: 4*$spacing auto
   div#contents
+    color: white
     position: relative
     div#star1
       +star-base($star1_x,$star1_y)
@@ -96,9 +110,74 @@ div#container
       +star-base($star3_x,$star3_y)
     div#star4
       +star-base($star4_x,$star4_y,71px,64px)
-
-
-
+    div#star5
+      +star-base($star5_x,$star5_y)
+    div#star6
+      +star-base($star6_x,$star6_y,71px,64px)
+    div#news_flow_container
+      width: $news_flow_container_width
+      height: $news_flow_container_height
+      +border-radius(10px)
+      background: rgba(20,20,20,0.5)
+      margin-top: 2*$spacing
+      border: 1px solid white
+      float: right
+      div#news_flow
+        width: $news_flow_width
+        margin: 0 auto
+        div.feed
+          margin-bottom: $spacing
+          h1
+            text-align: center
+            font-size: 32px
+            margin: 0
+            text-shadow: 3px 3px 3px $title_colour
+          div#time
+            font-size: 12px
+            text-align: center
+            color: $title_colour
+          div#content
+            font-size: 14px
+            span#continue
+              display: block
+              text-align: right
+              margin-right: $spacing
+              a
+                font-size: 12px
+    div#side_menu_container
+      width: $side_menu_container_width
+      height: $side_menu_container_height
+      margin-top: 2*$spacing
+      float: right
+      div#side_bar_container
+        width: $side_bar_container_width
+        margin: 0 auto 100px auto
+        div#side_bar
+          ul
+            float: right
+            li
+              list-style-type: none
+              a
+                color: white
+                text-shadow: 2px 2px 2px $link_colour
+                font-size: 25px
+      div#tweet_container
+        width: $tweet_container_width
+        margin: 0 auto
+        h1
+          text-align: right
+          font-size: 25px
+          margin: 0
+          text-shadow: 3px 3px 3px $title_colour
+        div.tweet
+          margin-top: $spacing
+          div#ago
+            font-size: 12px
+            text-align: right
+            color: $title_colour
+          div#content
+            text-align: right
+            font-size: 14px
     height: 500px
     padding: 2*$spacing 4*$spacing
     border: 1px solid black
@@ -108,6 +187,10 @@ div#container
     div#user_nav
       float: right
       color: white
+      border: 1px solid white
+      padding: 5px 10px
+      +border-radius($spacing)      
+      background: rgba(20,20,20,0.5)
     div#table
       margin-top: $spacing*2
       color: white
