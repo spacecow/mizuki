@@ -1,0 +1,11 @@
+<li class="event">
+  <h1><%= event.name %></h1>
+  <div id="time"><%= event.when %></div>
+  <% if truncate %>
+    <div id="content"><%= truncate(event.content, :length=>50) %>
+      <span id="continue"><%= link_to "つづく...", event %></span>
+    </div>
+  <% else %>
+    <div id="content"><%= event.content %></div>
+  <% end %>
+</li>

@@ -34,25 +34,9 @@
 
 <div id="news_flow_container">
   <ul id="news_flow">
-    <li class="event">
-      <h1>Shop Open</h1>
-      <div id="time">4月25日</div>
-      <div id="content">大西洋ではニューファンドランド島とグリーンランド
-        の沖からノルウェー北部沖にかけて、日本海、オホーツク海、太平洋では
-        ベーリング海、アメリカ合衆国アラスカ州のアラスカ湾とノートン湾に分
-        布する。<br />
-        <span id="continue"><%= link_to "つづく..." %></span>
-      </div>
-    </li>
-    <li class="event">
-      <h1>Mama back from Okinawa</h1>
-      <div id="time">4月22日</div>
-      <div id="content">日本ではヤシガニのその名前や言い伝えから、「ヤシ
-        の木に登りヤシの実を落として食べるカニ」としてのイメージが定着して
-        いる。<br />
-        <span id="continue"><%= link_to "つづく..." %></span>
-      </div>
-    </li>
+    <% @events.each do |event| %>
+      <%= render event, :truncate => true %>
+    <% end %>
   </ul>
 </div>
 
