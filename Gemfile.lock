@@ -49,11 +49,6 @@ GEM
     celerity (0.8.9)
     childprocess (0.1.8)
       ffi (~> 1.0.6)
-    chunky_png (1.1.1)
-    compass (0.11.0)
-      chunky_png (~> 1.1.1)
-      fssm (>= 0.2.7)
-      sass (>= 3.1.0.alpha.249)
     configuration (1.2.0)
     cucumber (0.10.0)
       builder (>= 2.1.2)
@@ -75,7 +70,6 @@ GEM
       actionpack (>= 2.3.7)
       activesupport (>= 2.3.7)
       i18n (~> 0.4)
-    fssm (0.2.7)
     gherkin (2.3.6)
       json (>= 1.4.6)
     i18n (0.5.0)
@@ -133,7 +127,6 @@ GEM
       railties (~> 3.0)
       rspec (~> 2.5.0)
     rubyzip (0.9.4)
-    sass (3.1.0)
     selenium-webdriver (0.2.0)
       childprocess (>= 0.1.7)
       ffi (>= 1.0.7)
@@ -155,7 +148,6 @@ DEPENDENCIES
   bcrypt-ruby
   cancan
   capybara
-  compass
   cucumber (= 0.10.0)
   cucumber-rails
   database_cleaner
