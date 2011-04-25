@@ -9,3 +9,5 @@ bc1357: !ruby/object:Dooby::Task
   todo: event when function rspec test :done
 75f596: !ruby/object:Dooby::Task 
   todo: split date to date & time fields :done
+82b638: !ruby/object:Dooby::Task 
+  todo: turn the when call into a module :done

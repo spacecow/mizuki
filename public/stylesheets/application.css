@@ -87,7 +87,7 @@ div#container div#contents {
 }
 /* line 105, ../../app/stylesheets/application.sass */
 div#container div#contents div#star1 {
-  left: 57px;
+  left: 77px;
   top: 162px;
   position: absolute;
   background-color: transparent;
@@ -167,39 +167,39 @@ div#container div#contents div#news_flow_container {
   float: right;
 }
 /* line 125, ../../app/stylesheets/application.sass */
-div#container div#contents div#news_flow_container div#news_flow {
+div#container div#contents div#news_flow_container ul#news_flow {
   width: 250px;
   margin: 0 auto;
 }
 /* line 128, ../../app/stylesheets/application.sass */
-div#container div#contents div#news_flow_container div#news_flow div.feed {
+div#container div#contents div#news_flow_container ul#news_flow li.event {
   margin-bottom: 10px;
 }
 /* line 130, ../../app/stylesheets/application.sass */
-div#container div#contents div#news_flow_container div#news_flow div.feed h1 {
+div#container div#contents div#news_flow_container ul#news_flow li.event h1 {
   text-align: center;
   font-size: 32px;
   margin: 0;
   text-shadow: 3px 3px 3px #cd7f12;
 }
 /* line 135, ../../app/stylesheets/application.sass */
-div#container div#contents div#news_flow_container div#news_flow div.feed div#time {
+div#container div#contents div#news_flow_container ul#news_flow li.event div#time {
   font-size: 12px;
   text-align: center;
   color: #cd7f12;
 }
 /* line 139, ../../app/stylesheets/application.sass */
-div#container div#contents div#news_flow_container div#news_flow div.feed div#content {
+div#container div#contents div#news_flow_container ul#news_flow li.event div#content {
   font-size: 14px;
 }
 /* line 141, ../../app/stylesheets/application.sass */
-div#container div#contents div#news_flow_container div#news_flow div.feed div#content span#continue {
+div#container div#contents div#news_flow_container ul#news_flow li.event div#content span#continue {
   display: block;
   text-align: right;
   margin-right: 10px;
 }
 /* line 145, ../../app/stylesheets/application.sass */
-div#container div#contents div#news_flow_container div#news_flow div.feed div#content span#continue a {
+div#container div#contents div#news_flow_container ul#news_flow li.event div#content span#continue a {
   font-size: 12px;
 }
 /* line 147, ../../app/stylesheets/application.sass */
