@@ -16,8 +16,10 @@ ActiveRecord::Schema.define(:version => 20110424044245) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.datetime "start_date"
-    t.datetime "end_date"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.time     "start_time"
+    t.time     "end_time"
     t.text     "content"
   end
 

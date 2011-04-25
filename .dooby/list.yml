@@ -7,3 +7,5 @@ ae1652: !ruby/object:Dooby::Task
   todo: show function for maintenance
 bc1357: !ruby/object:Dooby::Task 
   todo: event when function rspec test :done
+75f596: !ruby/object:Dooby::Task 
+  todo: split date to date & time fields :done
