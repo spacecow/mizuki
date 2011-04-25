@@ -15,7 +15,7 @@ $(function() {
   $("span#continue a").click(function() {
     $("ul#news_flow").fadeOut("slow");
     var id = this.toString().split("/")[3]+"/"+this.toString().split("/")[4]+".js";
-    setTimeout(showEvent,2000,id);
+    setTimeout(showEvent,1000,id);
     return false;
   });
 
