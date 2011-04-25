@@ -5,3 +5,5 @@
   todo: responsive web design
 ae1652: !ruby/object:Dooby::Task 
   todo: show function for maintenance
+bc1357: !ruby/object:Dooby::Task 
+  todo: event when function rspec test :done
