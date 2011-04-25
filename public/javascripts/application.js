@@ -21,7 +21,6 @@ $(function() {
 
   function showEvent(id) {
     $.getScript(id);
-    $("ul#news_flow").fadeIn("slow");
   }
 });
 
