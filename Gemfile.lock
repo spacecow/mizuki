@@ -165,5 +165,3 @@ DEPENDENCIES
   rspec-rails
   spork
 
-METADATA
-  version: 1.0.6
