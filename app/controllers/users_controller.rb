@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   
   def new
     @user = User.new
+    @void = true
   end
 
   def create
@@ -19,6 +20,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_path, :notice => t('notice.thank_you_for_signing_up')
     else
+      @void = true
       render :action => 'new'
     end
   end

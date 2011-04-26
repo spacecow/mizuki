@@ -27,7 +27,9 @@
             <%= link_to "Mobile Site", :iphone => 1 %>
           <% end %>
         </div>
+        <% unless @void %>
         <%= render "/operator/side_menu_container" %>
+        <% end %>
 
         <%= content_tag :h1, yield(:title) if show_title? %>
         <%= yield %>

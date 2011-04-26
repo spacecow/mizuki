@@ -220,6 +220,26 @@ div#container
         float: right
         a
           font-size: 14px
+    div#signup_form
+      form
+        float: right
+        li
+          list-style-type: none
+          label
+            width: 120px
+            float: left
+            text-align: right
+            margin: 7px $spacing 0 0
+          input
+            +red_gradient
+        li.error
+          p.inline-errors
+            margin-left: 130px
+            color: $error_colour
+            text-shadow: 1px 1px 1px blac
+        input.submit
+          margin: $spacing 0 0 130px
+          +red_gradient
     div#form
       margin: $spacing $spacing 0 0
       color: white
