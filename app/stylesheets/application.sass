@@ -3,7 +3,7 @@
 
 $spacing: 10px
 $main_width: 900px
-$label_width: 75px
+$label_width: 65px
 $label_margin: $spacing
 $label_full_width: $label_width + $label_margin
 
@@ -237,9 +237,10 @@ div#container
           width: 186px
           +red_gradient
         textarea
+          font-size: 14px
           +red_gradient
           width: 186px
-          height: 230px    
+          height: 180px    
       form.formtastic
         li.error
           //+linear-gradient(color-stops(white, $alert_dark 33%, white), left)
@@ -248,12 +249,15 @@ div#container
             color: $error_colour
             text-shadow: 1px 1px 1px black
         li
+          float: left
+          width: auto
           list-style-type: none
           label
+            font-size: 14px
             float: left
             width: $label_width
             text-align: right
-            margin: 2px $label_margin 0 0
+            margin: 7px $label_margin 0 0
         input.submit
           margin: $spacing 0 0 $label_full_width
         input.small_submit

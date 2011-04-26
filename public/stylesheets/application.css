@@ -353,6 +353,7 @@ div#container div#contents div#form form input {
 }
 /* line 239, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form textarea {
+  font-size: 14px;
   color: white;
   font-weight: bold;
   padding: 5px;
@@ -368,30 +369,33 @@ div#container div#contents div#form form textarea {
   background-image: -o-linear-gradient(top, #808080, #000000);
   background-image: linear-gradient(top, #808080, #000000);
   width: 186px;
-  height: 230px;
+  height: 180px;
 }
-/* line 246, ../../app/stylesheets/application.sass */
+/* line 247, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic li.error p.inline-errors {
-  margin-left: 85px;
+  margin-left: 75px;
   color: #cd4d10;
   text-shadow: 1px 1px 1px black;
 }
-/* line 250, ../../app/stylesheets/application.sass */
+/* line 251, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic li {
+  float: left;
+  width: auto;
   list-style-type: none;
 }
-/* line 252, ../../app/stylesheets/application.sass */
+/* line 255, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic li label {
+  font-size: 14px;
   float: left;
-  width: 75px;
+  width: 65px;
   text-align: right;
-  margin: 2px 10px 0 0;
+  margin: 7px 10px 0 0;
 }
-/* line 257, ../../app/stylesheets/application.sass */
+/* line 261, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic input.submit {
-  margin: 10px 0 0 85px;
+  margin: 10px 0 0 75px;
 }
-/* line 259, ../../app/stylesheets/application.sass */
+/* line 263, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic input.small_submit {
   margin-top: 10px;
 }
