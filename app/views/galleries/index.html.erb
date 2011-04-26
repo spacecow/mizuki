@@ -2,7 +2,11 @@
   <ul id="galleries">
     <% @galleries.each do |gallery| %>
     <li>
-      <span id="title"><%= gallery.title %></span>
+      <span id="title"><%= link_to gallery.title, gallery %></span>
+      <span id="links">
+        <%= link_to t(:edit), edit_gallery_path(gallery) %>
+        <%= link_to t(:del), gallery, :confirm => sure?, :method => :delete %>
+      </span>
       <span id="description"><%= gallery.description %></span>
     </li>
     <% end %>

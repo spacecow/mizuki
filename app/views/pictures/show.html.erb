@@ -1,0 +1,8 @@
+<div id="bottom_links">
+  <% if can? :edit, @picture %>
+  <%= link_to t(:edit), edit_gallery_picture_path(@gallery,@picture) %> |
+  <% end %>
+  <% if can? :destroy, @picture %>
+    <%= link_to t(:delete), [@gallery,@picture], :confirm => sure?, :method => :delete %>
+  <% end %>
+</div>

@@ -5,7 +5,8 @@ class Ability
     can :show, Event
     can :create, User
     can [:show,:index], Gallery
-
+    can :show, Picture
+    
     if user
       if user.role? :god
         can :manage, :all
@@ -21,8 +22,8 @@ class Ability
         if user.role? :mama
           can [:edit_roles, :update_roles, :destroy], User
           can [:new,:create,:edit,:update,:destroy], Event
-          can [:create], Gallery
-          can [:create,:update], Picture
+          can [:create,:update, :destroy], Gallery
+          can [:create, :update, :destroy], Picture
         end
       end
     end

@@ -1,3 +1,7 @@
+<% @pictures.each do |pic| %>
+  <%= link_to((image_tag pic.file_url, :title => pic.caption), [@gallery,pic]) %>
+<% end %>
+
 <div id="bottom_links">
   <%= link_to add(:picture), new_gallery_picture_path(@gallery) if can? :new, Picture %>
 </div>

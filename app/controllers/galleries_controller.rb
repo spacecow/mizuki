@@ -2,6 +2,7 @@ class GalleriesController < ApplicationController
   load_and_authorize_resource
 
   def show
+    @pictures = @gallery.pictures
   end
   
   def index
@@ -17,5 +18,13 @@ class GalleriesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def edit
+  end
+
+  def destroy
+    @gallery.destroy
+    redirect_to galleries_path
   end
 end

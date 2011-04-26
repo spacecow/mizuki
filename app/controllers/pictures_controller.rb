@@ -26,4 +26,9 @@ class PicturesController < ApplicationController
       render :edit
     end
   end
+
+  def destroy
+    @picture.destroy
+    redirect_to @gallery
+  end
 end

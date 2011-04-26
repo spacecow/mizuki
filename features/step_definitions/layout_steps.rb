@@ -22,3 +22,7 @@ end
 When /^I follow "([^"]*)" within the (.+) section$/ do |lnk,div|
   When %(I follow "#{lnk}" within "div##{underscore(div)}")
 end
+
+When /^I click the image "([^"]*)"$/ do |file|
+  find(:xpath, "//a/img[@alt='#{file}']/..").click
+end
