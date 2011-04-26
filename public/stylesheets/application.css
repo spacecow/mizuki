@@ -153,7 +153,7 @@ div#container div#contents div#star6 {
 }
 /* line 126, ../../app/stylesheets/application.sass */
 div#container div#contents div#news_flow_container {
-  width: 310px;
+  width: 320px;
   height: 480px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -212,7 +212,7 @@ div#container div#contents div#news_flow_container ul#news_flow li.event div#con
 }
 /* line 160, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container {
-  width: 200px;
+  width: 190px;
   height: 480px;
   float: right;
 }
