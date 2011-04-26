@@ -13,16 +13,12 @@ $(function() {
   function hoverfade6(){ $('div#star6').fadeOut(1500).fadeIn(1500); }
 
   $("span#continue a").click(function() {
-    $("ul#news_flow").fadeOut("slow");
-    var id = this.toString().split("/")[3]+"/"+this.toString().split("/")[4]+".js";
-    alert(this.href);
-    setTimeout(showEvent,1000,id);
-    return false;
+  //  $("ul#news_flow").fadeOut("slow");
+  //  setTimeout(showEvent,1500,this.href);
+  //  return false;
   });
 
-  function showEvent(id) {
-    $.getScript(id);
-    //history.pushState(null, "", );
+  function showEvent($id) {
+    $.getScript($id);
   }
 });
-
