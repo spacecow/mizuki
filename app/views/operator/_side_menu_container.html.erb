@@ -1,4 +1,15 @@
 <div id="side_menu_container">
+  <div id="user_nav">
+    <% if current_user %>
+    <%= link_to t(:log_out), logout_path %>
+    <% else %>
+    <%= link_to t(:sign_up), signup_path %>
+    <%= t(:or) %>
+    <%= link_to t(:log_in), login_path %>
+    <% end %>
+  </div>
+  <div class="clear"></div>
+
   <div id="side_bar_container">
     <div id="side_bar">
       <ul>

@@ -21,3 +21,5 @@ fd2107: !ruby/object:Dooby::Task
   todo: scroll event list
 b0a417: !ruby/object:Dooby::Task 
   todo: edit event function :done
+6d563d: !ruby/object:Dooby::Task 
+  todo: div layout :done

@@ -1,12 +1,11 @@
-<%= render "/operator/side_menu_container" %>
-
 <div id="news_flow_container">
   <div id="form"><%= render 'form', :button_label => update(:event) %>
 
-  <div id="bottom_links">
-    <% if can? :show, @event -%>
-    <%= link_to t(:show), @event %> |
-    <% end %>
-    <%= link_to t(:view_all), events_path if can? :index, Event %>
-  </div></div>
+    <div id="bottom_links">
+      <% if can? :show, @event -%>
+      <%= link_to t(:show), @event %> |
+      <% end %>
+      <%= link_to t(:view_all), events_path if can? :index, Event %>
+    </div>
+  </div>
 </div>
