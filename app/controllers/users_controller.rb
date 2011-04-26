@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   load_and_authorize_resource
 
+  def show
+    @events = Event.all.sort_by(&:when).reverse
+  end
+  
   def index
     @users = User.order('username asc')
   end

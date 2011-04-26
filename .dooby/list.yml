@@ -15,3 +15,5 @@ bc1357: !ruby/object:Dooby::Task
   todo: back button and url for transition javascript
 fd2107: !ruby/object:Dooby::Task 
   todo: view all on event show
+88792c: !ruby/object:Dooby::Task 
+  todo: layout on user page :done

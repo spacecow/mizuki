@@ -1,0 +1,7 @@
+<div id="news_flow_container">
+  <ul id="news_flow">
+    <% events.each do |event| %>
+      <%= render event, :truncate => true %>
+    <% end %>
+  </ul>
+</div>
