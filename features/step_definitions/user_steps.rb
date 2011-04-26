@@ -8,3 +8,8 @@ end
 Given /^I am logged in as #{capture_model}$/ do |mdl|
   Given %(I am logged in as "#{model(mdl).username}")
 end
+
+Given /^I am logged in as mama$/ do
+  Given %(a user exists with roles_mask: 2)
+  And %(I am logged in as that user)
+end

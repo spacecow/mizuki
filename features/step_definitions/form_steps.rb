@@ -3,7 +3,7 @@ Then /^I should see (?:a|an) (\w+) (\w+) error "([^"]*)"$/ do |mdl,attr,txt|
   with_scope("li##{mdl}_#{attr}_input p.inline-errors"){ page.text.should eq txt }
 end
 Then /^I should see (?:a|an) (\w+) (\w+) error: (\w+)$/ do |mdl,attr,err|
-  mess = "errors.messages.#{err}"
+  mess = "activerecord.errors.messages.#{err}"
   Then %(I should see a #{mdl} #{attr} error "#{I18n.t(mess)}")
 end
 Then /^I should see no (\w+) (\w+) error "([^"]*)"$/ do |mdl,attr,txt|

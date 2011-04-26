@@ -7,6 +7,15 @@ Then I should see "Wow!" within the first "news_flow" listing
 And I should see "4月25日" within the first "news_flow" listing
 And I should see "This is a nice post." within the first "news_flow" listing
 
+Scenario Outline: Side bar links
+When I go to the welcome page
+And I follow "<lnk>" within the side bar section
+Then I should be on <path> page
+Examples:
+| lnk     | path          |
+| Events  | the welcome   |
+| Gallery | the galleries |
+
 Scenario: Link within event
 Given an event exists
 When I go to the welcome page

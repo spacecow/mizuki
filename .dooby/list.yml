@@ -25,3 +25,7 @@ b0a417: !ruby/object:Dooby::Task
   todo: div layout :done
 ca1f51: !ruby/object:Dooby::Task 
   todo: clean up css :done
+bcd4ff: !ruby/object:Dooby::Task 
+  todo: galleriffic
+5e94ad: !ruby/object:Dooby::Task 
+  todo: simple gallery functionality :done

@@ -4,6 +4,7 @@ class Ability
   def initialize(user)
     can :show, Event
     can :create, User
+    can [:show,:index], Gallery
 
     if user
       if user.role? :god
@@ -20,6 +21,7 @@ class Ability
         if user.role? :mama
           can [:edit_roles, :update_roles, :destroy], User
           can [:new,:create,:edit,:update,:destroy], Event
+          can [:create], Gallery
         end
       end
     end

@@ -1,0 +1,14 @@
+<div id="list">
+  <ul id="galleries">
+    <% @galleries.each do |gallery| %>
+    <li>
+      <span id="title"><%= gallery.title %></span>
+      <span id="description"><%= gallery.description %></span>
+    </li>
+    <% end %>
+  </ul>
+
+  <div id="bottom_links">
+    <%= link_to new(:gallery), new_gallery_path if can? :new, Gallery %>
+  </div>
+</div>

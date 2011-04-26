@@ -16,5 +16,9 @@ end
 # LINKS -----------------------
 
 When /^I follow "([^"]*)" at the bottom of the page$/ do |lnk|
-  When %(I follow "#{lnk}" within "div#bottom_links")
+  When %(I follow "#{lnk}" within the bottom links section)
+end
+
+When /^I follow "([^"]*)" within the (.+) section$/ do |lnk,div|
+  When %(I follow "#{lnk}" within "div##{underscore(div)}")
 end
