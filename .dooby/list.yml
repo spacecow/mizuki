@@ -29,3 +29,5 @@ bcd4ff: !ruby/object:Dooby::Task
   todo: galleriffic
 5e94ad: !ruby/object:Dooby::Task 
   todo: simple gallery functionality :done
+b2910a: !ruby/object:Dooby::Task 
+  todo: simple picture tests :done

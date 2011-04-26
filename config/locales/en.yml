@@ -46,6 +46,7 @@ en:
     sure?: "Are you sure?"
     welcome: "Welcome %{user}."
   success:
+    added: "Successfully added %{obj}."
     created: "Successfully created %{obj}."
     deleted: "Successfully deleted %{obj}."
     logged_in: "Successfully logged in."

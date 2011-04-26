@@ -10,7 +10,9 @@ Mizuki::Application.routes.draw do
   resources :maintenances, :only => [:index,:edit,:update,:destroy]
   resources :sessions
   resources :events
-  resources :galleries
+  resources :galleries do
+    resources :pictures
+  end
   resources :users do
     member do
       get 'edit_roles'

@@ -22,6 +22,7 @@ class Ability
           can [:edit_roles, :update_roles, :destroy], User
           can [:new,:create,:edit,:update,:destroy], Event
           can [:create], Gallery
+          can [:create,:update], Picture
         end
       end
     end

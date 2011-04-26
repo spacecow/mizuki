@@ -1,0 +1,5 @@
+<%= semantic_form_for [@gallery,@picture], :html => {:multipart => true } do |f| %>
+  <%= f.input :file, :as => :file, :hint => @picture.file.blank? ? "" : "Uploaded file: #{@picture.filename}" %>
+  <%= f.input :caption %>
+  <%= f.submit button_label, :class => :submit %>
+<% end %>
