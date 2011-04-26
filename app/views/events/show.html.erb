@@ -1,16 +1,32 @@
-<% title "Event" %>
+<div id="side_menu_container">
+  <div id="side_bar_container">
+    <div id="side_bar">
+      <ul>
+        <li><%= link_to "Events" %></li>
+        <li><%= link_to "Gallery" %></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div id="tweet_container">
+    <h1>Mama Tweets</h1>
+    <div class="tweet">
+      <div id="content">
+        沖縄楽しかったにょ~
+      </div>
+      <div id="ago">2 hours ago</div>
+    </div>
+    <div class="tweet">
+      <div id="content">
+        毎日蟹ちゃん食てる
+      </div>
+      <div id="ago">2 days ago</div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong><%= t('formtastic.labels.name') %>:</strong>
-  <%= @event.name %>
-</p>
-
-<div id="bottom_links">
-  <% if can? :edit, @event %>
-    <%= link_to t(:edit), edit_event_path(@event) %> |
-  <% end %>
-  <% if can? :delete, @event %>
-    <%= link_to t(:delete), @event, :confirm => 'Are you sure?', :method => :delete %> |
-  <% end %>
-  <%= link_to view(:event), events_path if can? :index, Event %>
+<div id="news_flow_container">
+  <ul id="news_flow">
+    <%= render @event, :truncate => false %>
+  </ul>
 </div>

@@ -40,8 +40,7 @@ module When
       ret = "-"+ret unless ret.blank?
       ret
     end
-    def month(d); I18n.t('date.abbr_month_names')[month_no(d)] end
-    def month_no(d); d.strftime("%m").to_i end
+    def month(d); d.month.to_s+"月" end #I18n.t('date.abbr_month_names')[month_no(d)] end
     def start_date_format(d,t1,t2)
       ret = ""
       ret += year(d) if Date.today.year != d.year

@@ -6,6 +6,7 @@ class OperatorController < ApplicationController
       m.place = prev.first.place unless prev.empty?
       m.save
     end
-  end
 
+    @events = Event.all.sort_by(&:when).reverse
+  end
 end

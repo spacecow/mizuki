@@ -11,5 +11,16 @@ $(function() {
   function hoverfade4(){ $('div#star4').fadeOut(1500).fadeIn(1500); }
   function hoverfade5(){ $('div#star5').fadeOut(1500).fadeIn(1500); }
   function hoverfade6(){ $('div#star6').fadeOut(1500).fadeIn(1500); }
+
+  $("span#continue a").click(function() {
+    $("ul#news_flow").fadeOut("slow");
+    var id = this.toString().split("/")[3]+"/"+this.toString().split("/")[4]+".js";
+    setTimeout(showEvent,1000,id);
+    return false;
+  });
+
+  function showEvent(id) {
+    $.getScript(id);
+  }
 });
 

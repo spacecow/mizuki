@@ -11,3 +11,7 @@ bc1357: !ruby/object:Dooby::Task
   todo: split date to date & time fields :done
 82b638: !ruby/object:Dooby::Task 
   todo: turn the when call into a module :done
+09661d: !ruby/object:Dooby::Task 
+  todo: back button and url for transition javascript
+fd2107: !ruby/object:Dooby::Task 
+  todo: view all on event show
