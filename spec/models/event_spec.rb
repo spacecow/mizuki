@@ -2,20 +2,6 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
 describe Event do
-  describe "when its April" do
-    before(:each) do
-      @event = Factory(:event, :start_date => "2011-04-24",
-                       :end_date => "2011-04-24")
-    end
-    it "month_no should return 4" do
-      @event.send("month_no",@event.start_date).should eq 4
-      @event.send("month_no",@event.start_date).should eq 4
-    end
-    it "month should return 4月" do
-      @event.send("month",@event.start_date).should eq "4月"
-      @event.send("month",@event.end_date).should eq "4月"
-    end
-  end
   describe "function when()" do
     describe "for both start_date and end_date, the end field" do
       it "should contain time if the difference is less than a day" do

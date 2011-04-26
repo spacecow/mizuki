@@ -20,7 +20,7 @@ describe EventsController do
     end
     
     events_controller_actions.each do |action,req|
-      if action=="index"
+      if action=="show"
         it "should reach the #{action} page" do
           send("#{req}", "#{action}", :id => @event.id)
           response.redirect_url.should_not eq(login_url)
@@ -41,7 +41,7 @@ describe EventsController do
     end
     
     events_controller_actions.each do |action,req|
-      if %w(new create show index).include?(action)
+      if %w(index show).include?(action)
         it "should reach the #{action} page" do
           send("#{req}", "#{action}", :id => @event.id)
           response.redirect_url.should_not eq(welcome_url)
@@ -62,7 +62,7 @@ describe EventsController do
     end
     
     events_controller_actions.each do |action,req|
-      if %w(new create show index edit update).include?(action)
+      if %w(show index).include?(action)
         it "should reach the #{action} page" do
           send("#{req}", "#{action}", :id => @event.id)
           response.redirect_url.should_not eq(welcome_url)

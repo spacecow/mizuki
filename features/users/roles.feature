@@ -18,9 +18,9 @@ Examples:
 Scenario: Update roles
 Given I am logged in as "dover"
 When I go to user: "lifter"'s edit roles page
-And I uncheck "Admin"
-And I check "Mini-admin"
-And I check "Member"
+And I uncheck "Mama"
+And I check "Chibi-mama"
+And I check "Girl"
 And I press "Update Roles"
 Then I should see "Successfully updated lifter's roles." as notice flash message
 And a user should exist with username: "lifter", roles_mask: 12

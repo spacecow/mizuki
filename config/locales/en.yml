@@ -1,14 +1,14 @@
 en:
-  admin: "Admin"
+  chibi_mama: "Chibi-mama"
   del: "Del"
   delete: "Delete"
   edit: "Edit"
   english: "English"
+  girl: "Girl"
   japanese: "日本語"
   log_in: "Log in"
   log_out: "Log out"
-  member: "Member"
-  mini_admin: "mini-admin"
+  mama: "Mama"
   or: " or "
   possessive: "%{owner}'s %{obj}"
   profile: "Profile"
@@ -65,4 +65,5 @@ en:
 
   anonymous: "Anonymous"
   comment: "Comment"
+  event: "Event"
   maintenance: "Maintenance"

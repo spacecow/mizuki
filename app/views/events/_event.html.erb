@@ -14,7 +14,7 @@
   </div>
   <% if truncate %>
     <div id="content"><%= truncate(event.content, :length=>50) %>
-      <span id="continue"><%= link_to "つづく...", event %></span>
+      <span id="continue"><%= link_to "つづく...", event if can? :show, event %></span>
     </div>
   <% else %>
     <div id="content"><%= event.content %></div>
