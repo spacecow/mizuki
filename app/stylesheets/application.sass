@@ -221,11 +221,14 @@ div#container
       div#message
         float: right
       form
+        float: right
         p
+          label
           input
             +red_gradient
           input.submit
             margin-top: $spacing
+            margin-left: 0
         +formtastic_base($void_form_label_width)
             
     div#user_nav

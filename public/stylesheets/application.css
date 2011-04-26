@@ -270,7 +270,11 @@ div#container div#contents div#void {
 div#container div#contents div#void div#message {
   float: right;
 }
-/* line 225, ../../app/stylesheets/application.sass */
+/* line 223, ../../app/stylesheets/application.sass */
+div#container div#contents div#void form {
+  float: right;
+}
+/* line 227, ../../app/stylesheets/application.sass */
 div#container div#contents div#void form p input {
   color: white;
   font-weight: bold;
@@ -287,9 +291,10 @@ div#container div#contents div#void form p input {
   background-image: -o-linear-gradient(top, #808080, #000000);
   background-image: linear-gradient(top, #808080, #000000);
 }
-/* line 227, ../../app/stylesheets/application.sass */
+/* line 229, ../../app/stylesheets/application.sass */
 div#container div#contents div#void form p input.submit {
   margin-top: 10px;
+  margin-left: 0;
 }
 /* line 63, ../../app/stylesheets/application.sass */
 div#container div#contents div#void form li {
@@ -357,7 +362,7 @@ div#container div#contents div#void form input.submit {
   background-image: linear-gradient(top, #808080, #000000);
   margin: 10px 0 0 140px;
 }
-/* line 231, ../../app/stylesheets/application.sass */
+/* line 234, ../../app/stylesheets/application.sass */
 div#container div#contents div#user_nav {
   float: right;
   color: white;
@@ -372,51 +377,51 @@ div#container div#contents div#user_nav {
   border-radius: 10px;
   background: rgba(20, 20, 20, 0.5);
 }
-/* line 239, ../../app/stylesheets/application.sass */
+/* line 242, ../../app/stylesheets/application.sass */
 div#container div#contents div#table {
   margin-top: 20px;
   color: white;
   float: right;
 }
-/* line 243, ../../app/stylesheets/application.sass */
+/* line 246, ../../app/stylesheets/application.sass */
 div#container div#contents div#list {
   width: 250px;
   margin: 0 auto;
 }
-/* line 247, ../../app/stylesheets/application.sass */
+/* line 250, ../../app/stylesheets/application.sass */
 div#container div#contents div#list ul li {
   list-style-type: none;
 }
-/* line 249, ../../app/stylesheets/application.sass */
+/* line 252, ../../app/stylesheets/application.sass */
 div#container div#contents div#list ul li span#name {
   float: left;
   width: 160px;
 }
-/* line 253, ../../app/stylesheets/application.sass */
+/* line 256, ../../app/stylesheets/application.sass */
 div#container div#contents div#list ul li span#links a {
   font-size: 12px;
 }
-/* line 255, ../../app/stylesheets/application.sass */
+/* line 258, ../../app/stylesheets/application.sass */
 div#container div#contents div#list div#bottom_links {
   margin-top: 5px;
   float: right;
 }
-/* line 258, ../../app/stylesheets/application.sass */
+/* line 261, ../../app/stylesheets/application.sass */
 div#container div#contents div#list div#bottom_links a {
   font-size: 14px;
 }
-/* line 260, ../../app/stylesheets/application.sass */
+/* line 263, ../../app/stylesheets/application.sass */
 div#container div#contents div#form {
   margin: 10px 10px 0 0;
   color: white;
   float: right;
 }
-/* line 264, ../../app/stylesheets/application.sass */
+/* line 267, ../../app/stylesheets/application.sass */
 div#container div#contents div#form div#bottom_links {
   margin-top: 5px;
   float: right;
 }
-/* line 267, ../../app/stylesheets/application.sass */
+/* line 270, ../../app/stylesheets/application.sass */
 div#container div#contents div#form div#bottom_links a {
   font-size: 14px;
 }
