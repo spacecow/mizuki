@@ -21,6 +21,14 @@ $notice_dark: #396
 $alert_light: #f33
 $notice_light: #4CC417
 
+$main_height: 500px
+$main_spacing_top: 2*$spacing
+$main_spacing_side: 4*$spacing
+$news_flow_container_width: 300px
+$news_flow_container_height: $main_height
+$side_menu_container_width: 200px
+$side_menu_container_height: $news_flow_container_height
+
 @mixin star-base($x, $y, $w: 47px, $h: 47px)
   left: $x
   top: $y
@@ -88,11 +96,7 @@ $star5_x: $star_base_x + 650
 $star5_y: $star_base_y + 400
 $star6_x: $star_base_x + 600
 $star6_y: $star_base_y + 400
-$news_flow_container_width: 300px
-$news_flow_container_height: 500px
 $news_flow_width: 250px
-$side_menu_container_width: 200px
-$side_menu_container_height: $news_flow_container_height
 $side_bar_container_width: 170px
 $tweet_container_width: $side_bar_container_width
 div#container
@@ -100,6 +104,11 @@ div#container
   width: $main_width
   margin: 4*$spacing auto
   div#contents
+    height: $main_height
+    padding: $main_spacing_top $main_spacing_side
+    border: 1px solid black
+    +border-radius($spacing)
+    background: black url('/images/red_moon_mizuki.png') no-repeat scroll top left
     color: white
     position: relative
     div#star1
@@ -116,7 +125,7 @@ div#container
       +star-base($star6_x,$star6_y,71px,64px)
     div#news_flow_container
       width: $news_flow_container_width
-      height: $news_flow_container_height
+      height: $news_flow_container_height 
       +border-radius(10px)
       background: rgba(20,20,20,0.5)
       border: 1px solid white
@@ -181,11 +190,6 @@ div#container
           div#content
             text-align: right
             font-size: 14px
-    height: 500px
-    padding: 2*$spacing 4*$spacing
-    border: 1px solid black
-    +border-radius($spacing)
-    background: black url('/images/red_moon_mizuki.png') no-repeat scroll top left
     //+linear-gradient(color-stops(white, $bg_colour 33%, white), left)
     div#user_nav
       float: right

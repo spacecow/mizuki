@@ -1,18 +1,18 @@
-/* line 48, ../../app/stylesheets/application.sass */
+/* line 56, ../../app/stylesheets/application.sass */
 div.clear {
   clear: both;
   height: 0;
   overflow: hidden;
 }
 
-/* line 53, ../../app/stylesheets/application.sass */
+/* line 61, ../../app/stylesheets/application.sass */
 a {
   color: #4b7399;
   text-decoration: none;
   font-size: 16px;
 }
 
-/* line 58, ../../app/stylesheets/application.sass */
+/* line 66, ../../app/stylesheets/application.sass */
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -20,7 +20,7 @@ h1 {
   text-align: right;
 }
 
-/* line 64, ../../app/stylesheets/application.sass */
+/* line 72, ../../app/stylesheets/application.sass */
 div#flash_notice {
   float: left;
   margin-bottom: 5px;
@@ -42,7 +42,7 @@ div#flash_notice {
   background-image: linear-gradient(top, #4cc417, #339966);
 }
 
-/* line 70, ../../app/stylesheets/application.sass */
+/* line 78, ../../app/stylesheets/application.sass */
 div#flash_alert {
   float: left;
   margin-bottom: 5px;
@@ -64,16 +64,14 @@ div#flash_alert {
   background-image: linear-gradient(top, #ff3333, #993333);
 }
 
-/* line 98, ../../app/stylesheets/application.sass */
+/* line 102, ../../app/stylesheets/application.sass */
 div#container {
   font: normal 18px "Helvetica Neue", Arial, Helvetica, sans-serif;
   width: 900px;
   margin: 40px auto;
 }
-/* line 102, ../../app/stylesheets/application.sass */
+/* line 106, ../../app/stylesheets/application.sass */
 div#container div#contents {
-  color: white;
-  position: relative;
   height: 500px;
   padding: 20px 40px;
   border: 1px solid black;
@@ -84,8 +82,10 @@ div#container div#contents {
   -khtml-border-radius: 10px;
   border-radius: 10px;
   background: black url("/images/red_moon_mizuki.png") no-repeat scroll top left;
+  color: white;
+  position: relative;
 }
-/* line 105, ../../app/stylesheets/application.sass */
+/* line 114, ../../app/stylesheets/application.sass */
 div#container div#contents div#star1 {
   left: 77px;
   top: 162px;
@@ -96,7 +96,7 @@ div#container div#contents div#star1 {
   z-index: 1;
   display: block;
 }
-/* line 107, ../../app/stylesheets/application.sass */
+/* line 116, ../../app/stylesheets/application.sass */
 div#container div#contents div#star2 {
   left: 392px;
   top: 427px;
@@ -107,7 +107,7 @@ div#container div#contents div#star2 {
   z-index: 1;
   display: block;
 }
-/* line 109, ../../app/stylesheets/application.sass */
+/* line 118, ../../app/stylesheets/application.sass */
 div#container div#contents div#star3 {
   left: 601px;
   top: 77px;
@@ -118,7 +118,7 @@ div#container div#contents div#star3 {
   z-index: 1;
   display: block;
 }
-/* line 111, ../../app/stylesheets/application.sass */
+/* line 120, ../../app/stylesheets/application.sass */
 div#container div#contents div#star4 {
   left: 840px;
   top: 0px;
@@ -129,7 +129,7 @@ div#container div#contents div#star4 {
   z-index: 1;
   display: block;
 }
-/* line 113, ../../app/stylesheets/application.sass */
+/* line 122, ../../app/stylesheets/application.sass */
 div#container div#contents div#star5 {
   left: 690px;
   top: 400px;
@@ -140,7 +140,7 @@ div#container div#contents div#star5 {
   z-index: 1;
   display: block;
 }
-/* line 115, ../../app/stylesheets/application.sass */
+/* line 124, ../../app/stylesheets/application.sass */
 div#container div#contents div#star6 {
   left: 640px;
   top: 400px;
@@ -151,7 +151,7 @@ div#container div#contents div#star6 {
   z-index: 1;
   display: block;
 }
-/* line 117, ../../app/stylesheets/application.sass */
+/* line 126, ../../app/stylesheets/application.sass */
 div#container div#contents div#news_flow_container {
   width: 300px;
   height: 500px;
@@ -165,104 +165,104 @@ div#container div#contents div#news_flow_container {
   border: 1px solid white;
   float: right;
 }
-/* line 124, ../../app/stylesheets/application.sass */
+/* line 133, ../../app/stylesheets/application.sass */
 div#container div#contents div#news_flow_container ul#news_flow {
   width: 250px;
   margin: 0 auto;
 }
-/* line 127, ../../app/stylesheets/application.sass */
+/* line 136, ../../app/stylesheets/application.sass */
 div#container div#contents div#news_flow_container ul#news_flow li.event {
   list-style-type: none;
   margin-bottom: 10px;
 }
-/* line 130, ../../app/stylesheets/application.sass */
+/* line 139, ../../app/stylesheets/application.sass */
 div#container div#contents div#news_flow_container ul#news_flow li.event h1 {
   text-align: center;
   font-size: 32px;
   margin: 0;
   text-shadow: 3px 3px 3px #cd7f12;
 }
-/* line 135, ../../app/stylesheets/application.sass */
+/* line 144, ../../app/stylesheets/application.sass */
 div#container div#contents div#news_flow_container ul#news_flow li.event div#time {
   font-size: 12px;
   text-align: center;
   color: #cd7f12;
 }
-/* line 139, ../../app/stylesheets/application.sass */
+/* line 148, ../../app/stylesheets/application.sass */
 div#container div#contents div#news_flow_container ul#news_flow li.event div#links {
   text-align: center;
 }
-/* line 141, ../../app/stylesheets/application.sass */
+/* line 150, ../../app/stylesheets/application.sass */
 div#container div#contents div#news_flow_container ul#news_flow li.event div#links a {
   font-size: 12px;
 }
-/* line 143, ../../app/stylesheets/application.sass */
+/* line 152, ../../app/stylesheets/application.sass */
 div#container div#contents div#news_flow_container ul#news_flow li.event div#content {
   font-size: 14px;
 }
-/* line 145, ../../app/stylesheets/application.sass */
+/* line 154, ../../app/stylesheets/application.sass */
 div#container div#contents div#news_flow_container ul#news_flow li.event div#content span#continue {
   display: block;
   text-align: right;
   margin-right: 10px;
 }
-/* line 149, ../../app/stylesheets/application.sass */
+/* line 158, ../../app/stylesheets/application.sass */
 div#container div#contents div#news_flow_container ul#news_flow li.event div#content span#continue a {
   font-size: 12px;
 }
-/* line 151, ../../app/stylesheets/application.sass */
+/* line 160, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container {
   width: 200px;
   height: 500px;
   float: right;
 }
-/* line 155, ../../app/stylesheets/application.sass */
+/* line 164, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container {
   width: 170px;
   margin: 0 auto 100px auto;
 }
-/* line 159, ../../app/stylesheets/application.sass */
+/* line 168, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul {
   float: right;
 }
-/* line 161, ../../app/stylesheets/application.sass */
+/* line 170, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li {
   list-style-type: none;
 }
-/* line 163, ../../app/stylesheets/application.sass */
+/* line 172, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li a {
   color: white;
   text-shadow: 2px 2px 2px #4b7399;
   font-size: 25px;
 }
-/* line 167, ../../app/stylesheets/application.sass */
+/* line 176, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#tweet_container {
   width: 170px;
   margin: 0 auto;
 }
-/* line 170, ../../app/stylesheets/application.sass */
+/* line 179, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#tweet_container h1 {
   text-align: right;
   font-size: 25px;
   margin: 0;
   text-shadow: 3px 3px 3px #cd7f12;
 }
-/* line 175, ../../app/stylesheets/application.sass */
+/* line 184, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#tweet_container div.tweet {
   margin-top: 10px;
 }
-/* line 177, ../../app/stylesheets/application.sass */
+/* line 186, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#tweet_container div.tweet div#ago {
   font-size: 12px;
   text-align: right;
   color: #cd7f12;
 }
-/* line 181, ../../app/stylesheets/application.sass */
+/* line 190, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#tweet_container div.tweet div#content {
   text-align: right;
   font-size: 14px;
 }
-/* line 190, ../../app/stylesheets/application.sass */
+/* line 194, ../../app/stylesheets/application.sass */
 div#container div#contents div#user_nav {
   float: right;
   color: white;
@@ -277,63 +277,63 @@ div#container div#contents div#user_nav {
   border-radius: 10px;
   background: rgba(20, 20, 20, 0.5);
 }
-/* line 198, ../../app/stylesheets/application.sass */
+/* line 202, ../../app/stylesheets/application.sass */
 div#container div#contents div#table {
   margin-top: 20px;
   color: white;
   float: right;
 }
-/* line 202, ../../app/stylesheets/application.sass */
+/* line 206, ../../app/stylesheets/application.sass */
 div#container div#contents div#list {
   width: 250px;
   margin: 0 auto;
 }
-/* line 206, ../../app/stylesheets/application.sass */
+/* line 210, ../../app/stylesheets/application.sass */
 div#container div#contents div#list ul li {
   list-style-type: none;
 }
-/* line 208, ../../app/stylesheets/application.sass */
+/* line 212, ../../app/stylesheets/application.sass */
 div#container div#contents div#list ul li span#name {
   float: left;
   width: 160px;
 }
-/* line 212, ../../app/stylesheets/application.sass */
+/* line 216, ../../app/stylesheets/application.sass */
 div#container div#contents div#list ul li span#links a {
   font-size: 12px;
 }
-/* line 214, ../../app/stylesheets/application.sass */
+/* line 218, ../../app/stylesheets/application.sass */
 div#container div#contents div#list div#bottom_links {
   margin-top: 5px;
   float: right;
 }
-/* line 217, ../../app/stylesheets/application.sass */
+/* line 221, ../../app/stylesheets/application.sass */
 div#container div#contents div#list div#bottom_links a {
   font-size: 14px;
 }
-/* line 219, ../../app/stylesheets/application.sass */
+/* line 223, ../../app/stylesheets/application.sass */
 div#container div#contents div#form {
   margin: 10px 10px 0 0;
   color: white;
   float: right;
 }
-/* line 223, ../../app/stylesheets/application.sass */
+/* line 227, ../../app/stylesheets/application.sass */
 div#container div#contents div#form div#bottom_links {
   margin-top: 5px;
   float: right;
 }
-/* line 226, ../../app/stylesheets/application.sass */
+/* line 230, ../../app/stylesheets/application.sass */
 div#container div#contents div#form div#bottom_links a {
   font-size: 14px;
 }
-/* line 228, ../../app/stylesheets/application.sass */
+/* line 232, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form {
   float: right;
 }
-/* line 230, ../../app/stylesheets/application.sass */
+/* line 234, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form input.submit {
   margin-top: 10px;
 }
-/* line 232, ../../app/stylesheets/application.sass */
+/* line 236, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form input {
   width: 186px;
   color: white;
@@ -351,7 +351,7 @@ div#container div#contents div#form form input {
   background-image: -o-linear-gradient(top, #808080, #000000);
   background-image: linear-gradient(top, #808080, #000000);
 }
-/* line 235, ../../app/stylesheets/application.sass */
+/* line 239, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form textarea {
   color: white;
   font-weight: bold;
@@ -370,28 +370,28 @@ div#container div#contents div#form form textarea {
   width: 186px;
   height: 230px;
 }
-/* line 242, ../../app/stylesheets/application.sass */
+/* line 246, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic li.error p.inline-errors {
   margin-left: 85px;
   color: #cd4d10;
   text-shadow: 1px 1px 1px black;
 }
-/* line 246, ../../app/stylesheets/application.sass */
+/* line 250, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic li {
   list-style-type: none;
 }
-/* line 248, ../../app/stylesheets/application.sass */
+/* line 252, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic li label {
   float: left;
   width: 75px;
   text-align: right;
   margin: 2px 10px 0 0;
 }
-/* line 253, ../../app/stylesheets/application.sass */
+/* line 257, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic input.submit {
   margin: 10px 0 0 85px;
 }
-/* line 255, ../../app/stylesheets/application.sass */
+/* line 259, ../../app/stylesheets/application.sass */
 div#container div#contents div#form form.formtastic input.small_submit {
   margin-top: 10px;
 }
