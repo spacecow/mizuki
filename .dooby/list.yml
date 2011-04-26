@@ -23,3 +23,5 @@ b0a417: !ruby/object:Dooby::Task
   todo: edit event function :done
 6d563d: !ruby/object:Dooby::Task 
   todo: div layout :done
+ca1f51: !ruby/object:Dooby::Task 
+  todo: clean up css :done

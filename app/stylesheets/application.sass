@@ -53,6 +53,31 @@ $side_menu_container_height: $news_flow_container_height
   +border-radius($corner)
   +linear-gradient(color-stops($light, $dark))
 
+$field_width: 186px
+$textarea_width: $field_width
+$textarea_height: 180px
+$void_form_label_width: 130px
+$void_form_label_spacing: $spacing
+$void_form_label_full_width: $void_form_label_width + $void_form_label_spacing
+@mixin formtastic_base($width)
+  li
+    list-style-type: none
+    label
+      text-align: right
+      float: left
+      width: $width
+      margin: 4px $void_form_label_spacing 0 0
+    input
+      width: $field_width
+      +red_gradient
+    textarea
+      width: $textarea_width
+      height: $textarea_height
+      +red_gradient
+  input.submit
+    +red_gradient
+    margin: $spacing 0 0 $void_form_label_full_width
+
 div.clear
   clear: both
   height: 0
@@ -191,6 +216,18 @@ div#container
             text-align: right
             font-size: 14px
     //+linear-gradient(color-stops(white, $bg_colour 33%, white), left)
+    div#void
+      float: right
+      div#message
+        float: right
+      form
+        p
+          input
+            +red_gradient
+          input.submit
+            margin-top: $spacing
+        +formtastic_base($void_form_label_width)
+            
     div#user_nav
       float: right
       color: white
@@ -220,26 +257,6 @@ div#container
         float: right
         a
           font-size: 14px
-    div#signup_form
-      form
-        float: right
-        li
-          list-style-type: none
-          label
-            width: 120px
-            float: left
-            text-align: right
-            margin: 7px $spacing 0 0
-          input
-            +red_gradient
-        li.error
-          p.inline-errors
-            margin-left: 130px
-            color: $error_colour
-            text-shadow: 1px 1px 1px blac
-        input.submit
-          margin: $spacing 0 0 130px
-          +red_gradient
     div#form
       margin: $spacing $spacing 0 0
       color: white
@@ -250,36 +267,4 @@ div#container
         a
           font-size: 14px
       form
-        float: right
-        input.submit
-          margin-top: $spacing
-        input
-          width: 186px
-          +red_gradient
-        textarea
-          font-size: 14px
-          +red_gradient
-          width: 186px
-          height: 180px    
-      form.formtastic
-        li.error
-          //+linear-gradient(color-stops(white, $alert_dark 33%, white), left)
-          p.inline-errors
-            margin-left: $label_full_width
-            color: $error_colour
-            text-shadow: 1px 1px 1px black
-        li
-          float: left
-          width: auto
-          list-style-type: none
-          label
-            font-size: 14px
-            float: left
-            width: $label_width
-            text-align: right
-            margin: 7px $label_margin 0 0
-        input.submit
-          margin: $spacing 0 0 $label_full_width
-        input.small_submit
-          margin-top: $spacing
-              
+        +formtastic_base($label_width)
