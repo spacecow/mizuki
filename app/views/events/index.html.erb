@@ -1,20 +1,26 @@
-<% title pl(:event) %>
+<%= render "/operator/side_menu_container" %>
 
-<table>
-  <tr>
-    <th><%= t('formtastic.labels.name') %></th>
-  </tr>
-  <% for event in @events %>
-    <tr>
-      <td><%= event.name %></td>
-      <td><%= link_to t(:show), event if can? :show, event %></td>
-      <td><%= link_to t(:edit), edit_event_path(event) if can? :edit, event %></td>
-      <td><%= link_to t(:del), event, :confirm => sure?, :method => :delete if can? :destroy, event %></td>
-    </tr>
-  <% end %>
-</table>
+<div id="news_flow_container">
+  <div id="list">
 
-<div id="bottom_links">
-  <%= link_to new(:event),
-  new_event_path if can? :new, Event %>
+    <ul>
+      <% for event in @events %>
+      <li>
+        <span id="name"><%= event.name %></span>
+        <span id="links">
+          <%= link_to t(:show), event if can? :show, event %>
+          <%= link_to t(:edit), edit_event_path(event) if can? :edit, event %>
+          <%= link_to t(:del), event, :confirm => sure?, :method =>
+          :delete if can? :destroy, event %>
+        </span>
+      </li>
+      <div class="clear"></div>
+      <% end %>
+    </ul>
+
+    <div id="bottom_links">
+      <%= link_to new(:event),
+          new_event_path if can? :new, Event %>
+    </div>
+  </div>
 </div>

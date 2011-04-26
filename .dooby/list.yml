@@ -17,3 +17,7 @@ fd2107: !ruby/object:Dooby::Task
   todo: view all on event show
 88792c: !ruby/object:Dooby::Task 
   todo: layout on user page :done
+62bef4: !ruby/object:Dooby::Task 
+  todo: scroll event list
+b0a417: !ruby/object:Dooby::Task 
+  todo: edit event function :done

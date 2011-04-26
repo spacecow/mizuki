@@ -1,6 +1,17 @@
 <li class="event">
   <h1><%= event.name %></h1>
   <div id="time"><%= event.when %></div>
+  <div id="links">
+    <% if can? :edit, event %>
+    <%= link_to t(:edit), edit_event_path(event) %> |
+    <% end %>
+    <% if can? :destroy, event %>
+    <%= link_to t(:delete), event, :confirm => sure?, :method => :delete %> |
+    <% end %>
+    <% if can? :index, event %>
+    <%= link_to t(:view_all), events_path %>
+    <% end %>
+  </div>
   <% if truncate %>
     <div id="content"><%= truncate(event.content, :length=>50) %>
       <span id="continue"><%= link_to "つづく...", event %></span>

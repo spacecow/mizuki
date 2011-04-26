@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   validates_confirmation_of :password
   validates_length_of :password, :minimum => 4, :allow_blank => true
 
-  ROLES = %w(god admin mini_admin member)
+  ROLES = %w(god mama chibi_mama girl)
 
   def role?( role ); roles.include? role.to_s end
   def role_symbols; roles.map(&:to_sym) end

@@ -12,3 +12,16 @@ Given an event exists
 When I go to the welcome page
 When I follow "つづく"
 Then I should be on that event page
+
+Scenario Outline: Link for mama
+Given an event exists
+And a user exists with roles_mask: 2
+And I am logged in as that user
+When I go to the welcome page
+And I follow "<lnk>" within the first "news_flow" listing
+Then I should be on <path> page
+And <no> events should exist
+Examples:
+| lnk    | path              | no |
+| Edit   | that event's edit | 1  |
+| Delete | the events        | 0  |

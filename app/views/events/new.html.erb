@@ -1,8 +1,12 @@
-<% title new(:event) %>
+<%= render "/operator/side_menu_container" %>
 
-<%= render 'form' %>
+<div id="news_flow_container">
+  <div id="form">
+    <%= render 'form', :button_label => create(:event) %>
 
-<div id="bottom_links">
-  <%= link_to view(:event),
-  events_path if can? :index, @Event %>
+    <div id="bottom_links">
+      <%= link_to view(:event),
+          events_path if can? :index, @Event %>
+    </div>
+  </div>
 </div>
