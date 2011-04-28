@@ -148,6 +148,21 @@ div#container
       +star-base($star5_x,$star5_y)
     div#star6
       +star-base($star6_x,$star6_y,71px,64px)
+    div#picture_container
+      width: 400px
+      height: 380px
+      float: right
+      border: 1px solid white
+    div#picture_thumbnails_pusher
+      width: 400px
+      height: 230px
+      float: right
+    div#picture_thumbnails_container
+      width: 380px
+      height: 150px
+      float: right
+      border: 1px solid white
+      padding: $spacing
     div#news_flow_container
       width: $news_flow_container_width
       height: $news_flow_container_height 
@@ -184,11 +199,12 @@ div#container
                 font-size: 12px
     div#side_menu_container
       width: $side_menu_container_width
-      height: $side_menu_container_height
+      //height: $side_menu_container_height
       float: right
+      border: 1px solid white
       div#side_bar_container
         width: $side_bar_container_width
-        margin: 0 auto 100px auto
+        margin: 0 auto 0 auto
         div#side_bar
           ul
             float: right
@@ -200,7 +216,7 @@ div#container
                 font-size: 25px
       div#tweet_container
         width: $tweet_container_width
-        margin: 0 auto
+        margin: 100px auto 0 auto
         h1
           text-align: right
           font-size: 25px

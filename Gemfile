@@ -6,9 +6,10 @@ gem 'mysql2'
 gem 'formtastic' #rails g formtastic:install
 #gem 'compass' #compass init rails /path/to/myrailsproject --using blueprint/semantic
 gem 'carrierwave'
+gem 'mini_magick'
 gem 'cancan' #rails g cancan:ability
 gem "bcrypt-ruby", :require => "bcrypt"
-gem "mocha", :group => :test
+gem "annotate"
 
 group :development do
   gem 'jquery-rails'

@@ -1,7 +1,15 @@
+<div class="clear"></div>
+<div id="picture_container">
+</div>
+<div id="picture_thumbnails_pusher">
+</div>
+<div id="picture_thumbnails_container">
+
 <% @pictures.each do |pic| %>
-  <%= link_to((image_tag pic.file_url, :title => pic.caption), [@gallery,pic]) %>
+  <%= link_to((image_tag pic.file_url(:thumb), :title => pic.caption), [@gallery,pic]) %>
 <% end %>
 
 <div id="bottom_links">
   <%= link_to add(:picture), new_gallery_picture_path(@gallery) if can? :new, Picture %>
+</div>
 </div>

@@ -33,3 +33,5 @@ b2910a: !ruby/object:Dooby::Task
   todo: simple picture tests :done
 12d1bd: !ruby/object:Dooby::Task 
   todo: add thumbnail of picture
+15178a: !ruby/object:Dooby::Task 
+  todo: thumbnails lineup in gallery show :done
