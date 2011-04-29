@@ -61,12 +61,13 @@ $void_form_label_spacing: $spacing
 $void_form_label_full_width: $void_form_label_width + $void_form_label_spacing
 @mixin formtastic_base($width)
   li
+    font-size: 14px
     list-style-type: none
     label
       text-align: right
       float: left
       width: $width
-      margin: 4px $void_form_label_spacing 0 0
+      margin-right: $void_form_label_spacing
     input
       width: $field_width
       +red_gradient
@@ -76,13 +77,15 @@ $void_form_label_full_width: $void_form_label_width + $void_form_label_spacing
       +red_gradient
   input.submit
     +red_gradient
-    margin: $spacing 0 0 $void_form_label_full_width
+    margin: $spacing 0 0 $void_form_label_spacing + $width
 
 div.clear
   clear: both
   height: 0
   overflow: hidden
 
+body
+  text-align: left
 a
   color: $link_colour
   text-decoration: none
@@ -247,9 +250,7 @@ div#container
       div#message
         float: right
       form
-        float: right
         p
-          label
           input
             +red_gradient
           input.submit
@@ -287,9 +288,9 @@ div#container
         a
           font-size: 14px
     div#form
-      margin: $spacing $spacing 0 0
+      text-align: left
+      padding: $spacing
       color: white
-      float: right
       div#bottom_links
         margin-top: $spacing/2
         float: right
