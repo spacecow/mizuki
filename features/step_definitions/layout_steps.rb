@@ -1,3 +1,5 @@
+# TEXT -------------------------
+
 Then /^I should see "([^"]*)" as (\w+) flash message$/ do |txt,cat|
   Then %(I should see "#{txt}" within "div#flash_#{cat}")
 end
@@ -13,13 +15,20 @@ Then /^I should not see "([^"]*)" within the (.+) section$/ do |txt,div|
   Then %(I should not see "#{txt}" within "div##{underscore div}")
 end
 
+# EXISTENCE --------------------
+
+Then /^I should see no links at the bottom of the page$/ do
+  page.should have_no_css("div#bottom_links a")
+end
+
+
 # LINKS -----------------------
 
 When /^I follow "([^"]*)" at the bottom of the page$/ do |lnk|
-  When %(I follow "#{lnk}" within the bottom links section)
+  When %(I follow "#{lnk}" within the "bottom links" section)
 end
 
-When /^I follow "([^"]*)" within the (.+) section$/ do |lnk,div|
+When /^I follow "([^"]*)" within the "([^"]*)" section$/ do |lnk,div|
   When %(I follow "#{lnk}" within "div##{underscore(div)}")
 end
 

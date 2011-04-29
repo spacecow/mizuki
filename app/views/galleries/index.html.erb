@@ -1,18 +1,22 @@
-<div id="list">
-  <ul id="galleries">
-    <% @galleries.each do |gallery| %>
-    <li>
-      <span id="title"><%= link_to gallery.title, gallery %></span>
-      <span id="links">
-        <%= link_to t(:edit), edit_gallery_path(gallery) %>
-        <%= link_to t(:del), gallery, :confirm => sure?, :method => :delete %>
-      </span>
-      <span id="description"><%= gallery.description %></span>
-    </li>
-    <% end %>
-  </ul>
+<div id="main_container">
+  <div id="list">
 
-  <div id="bottom_links">
-    <%= link_to new(:gallery), new_gallery_path if can? :new, Gallery %>
+    <ul id="galleries">
+      <% @galleries.each do |gallery| %>
+      <li>
+        <span id="title"><%= link_to gallery.title, gallery if can? :show, gallery %></span>
+        <span id="links">
+          <%= link_to t(:edit), edit_gallery_path(gallery) if can? :edit, gallery %>
+          <%= link_to t(:del), gallery, :confirm => sure?, :method => :delete if can? :destroy, gallery %>
+          <%= link_to t(:event), gallery.event if gallery.event %>
+        </span>
+        <span id="description"><%= gallery.description %></span>
+      </li>
+      <% end %>
+    </ul>
+
+    <div id="bottom_links">
+      <%= link_to new(:gallery), new_gallery_path if can? :new, Gallery %>
+    </div>
   </div>
 </div>

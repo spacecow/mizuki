@@ -9,12 +9,12 @@ And I should see "This is a nice post." within the first "news_flow" listing
 
 Scenario Outline: Side bar links
 When I go to the welcome page
-And I follow "<lnk>" within the side bar section
-Then I should be on <path> page
+And I follow "<lnk>" within the "side bar" section
+Then I should be on the <path> page
 Examples:
-| lnk     | path          |
-| Events  | the welcome   |
-| Gallery | the galleries |
+| lnk     | path      |
+| Events  | events    |
+| Gallery | galleries |
 
 Scenario: Link within event
 Given an event exists

@@ -16,5 +16,5 @@ Scenario: Only valid formats can be uploaded
 When I go to that gallery's new picture page
 And I attach the file "features/red_moon_mizuki.svg" to "File"
 And I press "Add Picture"
-Then I should see a picture file error "is not an allowed file type"
+Then I should see a picture file error "is not an allowed file type and can't be blank"
 And 0 pictures should exist

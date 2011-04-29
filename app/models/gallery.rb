@@ -1,7 +1,8 @@
 class Gallery < ActiveRecord::Base
-  has_many :pictures
-
-  attr_accessible :title, :description
+  has_many :pictures, :dependent => :destroy
+  belongs_to :event
+  
+  attr_accessible :title, :description, :event
 
   validates :title, :uniqueness => true
 end
