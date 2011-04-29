@@ -15,6 +15,12 @@ Then /^I should not see "([^"]*)" within the (.+) section$/ do |txt,div|
   Then %(I should not see "#{txt}" within "div##{underscore div}")
 end
 
+# TEXT LINKS ------------------
+
+Then /^I should see links "([^"]*)" at the bottom of the page$/ do |lnks|
+  all("div#bottom_links a").map(&:text).join(', ').should eq lnks
+end
+
 # EXISTENCE --------------------
 
 Then /^I should see no links at the bottom of the page$/ do

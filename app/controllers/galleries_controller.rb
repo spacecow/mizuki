@@ -23,6 +23,14 @@ class GalleriesController < ApplicationController
   def edit
   end
 
+  def update
+    if @gallery.update_attributes(params[:gallery])
+      redirect_to galleries_path, :notice => updated(:gallery)
+    else
+      render :edit
+    end
+  end
+  
   def destroy
     @gallery.destroy
     redirect_to galleries_path

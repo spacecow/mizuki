@@ -72,6 +72,9 @@ $void_form_label_full_width: $void_form_label_width + $void_form_label_spacing
   li
     font-size: 14px
     list-style-type: none
+    p.inline-errors
+      margin-left: $void_form_label_spacing + $width
+      color: $error_colour
     label
       text-align: right
       float: left
@@ -205,14 +208,27 @@ div#container
       background: rgba(20,20,20,0.5)
       border: 1px solid white
       float: right
+      div#form
+        text-align: left
+        padding: $spacing
+        color: white
+        div#bottom_links
+          margin-top: $spacing
+          text-align: right
+          margin-right: $spacing*2
+          font-size: 12px
+          a
+            font-size: 12px
+        form
+          +formtastic_base($label_width)
       div#list
         +main-subcontainer-base
-        ul#events
+        ul
           li
             list-style-type: none
             line-height: 16px
             margin-bottom: $spacing/2
-            span#name
+            span#title
               float: left
               width: 150px
               a
@@ -222,23 +238,11 @@ div#container
                 font-size: 12px
             span#time
               +time-base
-
-        //width: $news_flow_width
-        //margin: 0 auto
-        //ul
-          //li
-            //list-style-type: none
-        //span#name
-          //float: left
-          //width: 160px
-        //span#links
-          //a
-            //font-size: 12px
-      div#bottom_links
-        margin-top: $spacing/2
-        float: right
-        a
-          font-size: 14px
+        div#bottom_links
+          margin-top: $spacing/2
+          text-align: right
+          a
+            font-size: 14px
 
       ul#news_flow
         width: $news_flow_width
@@ -328,14 +332,4 @@ div#container
       margin-top: $spacing*2
       color: white
       float: right
-    div#form
-      text-align: left
-      padding: $spacing
-      color: white
-      div#bottom_links
-        margin-top: $spacing/2
-        float: right
-        a
-          font-size: 14px
-      form
-        +formtastic_base($label_width)
+

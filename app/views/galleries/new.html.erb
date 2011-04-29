@@ -1,5 +1,11 @@
-<%= semantic_form_for @gallery do |f| %>
-  <%= f.input :title %>
-  <%= f.input :description %>
-  <%= f.submit :class => :submit %>
-<% end %>
+<div id="main_container">
+  <div id="form">
+    <%= render "form" %>
+
+    <div id="bottom_links">
+      <% if can? :index, Gallery %>
+      <%= link_to view(:gallery), galleries_path %>
+      <% end %>
+    </div>
+  </div>
+</div>

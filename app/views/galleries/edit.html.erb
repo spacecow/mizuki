@@ -1,0 +1,17 @@
+<div id="main_container">
+  <div id="form">
+    <%= render "form" %>
+      
+    <div id="bottom_links">
+      <% if can? :show, @gallery %>
+        <%= link_to t(:show), @gallery %> |
+      <% end %>
+      <% if can? :destroy, @gallery %>
+        <%= link_to t(:delete), @gallery, :confirm => sure?, :method => :delete %> |
+      <% end %>
+      <% if can? :index, Gallery %>
+        <%= link_to view(:gallery), galleries_path %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,10 @@
 Factory.define :event do |f|
 end
 
+Factory.define :gallery do |f|
+  f.title "Default factory title"
+end
+
 Factory.define :maintenance do |f|
 end
 

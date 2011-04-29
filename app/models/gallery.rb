@@ -4,7 +4,7 @@ class Gallery < ActiveRecord::Base
   
   attr_accessible :title, :description, :event
 
-  validates :title, :uniqueness => true
+  validates :title, :uniqueness => true, :presence => true
 end
 
 # == Schema Information

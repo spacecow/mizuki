@@ -19,3 +19,11 @@ And I fill in "Title" with "Unique title"
 And I press "Create Gallery"
 Then I should see a gallery title error: taken
 
+Scenario: New gallery view
+When I go to the new gallery page
+Then I should see links "View Galleries" at the bottom of the page
+
+Scenario: Follow link at the bottom of the page
+When I go to the new gallery page
+And I follow "View Galleries" at the bottom of the page
+Then I should be on the galleries page

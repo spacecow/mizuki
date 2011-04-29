@@ -70,3 +70,8 @@ en:
   gallery: "Gallery"
   maintenance: "Maintenance"
   picture: "Picture"
+
+  activerecord:
+    errors:
+      messages:
+        blank: "can't be blank"

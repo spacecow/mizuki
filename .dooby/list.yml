@@ -39,3 +39,5 @@ b2910a: !ruby/object:Dooby::Task
   todo: event list layout :done
 3ee5d5: !ruby/object:Dooby::Task 
   todo: retest when to be able to sort on date :done
+c71cc0: !ruby/object:Dooby::Task 
+  todo: should be able to choose event for gallery
