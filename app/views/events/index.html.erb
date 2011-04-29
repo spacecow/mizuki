@@ -1,18 +1,19 @@
-<div id="news_flow_container">
+<div id="main_container">
   <div id="list">
 
-    <ul>
+    <ul id="events">
       <% for event in @events %>
       <li>
         <span id="name"><%= event.name %></span>
         <span id="links">
-          <%= link_to t(:show), event if can? :show, event %>
+          <%= link_to t(:gallery), event if can? :show, event %>
           <%= link_to t(:edit), edit_event_path(event) if can? :edit, event %>
           <%= link_to t(:del), event, :confirm => sure?, :method =>
           :delete if can? :destroy, event %>
         </span>
+        <div class="clear"></div>
+        <span id="time"><%= event.when %></span>
       </li>
-      <div class="clear"></div>
       <% end %>
     </ul>
 

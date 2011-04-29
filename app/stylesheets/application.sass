@@ -39,6 +39,15 @@ $side_menu_container_height: $news_flow_container_height
   z-index: 1
   display: block
 
+@mixin main-subcontainer-base
+  width: 260px
+  margin: 0 auto
+  padding: 20px 0      
+@mixin time-base
+  line-height: 20px
+  font-size: 12px
+  color: $title_colour
+
 @mixin red-gradient
   color: white
   font-weight: bold
@@ -86,10 +95,6 @@ div.clear
 
 body
   text-align: left
-a
-  color: $link_colour
-  text-decoration: none
-  font-size: $a_size
 
 h1
   font-size: $h1_size
@@ -128,6 +133,10 @@ $news_flow_width: 250px
 $side_bar_container_width: 170px
 $tweet_container_width: $side_bar_container_width
 div#container
+  a
+    color: $link_colour
+    text-decoration: none
+    font-size: $a_size
   font: normal $font_size "Helvetica Neue", Arial, Helvetica, sans-serif
   width: $main_width
   margin: 4*$spacing auto
@@ -189,13 +198,46 @@ div#container
             list-style-type: none
             margin-right: 4px
             float: left
-    div#news_flow_container
+    div#main_container
       width: $news_flow_container_width
       height: $news_flow_container_height 
       +border-radius(10px)
       background: rgba(20,20,20,0.5)
       border: 1px solid white
       float: right
+      div#list
+        +main-subcontainer-base
+        ul#events
+          li
+            list-style-type: none
+            line-height: 16px
+            margin-bottom: $spacing/2
+            span#name
+              float: left
+              width: 150px
+            span#links
+              a
+                font-size: 12px
+            span#time
+              +time-base
+
+        //width: $news_flow_width
+        //margin: 0 auto
+        //ul
+          //li
+            //list-style-type: none
+        //span#name
+          //float: left
+          //width: 160px
+        //span#links
+          //a
+            //font-size: 12px
+      div#bottom_links
+        margin-top: $spacing/2
+        float: right
+        a
+          font-size: 14px
+
       ul#news_flow
         width: $news_flow_width
         margin: 0 auto
@@ -208,10 +250,8 @@ div#container
             margin: $spacing 0 0 0
             text-shadow: 3px 3px 3px $title_colour
           div#time
-            line-height: 20px
-            font-size: 12px
+            +time-base
             text-align: center
-            color: $title_colour
           div#links
             text-align: center
             line-height: 16px
@@ -286,23 +326,6 @@ div#container
       margin-top: $spacing*2
       color: white
       float: right
-    div#list
-      width: $news_flow_width
-      margin: 0 auto
-      ul
-        li
-          list-style-type: none
-          span#name
-            float: left
-            width: 160px
-          span#links
-            a
-              font-size: 12px
-      div#bottom_links
-        margin-top: $spacing/2
-        float: right
-        a
-          font-size: 14px
     div#form
       text-align: left
       padding: $spacing

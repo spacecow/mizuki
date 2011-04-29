@@ -4,7 +4,7 @@ Then /^I should see "([^"]*)" within the (\w+) listing$/ do |txt,order|
   end
 end
 Then /^I should see "([^"]*)" within the (\w+) "([^"]*)" listing$/ do |txt,order,lst|
-  with_scope(list_no(lst,order)) do
+  with_scope(list_no(underscore(lst),order)) do
     page.should have_content(txt)
   end
 end

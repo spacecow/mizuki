@@ -35,3 +35,5 @@ b2910a: !ruby/object:Dooby::Task
   todo: add thumbnail of picture
 15178a: !ruby/object:Dooby::Task 
   todo: thumbnails lineup in gallery show :done
+"785941": !ruby/object:Dooby::Task 
+  todo: event list layout :done

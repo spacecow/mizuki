@@ -5,6 +5,7 @@ class Picture < ActiveRecord::Base
   mount_uploader :file, PictureUploader
 
   validates :gallery, :presence => true
+  validates :file, :presence => true
   
   def filename; file.file.filename end
 end
