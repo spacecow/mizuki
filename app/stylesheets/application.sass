@@ -155,14 +155,21 @@ div#container
       border: 1px solid white
     div#picture_thumbnails_pusher
       width: 400px
-      height: 230px
+      height: 200px
       float: right
     div#picture_thumbnails_container
       width: 380px
-      height: 150px
+      height: 160px
       float: right
       border: 1px solid white
       padding: $spacing
+      div#thumbs
+        ul.thumbs
+          float: left
+          li
+            list-style-type: none
+            margin-right: 4px
+            float: left
     div#news_flow_container
       width: $news_flow_container_width
       height: $news_flow_container_height 
@@ -179,17 +186,21 @@ div#container
           h1
             text-align: center
             font-size: 32px
-            margin: 0
+            margin: $spacing 0 0 0
             text-shadow: 3px 3px 3px $title_colour
           div#time
+            line-height: 20px
             font-size: 12px
             text-align: center
             color: $title_colour
           div#links
             text-align: center
+            line-height: 16px
             a
               font-size: 12px
           div#content
+            text-align: left
+            line-height: 20px
             font-size: 14px
             span#continue
               display: block
@@ -201,7 +212,6 @@ div#container
       width: $side_menu_container_width
       //height: $side_menu_container_height
       float: right
-      border: 1px solid white
       div#side_bar_container
         width: $side_bar_container_width
         margin: 0 auto 0 auto
