@@ -3,9 +3,9 @@
 class PictureUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or ImageScience support:
-  # include CarrierWave::RMagick
+  include CarrierWave::RMagick
   # include CarrierWave::ImageScience
-  include CarrierWave::MiniMagick
+  #include CarrierWave::MiniMagick
   
   # Choose what kind of storage to use for this uploader:
   storage :file
@@ -14,7 +14,7 @@ class PictureUploader < CarrierWave::Uploader::Base
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
-    ENV['app_root'] + "/tmp"
+    #ENV['app_root'] + "/tmp"
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
@@ -30,11 +30,39 @@ class PictureUploader < CarrierWave::Uploader::Base
   #   # do something
   # end
 
-  # Create different versions of your uploaded files:
-  version :thumb do
-    process :resize_to_fill => [50, 50]
+  # Rotates the image based on the EXIF Orientation
+  def fix_exif_rotation
+    manipulate! do |img|
+      img.auto_orient!
+      img = yield(img) if block_given?
+      img
+    end
+  end
+  # Strips out all embedded information from the image
+  def strip
+    manipulate! do |img|
+      img.strip!
+      img = yield(img) if block_given?
+      img
+    end
   end
 
+
+  
+  # Create different versions of your uploaded files:
+  version :thumb do
+    process :fix_exif_rotation
+    process :strip  
+    process :resize_to_fill => [50, 50]
+  end
+  version :slideshow do
+    process :fix_exif_rotation
+    process :strip
+    process :resize_to_limit => [400, 300]
+  end
+
+
+  
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
   def extension_white_list
