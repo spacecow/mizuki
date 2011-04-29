@@ -2,6 +2,70 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
 describe Event do
+  def event(s,e=nil)
+    f = Factory(:event)
+    if s
+      sp = s.split
+      if sp.length == 2
+        f.start_date = sp[0]
+        f.start_time = sp[1]
+      elsif sp[0] =~ /:/
+        f.start_time = sp[0]
+      else
+        f.start_date = sp[0]
+      end
+    end
+    if e
+      sp = e.split
+      if sp.length == 2
+        f.end_date = sp[0]
+        f.end_time = sp[1]
+      elsif sp[0] =~ /:/
+        f.end_time = sp[0]
+      else
+        f.end_date = sp[0]
+      end
+    end
+    f
+  end
+  
+  describe "function start()" do
+    it "should" do
+      event = event("2011-04-29 16:21")
+      event.start.to_s.should eq "2011-04-29 16:21:00 UTC"
+
+      event = event("2011-04-29")
+      event.start.to_s.should eq "2011-04-29 00:00:00 UTC"
+
+      event = event(nil,"2011-04-29")
+      event.start.to_s.should eq "2011-04-29 00:00:00 UTC"
+
+      event = event(nil, "2011-04-29 16:37")
+      event.start.to_s.should eq "2011-04-29 16:37:00 UTC"
+
+      event = event("16:36", "2011-04-29 16:37")
+      event.start.to_s.should eq "2011-04-29 16:36:00 UTC"
+
+      event = event("16:44", "2011-04-29")
+      event.start.to_s.should eq "2011-04-29 16:44:00 UTC"
+
+      event = event("2011-04-29", "16:45")
+      event.start.to_s.should eq "2011-04-29 16:45:00 UTC"
+
+      event = event("2011-04-29 16:46", "16:45")
+      event.start.to_s.should eq "2011-04-29 16:46:00 UTC"
+
+      event = event("16:47")
+      event.start.to_s.should eq "まだ発表されていません"       
+
+      event = event(nil,"16:48")
+      event.start.to_s.should eq "まだ発表されていません"
+
+      event = event(nil,nil)
+      event.start.to_s.should eq "まだ発表されていません"             
+    end
+  end
+  
   describe "function when()" do
     describe "for both start_date and end_date, the end field" do
       it "should contain time if the difference is less than a day" do

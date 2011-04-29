@@ -37,3 +37,5 @@ b2910a: !ruby/object:Dooby::Task
   todo: thumbnails lineup in gallery show :done
 "785941": !ruby/object:Dooby::Task 
   todo: event list layout :done
+3ee5d5: !ruby/object:Dooby::Task 
+  todo: retest when to be able to sort on date :done

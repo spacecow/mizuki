@@ -4,7 +4,7 @@
     <ul id="events">
       <% for event in @events %>
       <li>
-        <span id="name"><%= event.name %></span>
+        <span id="name"><%= link_to event.name, event %></span>
         <span id="links">
           <%= link_to t(:gallery), event if can? :show, event %>
           <%= link_to t(:edit), edit_event_path(event) if can? :edit, event %>

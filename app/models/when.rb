@@ -15,6 +15,20 @@ module When
     ret
   end
 
+  def start
+    if start_date||end_date
+      ret = (start_date||end_date) + 0.hour
+      if start_time
+        ret += start_time.hour.hour + start_time.min.minutes
+      elsif end_time
+        ret += end_time.hour.hour + end_time.min.minutes
+      end
+    else
+      ret = "まだ発表されていません"
+    end
+    ret
+  end
+  
   private
     def days_in_year(d=Date.today)
       return Date.new(d.year+1)-Date.new(d.year) if d < Date.new(d.year,2,28)

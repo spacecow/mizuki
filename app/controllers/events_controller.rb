@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   load_and_authorize_resource
 
   def index
-    @events = Event.all
+    @events = Event.all.sort_by(&:start).reverse
   end
 
   def show
