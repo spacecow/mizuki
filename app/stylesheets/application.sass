@@ -44,7 +44,6 @@ $side_menu_container_height: $news_flow_container_height
   margin: 0 auto
   padding: 20px 0      
 @mixin time-base
-  line-height: 20px
   font-size: 12px
   color: $title_colour
 
@@ -86,6 +85,8 @@ $void_form_label_full_width: $void_form_label_width + $void_form_label_spacing
     textarea
       width: $textarea_width
       height: $textarea_height
+      +red_gradient
+    select
       +red_gradient
   input.submit
     +red_gradient
@@ -167,6 +168,8 @@ div#container
       width: 400px
       height: 380px
       float: right
+      +border-radius(10px)
+      background: rgba(20,20,20,0.5)
       border: 1px solid white
       div#controls
         text-align: center
@@ -192,6 +195,8 @@ div#container
       width: 380px
       height: 160px
       float: right
+      +border-radius(10px)
+      background: rgba(20,20,20,0.5)
       border: 1px solid white
       padding: $spacing
       div#thumbs
@@ -224,13 +229,14 @@ div#container
       div#list
         +main-subcontainer-base
         ul
-          li
+          li          
             list-style-type: none
             line-height: 16px
             margin-bottom: $spacing/2
-            span#title
+            span#title            
               float: left
               width: 150px
+              font-weight: bold
               a
                 color: white
             span#links
@@ -253,14 +259,14 @@ div#container
           h1
             text-align: center
             font-size: 32px
-            margin: $spacing 0 0 0
+            margin-bottom: $spacing
             text-shadow: 3px 3px 3px $title_colour
           div#time
             +time-base
             text-align: center
           div#links
             text-align: center
-            line-height: 16px
+            font-size: 12px
             a
               font-size: 12px
           div#content

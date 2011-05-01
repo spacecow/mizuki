@@ -20,12 +20,13 @@ Examples:
 | Delete         | the galleries |  0 |
 | View Galleries | the galleries |  1 |
 
+@edit
 Scenario: Edit a gallery
 When I go to that gallery edit page
 And I fill in "Title" with "Another title"
 And I fill in "Description" with "no ppl."
 And I press "Update Gallery"
-Then a gallery should exist with title: "Another title", description: "no ppl."
+Then a gallery should exist with title: "Another title", description: "no ppl.", event_id: nil
 And 1 galleries should exist
 And I should see "Successfully updated gallery." as notice flash message
 And I should be on the galleries page
@@ -36,5 +37,11 @@ And I fill in "Title" with ""
 And I press "Update Gallery"
 Then I should see a gallery title error: blank
 
-@pending
-Scenario: Should be able to choose event
+@event
+Scenario: Choose an event to belong to
+Given an event exists with name: "Opening Day"
+When I go to that gallery's edit page
+And I select "Opening Day" from "Event"
+And I press "Update Gallery"
+Then a gallery should exist with title: "Opening Day", description: "Lots of ppl.", event: that event
+And 1 galleries exist

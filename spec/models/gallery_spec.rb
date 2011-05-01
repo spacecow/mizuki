@@ -4,6 +4,7 @@ describe Gallery do
   pending "add some examples to (or delete) #{__FILE__}"
 end
 
+
 # == Schema Information
 #
 # Table name: galleries
@@ -13,5 +14,6 @@ end
 #  description :text
 #  created_at  :datetime
 #  updated_at  :datetime
+#  event_id    :integer(4)
 #
 

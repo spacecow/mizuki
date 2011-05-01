@@ -56,12 +56,14 @@ en:
     labels:
       affiliation: "Affiliation"
       content: "Content"
+      description: "Description"
       email: "Email"
       ip: "IP"
       name: "Name"
       password: "Password"
       password_confirmation: "Password confirmation"
       start_date: "Start"
+      title: "Title"
       username: "Username"
 
   anonymous: "Anonymous"

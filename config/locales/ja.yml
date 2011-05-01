@@ -23,6 +23,7 @@ ja:
     thank_you_for_signing_up: "登録してくれてありがとうございました"
     thank_you_for_sending: "コメントを発送されてありがとうございました"
   label:
+    add: "%{obj}追加"
     create: "%{obj}創造"
     edit: "%{obj}編集"
     new: "新しい%{obj}"
@@ -47,20 +48,22 @@ ja:
     labels:
       affiliation: "所属"
       content: "コメント"
+      date: "デート"
+      description: "内容"
       email: "Eメール"
-      end_date: "エンド"
-      end_time: "デート"
+      end: "エンド"
       ip: "IP"
       name: "名前"
       password: "パスワード"
       password_confirmation: "パスワード確認"
-      start_date: "スタート"
-      start_time: "デート"
+      start: "スタート"
+      title: "タイトル"
       username: "ユーザー名"
 
   event: "イベント"
   gallery: "ギャラリー"
   maintenance: "Maintenance"
+  picture: "写真"
 
   date:
     formats:

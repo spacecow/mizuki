@@ -1,4 +1,5 @@
 Factory.define :event do |f|
+  f.name "Default factory name"
 end
 
 Factory.define :gallery do |f|

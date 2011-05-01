@@ -4,6 +4,8 @@ class Event < ActiveRecord::Base
   has_one :gallery
   
   attr_accessible :name, :start_date, :end_date, :start_time, :end_time, :content
+
+  validates :name, :presence => true
 end
 
   
