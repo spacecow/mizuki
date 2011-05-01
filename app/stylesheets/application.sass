@@ -39,6 +39,19 @@ $side_menu_container_height: $news_flow_container_height
   z-index: 1
   display: block
 
+@mixin thumbs-base
+  div#thumbs
+    ul.thumbs
+      float: left
+      li
+        list-style-type: none
+        margin-right: 4px
+        float: left
+    span#gallery
+      font-size: 12px
+      a
+        font-size: 12px
+
 @mixin main-subcontainer-base
   width: 260px
   margin: 0 auto
@@ -74,6 +87,9 @@ $void_form_label_full_width: $void_form_label_width + $void_form_label_spacing
     p.inline-errors
       margin-left: $void_form_label_spacing + $width
       color: $error_colour
+    p.inline-hints
+      margin-left: $void_form_label_spacing + $width
+      font-style: italic
     label
       text-align: right
       float: left
@@ -166,7 +182,7 @@ div#container
       +star-base($star6_x,$star6_y,71px,64px)
     div#picture_container
       width: 400px
-      height: 380px
+      height: 370px
       float: right
       +border-radius(10px)
       background: rgba(20,20,20,0.5)
@@ -176,7 +192,7 @@ div#container
         a
           font-size: 14px
       div#slideshow
-        float: left
+        height: 300px
         text-align: center
         position: relative
         span.image-wrapper
@@ -187,9 +203,14 @@ div#container
             width: 400px
             display: block
             text-align: center
+      div#caption
+        text-align: center
+        font-size: 12px
+        a
+          font-size: 12px
     div#picture_thumbnails_pusher
       width: 400px
-      height: 200px
+      height: 190px
       float: right
     div#picture_thumbnails_container
       width: 380px
@@ -199,13 +220,7 @@ div#container
       background: rgba(20,20,20,0.5)
       border: 1px solid white
       padding: $spacing
-      div#thumbs
-        ul.thumbs
-          float: left
-          li
-            list-style-type: none
-            margin-right: 4px
-            float: left
+      +thumbs-base
     div#main_container
       width: $news_flow_container_width
       height: $news_flow_container_height 
@@ -244,6 +259,7 @@ div#container
                 font-size: 12px
             span#time
               +time-base
+        +thumbs-base
         div#bottom_links
           margin-top: $spacing/2
           text-align: right
@@ -264,7 +280,7 @@ div#container
           div#time
             +time-base
             text-align: center
-          div#links
+          div#top_links
             text-align: center
             font-size: 12px
             a

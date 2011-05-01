@@ -26,12 +26,12 @@ Then I should be on <path> page
 And <no> events should exist
 Examples:
 | link        | path       | no |
-| Delete      | the event  |  0 |
+| Show        | that event |  1 |
+| Delete      | the events |  0 |
 | View Events | the events |  1 |
-#| Show        | that event |  1 |
 
 Scenario: An event must have a title
 When I go to that event's edit page
 And I fill in "Title" with ""
 And I press "Update Event"
-Then I should see a event title error: blank
+Then I should see a event name error: blank

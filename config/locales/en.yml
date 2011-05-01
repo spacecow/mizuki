@@ -19,6 +19,7 @@ en:
   view_all: "View All"
   label:
     add: "Add %{obj}"
+    all: "All %{obj}"
     create: "Create %{obj}"
     edit: "Edit %{obj}"
     list: "List %{obj}"

@@ -11,7 +11,7 @@ Mizuki::Application.routes.draw do
   resources :sessions
   resources :events
   resources :galleries do
-    resources :pictures
+    resources :pictures, :except => :index
   end
   resources :users do
     member do

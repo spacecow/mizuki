@@ -2,5 +2,5 @@
   <%= f.input :title %>
   <%= f.input :event, :label => t(:event) %>
   <%= f.input :description %>
-  <%= f.submit :class => :submit %>
+  <%= f.submit create_or_update(@gallery), :class => :submit %>
 <% end %>

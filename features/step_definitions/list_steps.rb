@@ -34,6 +34,9 @@ Then /^I should see no (\w+) (\w+) listing$/ do |order,lst|
   page.should have_no_css(list_no(lst,order))
 end
 
+Then /^I should see no "([^"]*)" section within the (\w+) "([^"]*)" listing$/ do |div,order,id|
+  page.should have_no_css("#{list_no(id,order)} div##{div}")
+end
 
 # AND ----------------------------
 

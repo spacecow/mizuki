@@ -57,10 +57,14 @@
 <% end %>
 <div class="clear"></div>
 <div id="picture_container">
-  <div id="controls"></div>
-  <div id="loading"></div>
-  <div id="slideshow"></div>
-  <div id="caption"></div>
+  <div id="controls">
+  </div>
+  <div id="loading">
+  </div>
+  <div id="slideshow">
+  </div>
+  <div id="caption">
+  </div>
 </div>
 <div id="picture_thumbnails_pusher">
 </div>
@@ -71,7 +75,14 @@
     <ul class="thumbs noscript">
       <% @pictures.each do |pic| %>
       <li><%= link_to((image_tag pic.file_url(:thumb), :title => pic.caption), pic.file_url(:slideshow), :class => :thumb) %>
-        <div class="caption"></div>
+        <div class="caption">
+          <% if can? :edit, pic %>
+          <%= link_to t(:edit), edit_gallery_picture_path(@gallery,pic) %> |
+          <% end %>
+          <% if can? :destroy, pic %>
+          <%= link_to t(:delete), [@gallery,pic], :confirm => sure?, :method => :delete %>
+          <% end %>
+        </div>
       </li>
       <% end %>
     </ul>

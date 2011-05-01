@@ -7,6 +7,7 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
+    @pictures = @event.gallery ? @event.gallery.pictures.limit(4) : []
   end
 
   def new

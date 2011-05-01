@@ -24,6 +24,7 @@ ja:
     thank_you_for_sending: "コメントを発送されてありがとうございました"
   label:
     add: "%{obj}追加"
+    all: "すべとの%{obj}"
     create: "%{obj}創造"
     edit: "%{obj}編集"
     new: "新しい%{obj}"

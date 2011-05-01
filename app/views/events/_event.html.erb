@@ -1,7 +1,8 @@
 <li class="event">
   <h1><%= event.name %></h1>
   <div id="time"><%= event.when %></div>
-  <div id="links">
+  <% if links %>
+  <div id="top_links">
     <% if can? :edit, event %>
     <%= link_to t(:edit), edit_event_path(event) %> |
     <% end %>
@@ -9,14 +10,26 @@
     <%= link_to t(:delete), event, :confirm => sure?, :method => :delete %> |
     <% end %>
     <% if can? :index, event %>
-    <%= link_to t(:view_all), events_path %>
+    <%= link_to all(:event), events_path %>
     <% end %>
   </div>
+  <% end %>
   <% if truncate %>
-    <div id="content"><%= truncate(event.content, :length=>50) %>
-      <span id="continue"><%= link_to "つづく...", event if can? :show, event %></span>
-    </div>
+  <div id="content"><%= truncate(event.content, :length=>50) %>
+    <span id="continue"><%= link_to "つづく...", event if can? :show, event %></span>
+  </div>
   <% else %>
-    <div id="content"><%= event.content %></div>
+  <div id="content"><%= event.content %></div>
+  <% end %>
+  <% if thumbs && !@pictures.empty? %>
+  <div id="thumbs">
+    <ul class="thumbs">
+      <% @pictures.each do |pic| %>
+      <li><%= image_tag pic.file_url(:thumb), :title => pic.caption %></li>
+      <% end %><br />
+      <span id="gallery"><%= link_to t(:gallery), event.gallery %> &rsaquo;&rsaquo;</span>
+    </ul>
+    <div class="clear"></div>
+  </div>
   <% end %>
 </li>

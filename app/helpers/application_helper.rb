@@ -1,7 +1,12 @@
 module ApplicationHelper
   def add(s); t2(:add,s) end
+  def all(s); tp2(:all,s) end
   def chain(s1,s2); "#{s1.to_s}.#{s2.to_s}" end
   def create(s); t2(:create,s) end
+  def create_or_update(mod)
+    sym = mod.class.to_s.downcase.to_sym
+    mod.new_record? ? create(sym) : update(sym)
+  end
   def current_language; english? ? t(:japanese) : t(:english) end
   def edit(s); t2(:edit,s) end
   def edit_p(s); tp2(:edit,s) end

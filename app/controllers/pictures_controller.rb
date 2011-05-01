@@ -21,7 +21,7 @@ class PicturesController < ApplicationController
 
   def update
     if @picture.update_attributes(params[:picture])
-      redirect_to [@gallery,@picture]
+      redirect_to @gallery
     else
       render :edit
     end

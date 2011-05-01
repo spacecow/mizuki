@@ -3,7 +3,7 @@
 
     <ul id="news_flow">
       <% events.each do |event| %>
-        <%= render event, :truncate => true %>
+        <%= render event, :truncate => true, :links => false, :thumbs => false %>
       <% end %>
     </ul>
   </div>
