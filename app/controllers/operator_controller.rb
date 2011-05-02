@@ -8,6 +8,5 @@ class OperatorController < ApplicationController
     end
 
     @events = Event.all.sort_by(&:when).reverse
-    @tweet = Twitter.user_timeline("rymdtjuren").first
   end
 end

@@ -8,7 +8,8 @@ class ApplicationController < ActionController::Base
     end
   end
   protect_from_forgery
-  
+
+  before_filter :get_tweet
   before_filter :set_language
   before_filter :prepare_for_iphone
   
@@ -48,6 +49,10 @@ class ApplicationController < ActionController::Base
     def current_user_name; current_user && current_user.name end
     def current_user_email; current_user && current_user.email end
     def current_user_affiliation; current_user && current_user.affiliation end
+
+    def get_tweet
+      @tweet ||= Twitter.user_timeline("rymdtjuren").first
+    end
 
     def iphone?
       if session[:iphone]

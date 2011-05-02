@@ -43,7 +43,9 @@ f418ad: !ruby/object:Dooby::Task
   todo: add thumbnail of picture :done
 c8c142: !ruby/object:Dooby::Task 
   todo: "title: untitled"
-adee57: !ruby/object:Dooby::Task 
-  todo: line height on title in news
 aaeb8b: !ruby/object:Dooby::Task 
   todo: implementing the twitter gem :done
+f5acb3: !ruby/object:Dooby::Task 
+  todo: gallery description on show page
+0c7821: !ruby/object:Dooby::Task 
+  todo: line height on title in news :done
