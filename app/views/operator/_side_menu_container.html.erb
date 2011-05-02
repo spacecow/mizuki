@@ -4,7 +4,6 @@
     <%= link_to t(:log_out), logout_path %>
     <% else %>
     <%= link_to t(:sign_up), signup_path %>
-    <%= t(:or) %>
     <%= link_to t(:log_in), login_path %>
     <% end %>
   </div>
@@ -13,13 +12,13 @@
   <div id="side_bar_container">
     <div id="side_bar">
       <ul>
-        <li><%= link_to "Events", events_path %></li>
-        <li><%= link_to "Gallery", galleries_path %></li>
+        <li class="<%= request.url =~ /events/ ? "selected" : "" %>"><%= link_to "Events", events_path %></li>
+        <li class="<%= request.url =~ /galleries/ ? "selected" : "" %>"><%= link_to "Gallery", galleries_path %></li>
       </ul>
       <div class="clear"></div>
     </div>
   </div>
-  <% unless @gallery %>
+  <% if !(request.url =~ /show2/) %>
   <div id="tweet_container">
     <h1>Mama Tweets</h1>
     <div class="tweet">

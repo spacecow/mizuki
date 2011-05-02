@@ -49,3 +49,13 @@ f5acb3: !ruby/object:Dooby::Task
   todo: gallery description on show page
 0c7821: !ruby/object:Dooby::Task 
   todo: line height on title in news :done
+f2f8f5: !ruby/object:Dooby::Task 
+  todo: mizuki watermark on pictures
+d4673f: !ruby/object:Dooby::Task 
+  todo: ajax automatic fill at creation of gallery
+15f7ed: !ruby/object:Dooby::Task 
+  todo: visual notification of events|gallery
+fb740e: !ruby/object:Dooby::Task 
+  todo: random pictures in pre-gallery
+cd14d7: !ruby/object:Dooby::Task 
+  todo: alternative gallery :doing

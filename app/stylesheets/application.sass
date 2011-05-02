@@ -66,9 +66,9 @@ $thumb_full_width: $thumb_width + $thumb_horizontal_margin
         a
           font-size: 12px
         
-
+$main_subcontainer_width: 260px
 @mixin main-subcontainer-base
-  width: 260px
+  width: $main_subcontainer_width
   margin: 0 auto
   padding: 20px 0      
 @mixin time-base
@@ -81,6 +81,13 @@ $thumb_full_width: $thumb_width + $thumb_horizontal_margin
   padding: 5px
   +border-radius(10px)
   +linear-gradient(color-stops(gray, black))
+
+@mixin white-gradient
+  color: black
+  font-weight: bold
+  padding: 5px
+  +border-radius(10px)
+  +linear-gradient(color-stops(gray, white))
 
 @mixin custom_gradient($light, $dark, $corner: 10px)
   color: white
@@ -248,6 +255,31 @@ div#container
       border: 1px solid white
       padding: $spacing
       +thumbs-base($thumb_full_width*7)
+    div#thumbnails_pusher
+      float: right
+      width: 300px
+      height: 320px
+    div#thumbnails_container
+      padding: 5px
+      float: right
+      margin-right: 2px
+      height: 150px
+      width: 290px
+      border: 1px solid white
+      +border-radius(10px)
+      +thumbs-base($thumb_full_width*5)
+      div#thumbs
+        padding: 5px 10px
+        div.pagination
+          width: 100px
+          float: left        
+        ul
+          div#bottom_links
+            float: right  
+            line-height: 15px
+            margin-right: 5px
+            a
+              font-size: 12px
     div#main_container
       width: $news_flow_container_width
       height: $news_flow_container_height 
@@ -287,6 +319,28 @@ div#container
             span#time
               +time-base
         +thumbs-base($thumb_full_width*4)
+        div#controls
+          text-align: center
+          a
+            font-size: 14px
+        div#slideshow
+          height: 380px
+          position: relative
+          span.image-wrapper
+            position: absolute
+            a
+              img
+                width: $main_subcontainer_width
+        div#caption
+          position: relative
+          span.image-caption
+            position: absolute
+            width: $main_subcontainer_width
+            div.caption
+              text-align: center
+              font-size: 12px
+              a
+                font-size: 12px
         div#bottom_links
           margin-top: $spacing/2
           text-align: right
@@ -333,11 +387,20 @@ div#container
           ul
             float: right
             li
+              padding-right: 5px
+              width: 180px
+              text-align: right
+              position: relative
               list-style-type: none
+              border: 1px solid black
               a
                 color: white
                 text-shadow: 2px 2px 2px $link_colour
                 font-size: 25px
+            li.selected
+              background: black
+              border: 1px solid white
+              +border-radius(10px)
       div#tweet_container
         width: $tweet_container_width
         margin: 100px auto 0 auto
@@ -371,12 +434,14 @@ div#container
             
     div#user_nav
       float: right
-      color: white
-      border: 1px solid white
-      padding: 5px 10px
-      margin-bottom: 2*$spacing
-      +border-radius($spacing)      
-      background: rgba(20,20,20,0.5)
+      margin: 0 10px 2*$spacing 0
+      padding-top: 0
+      a
+        +border-radius($spacing)      
+        +white_gradient
+        padding-bottom: 3px
+        border: 1px solid white
+        font-size: 12px
     div#table
       margin-top: $spacing*2
       color: white

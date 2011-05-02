@@ -4,6 +4,10 @@ class GalleriesController < ApplicationController
   def show
     @pictures = @gallery.pictures
   end
+
+  def show2
+    @pictures = @gallery.pictures
+  end
   
   def index
     @galleries = Gallery.all
