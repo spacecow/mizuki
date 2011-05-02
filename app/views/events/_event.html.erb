@@ -21,7 +21,7 @@
   <% else %>
   <div id="content"><%= event.content %></div>
   <% end %>
-  <% if thumbs && !@pictures.empty? %>
+  <% if thumbs && event.gallery %>
   <div id="thumbs">
     <ul class="thumbs">
       <% @pictures.each do |pic| %>

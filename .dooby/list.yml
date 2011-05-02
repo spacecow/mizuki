@@ -53,9 +53,11 @@ f2f8f5: !ruby/object:Dooby::Task
   todo: mizuki watermark on pictures
 d4673f: !ruby/object:Dooby::Task 
   todo: ajax automatic fill at creation of gallery
-fb740e: !ruby/object:Dooby::Task 
-  todo: random pictures in pre-gallery
 0067ab: !ruby/object:Dooby::Task 
   todo: alternative gallery :done
 03cafd: !ruby/object:Dooby::Task 
   todo: visual notification of events|gallery :done
+2ae519: !ruby/object:Dooby::Task 
+  todo: gallery link should be there if a gallery exists
+23695f: !ruby/object:Dooby::Task 
+  todo: random pictures in pre-gallery :done
