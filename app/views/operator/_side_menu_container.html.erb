@@ -24,15 +24,10 @@
     <h1>Mama Tweets</h1>
     <div class="tweet">
       <div id="content">
-        沖縄楽しかったにょ~
+        <%= @tweet.text %>
       </div>
-      <div id="ago">2 hours ago</div>
-    </div>
-    <div class="tweet">
-      <div id="content">
-        毎日蟹ちゃん食てる
-      </div>
-      <div id="ago">2 days ago</div>
+      <div id="ago">
+        <%= distance_of_time_in_words_to_now(Time.parse(@tweet.created_at)) %>前</div>
     </div>
   </div>
   <% end %>

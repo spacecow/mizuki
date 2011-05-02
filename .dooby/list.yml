@@ -41,3 +41,9 @@ f418ad: !ruby/object:Dooby::Task
   todo: should be able to choose event for gallery :done
 72750d: !ruby/object:Dooby::Task 
   todo: add thumbnail of picture :done
+c8c142: !ruby/object:Dooby::Task 
+  todo: "title: untitled"
+adee57: !ruby/object:Dooby::Task 
+  todo: line height on title in news
+aaeb8b: !ruby/object:Dooby::Task 
+  todo: implementing the twitter gem :done
