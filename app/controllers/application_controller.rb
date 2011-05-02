@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   end
   protect_from_forgery
 
-  before_filter :get_tweet
+  #before_filter :get_tweet
   before_filter :set_language
   before_filter :prepare_for_iphone
   
