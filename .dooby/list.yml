@@ -25,19 +25,39 @@ b0a417: !ruby/object:Dooby::Task
   todo: div layout :done
 ca1f51: !ruby/object:Dooby::Task 
   todo: clean up css :done
-bcd4ff: !ruby/object:Dooby::Task 
-  todo: galleriffic
 5e94ad: !ruby/object:Dooby::Task 
   todo: simple gallery functionality :done
 b2910a: !ruby/object:Dooby::Task 
   todo: simple picture tests :done
-12d1bd: !ruby/object:Dooby::Task 
-  todo: add thumbnail of picture
 15178a: !ruby/object:Dooby::Task 
   todo: thumbnails lineup in gallery show :done
 "785941": !ruby/object:Dooby::Task 
   todo: event list layout :done
 3ee5d5: !ruby/object:Dooby::Task 
   todo: retest when to be able to sort on date :done
-c71cc0: !ruby/object:Dooby::Task 
-  todo: should be able to choose event for gallery
+f418ad: !ruby/object:Dooby::Task 
+  todo: galleriffic :done
+6fd165: !ruby/object:Dooby::Task 
+  todo: should be able to choose event for gallery :done
+72750d: !ruby/object:Dooby::Task 
+  todo: add thumbnail of picture :done
+c8c142: !ruby/object:Dooby::Task 
+  todo: "title: untitled"
+aaeb8b: !ruby/object:Dooby::Task 
+  todo: implementing the twitter gem :done
+f5acb3: !ruby/object:Dooby::Task 
+  todo: gallery description on show page
+0c7821: !ruby/object:Dooby::Task 
+  todo: line height on title in news :done
+f2f8f5: !ruby/object:Dooby::Task 
+  todo: mizuki watermark on pictures
+d4673f: !ruby/object:Dooby::Task 
+  todo: ajax automatic fill at creation of gallery
+0067ab: !ruby/object:Dooby::Task 
+  todo: alternative gallery :done
+03cafd: !ruby/object:Dooby::Task 
+  todo: visual notification of events|gallery :done
+2ae519: !ruby/object:Dooby::Task 
+  todo: gallery link should be there if a gallery exists
+23695f: !ruby/object:Dooby::Task 
+  todo: random pictures in pre-gallery :done

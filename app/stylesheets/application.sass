@@ -9,7 +9,7 @@ $label_full_width: $label_width + $label_margin
 
 $font_size: 18px
 $a_size: $font_size - 2px
-$h1_size: $font_size * 2
+$h1_size: $font_size * 1.7
 
 $menu_colour: #932710
 $title_colour: #cd7f12
@@ -29,6 +29,8 @@ $news_flow_container_height: $main_height - 2*$spacing
 $side_menu_container_width: 190px
 $side_menu_container_height: $news_flow_container_height
 
+$news_flow_width: 250px
+
 @mixin star-base($x, $y, $w: 47px, $h: 47px)
   left: $x
   top: $y
@@ -39,21 +41,34 @@ $side_menu_container_height: $news_flow_container_height
   z-index: 1
   display: block
 
-@mixin thumbs-base
+$thumb_width: 50px
+$thumb_horizontal_margin: 4px
+$thumb_full_width: $thumb_width + $thumb_horizontal_margin
+@mixin thumbs-base($width)
   div#thumbs
-    ul.thumbs
-      float: left
+    div.pagination
+      font-size: 16px
+      a
+        font-size: 14px
+    ul
+      margin: 0 auto
+      text-align: center
+      width: $width
       li
         list-style-type: none
-        margin-right: 4px
         float: left
-    span#gallery
-      font-size: 12px
-      a
+        margin-right: $thumb_horizontal_margin
+      span#gallery
+        float: left
+        text-align: center
+        width: $width
         font-size: 12px
-
+        a
+          font-size: 12px
+        
+$main_subcontainer_width: 260px
 @mixin main-subcontainer-base
-  width: 260px
+  width: $main_subcontainer_width
   margin: 0 auto
   padding: 20px 0      
 @mixin time-base
@@ -66,6 +81,13 @@ $side_menu_container_height: $news_flow_container_height
   padding: 5px
   +border-radius(10px)
   +linear-gradient(color-stops(gray, black))
+
+@mixin white-gradient
+  color: black
+  font-weight: bold
+  padding: 5px
+  +border-radius(10px)
+  +linear-gradient(color-stops(gray, white))
 
 @mixin custom_gradient($light, $dark, $corner: 10px)
   color: white
@@ -118,9 +140,10 @@ body
 
 h1
   font-size: $h1_size
-  margin-bottom: 2*$spacing
   color: white
-  text-align: right
+  line-height: 30px
+  text-shadow: 3px 3px 3px $title_colour
+              
 
 div#flash_notice
   float: left  
@@ -149,7 +172,6 @@ $star5_x: $star_base_x + 650
 $star5_y: $star_base_y + 400
 $star6_x: $star_base_x + 600
 $star6_y: $star_base_y + 400
-$news_flow_width: 250px
 $side_bar_container_width: 170px
 $tweet_container_width: $side_bar_container_width
 div#container
@@ -196,18 +218,30 @@ div#container
         text-align: center
         position: relative
         span.image-wrapper
+          height: 300px
           position: absolute
           top: 0
           left: 0
           a
+            height: 300px
             width: 400px
             display: block
             text-align: center
+            img
+              height: 290px
+              top: 0
       div#caption
-        text-align: center
-        font-size: 12px
-        a
-          font-size: 12px
+        position: relative
+        span.image-caption
+          width: 400px
+          position: absolute
+          top: 0
+          left: 0
+          div.caption
+            text-align: center
+            font-size: 12px
+            a
+              font-size: 12px
     div#picture_thumbnails_pusher
       width: 400px
       height: 190px
@@ -220,7 +254,32 @@ div#container
       background: rgba(20,20,20,0.5)
       border: 1px solid white
       padding: $spacing
-      +thumbs-base
+      +thumbs-base($thumb_full_width*7)
+    div#thumbnails_pusher
+      float: right
+      width: 300px
+      height: 320px
+    div#thumbnails_container
+      padding: 5px
+      float: right
+      margin-right: 2px
+      height: 150px
+      width: 290px
+      border: 1px solid white
+      +border-radius(10px)
+      +thumbs-base($thumb_full_width*5)
+      div#thumbs
+        padding: 5px 10px
+        div.pagination
+          width: 100px
+          float: left        
+        ul
+          div#bottom_links
+            float: right  
+            line-height: 15px
+            margin-right: 5px
+            a
+              font-size: 12px
     div#main_container
       width: $news_flow_container_width
       height: $news_flow_container_height 
@@ -259,7 +318,29 @@ div#container
                 font-size: 12px
             span#time
               +time-base
-        +thumbs-base
+        +thumbs-base($thumb_full_width*4)
+        div#controls
+          text-align: center
+          a
+            font-size: 14px
+        div#slideshow
+          height: 380px
+          position: relative
+          span.image-wrapper
+            position: absolute
+            a
+              img
+                width: $main_subcontainer_width
+        div#caption
+          position: relative
+          span.image-caption
+            position: absolute
+            width: $main_subcontainer_width
+            div.caption
+              text-align: center
+              font-size: 12px
+              a
+                font-size: 12px
         div#bottom_links
           margin-top: $spacing/2
           text-align: right
@@ -274,19 +355,19 @@ div#container
           margin-bottom: $spacing
           h1
             text-align: center
-            font-size: 32px
-            margin-bottom: $spacing
-            text-shadow: 3px 3px 3px $title_colour
+            margin-bottom: 0
           div#time
             +time-base
             text-align: center
+            margin: 0
+            padding: 0
           div#top_links
             text-align: center
             font-size: 12px
             a
               font-size: 12px
           div#content
-            text-align: left
+            text-align: center
             line-height: 20px
             font-size: 14px
             span#continue
@@ -306,11 +387,20 @@ div#container
           ul
             float: right
             li
+              padding-right: 5px
+              width: 180px
+              text-align: right
+              position: relative
               list-style-type: none
+              border: 1px solid black
               a
                 color: white
                 text-shadow: 2px 2px 2px $link_colour
                 font-size: 25px
+            li.selected
+              background: black
+              border: 1px solid white
+              +border-radius(10px)
       div#tweet_container
         width: $tweet_container_width
         margin: 100px auto 0 auto
@@ -344,12 +434,14 @@ div#container
             
     div#user_nav
       float: right
-      color: white
-      border: 1px solid white
-      padding: 5px 10px
-      margin-bottom: 2*$spacing
-      +border-radius($spacing)      
-      background: rgba(20,20,20,0.5)
+      margin: 0 10px 2*$spacing 0
+      padding-top: 0
+      a
+        +border-radius($spacing)      
+        +white_gradient
+        padding-bottom: 3px
+        border: 1px solid white
+        font-size: 12px
     div#table
       margin-top: $spacing*2
       color: white

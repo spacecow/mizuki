@@ -7,7 +7,12 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
-    @pictures = @event.gallery ? @event.gallery.pictures.limit(4) : []
+    #@pictures = @event.gallery ? @event.gallery.pictures.limit(4) : []
+    if @event.gallery
+      size = @event.gallery.pictures.count
+      r = size >= 4 ? rand(size-4) : 0
+      @pictures = @event.gallery.pictures.all(:offset => r,:limit => 4)
+    end
   end
 
   def new

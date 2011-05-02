@@ -18,7 +18,7 @@
   // Initialize Advanced Galleriffic Gallery
   var gallery = $('#thumbs').galleriffic({
   delay: 2500,
-  numThumbs: 10,
+  numThumbs: 14,
   preloadAhead: 10,
   enableTopPager: true,
   enableBottomPager: false,
@@ -41,47 +41,41 @@
   defaultTransitionDuration: 900,
   onSlideChange: function(prevIndex, nextIndex) {
   // 'this' refers to the gallery, which is an extension of $('#thumbs')
-  this.find('ul.thumbs').children()
-  .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
-  .eq(nextIndex).fadeTo('fast', 1.0);
+    this.find('ul.thumbs').children()
+    .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+    .eq(nextIndex).fadeTo('fast', 1.0);
   },
   onPageTransitionOut: function(callback) {
-  this.fadeTo('fast', 0.0, callback);
+    this.fadeTo('fast', 0.0, callback);
   },
   onPageTransitionIn: function() {
-  this.fadeTo('fast', 1.0);
+    this.fadeTo('fast', 1.0);
   },
   });
   });
 </script>
 <% end %>
-
-<div id="main_container">
-  <div id="list">
-
-    <div id="controls">
-    </div>
-    <div id="loading">
-    </div>
-    <div id="slideshow">
-    </div>
-    <div id="caption">
-    </div>
+<div class="clear"></div>
+<div id="picture_container">
+  <div id="controls">
+  </div>
+  <div id="loading">
+  </div>
+  <div id="slideshow">
+  </div>
+  <div id="caption">
   </div>
 </div>
+<div id="picture_thumbnails_pusher">
+</div>
+<div id="picture_thumbnails_container">
 
-<div id="thumbnails_pusher"></div>
-<div id="thumbnails_container">
   <div id="thumbs">
+
     <ul class="thumbs noscript">
-    <div id="bottom_links">
-      <%= link_to add(:picture), new_gallery_picture_path(@gallery) if can? :new, Picture %>
-    </div>
-    <div class="clear"></div>
       <% @pictures.each do |pic| %>
       <li><%= link_to((image_tag pic.file_url(:thumb), :title => pic.caption), pic.file_url(:slideshow), :class => :thumb) %>
         <div class="caption">
-          <%= pic.caption %><br />
           <% if can? :edit, pic %>
           <%= link_to t(:edit), edit_gallery_picture_path(@gallery,pic) %> |
           <% end %>
@@ -92,5 +86,10 @@
       </li>
       <% end %>
     </ul>
+
+    <div class="clear"></div>
+    <div id="bottom_links">
+      <%= link_to add(:picture), new_gallery_picture_path(@gallery) if can? :new, Picture %>
+    </div>
   </div>
 </div>

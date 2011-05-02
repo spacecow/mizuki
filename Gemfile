@@ -11,6 +11,7 @@ gem 'rmagick'
 gem 'cancan' #rails g cancan:ability
 gem "bcrypt-ruby", :require => "bcrypt"
 gem "annotate"
+gem "twitter"
 
 group :development do
   gem 'jquery-rails'
