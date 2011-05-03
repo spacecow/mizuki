@@ -61,3 +61,7 @@ d4673f: !ruby/object:Dooby::Task
   todo: gallery link should be there if a gallery exists
 23695f: !ruby/object:Dooby::Task 
   todo: random pictures in pre-gallery :done
+00611d: !ruby/object:Dooby::Task 
+  todo: cannot sort by start if no date exists
+59dfb9: !ruby/object:Dooby::Task 
+  todo: date format kara, made may be better

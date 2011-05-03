@@ -1,20 +1,20 @@
 <%= semantic_form_for @event do |f| %>
 <%= f.input :name, :label => ft(:title) %>
-<li class="select">
+<li>
   <%= f.label :start_date, :label => ft(:start) %>
-  <%= f.date_select :start_date, :include_blank => true %>
+  <%= f.text_field :start_date %>
 </li>
 <li class="select">
-  <%= f.label :start_time, :label => ft(:date) %>
-  <%= f.time_select :start_time, :include_blank => true %>
+  <%= f.label :start_time, :label => ft(:time) %>
+  <%= f.text_field :start_time %>
 </li>
 <li class="select">
   <%= f.label :end_date, :label => ft(:end) %>
-  <%= f.date_select :end_date, :include_blank => true %>
+  <%= f.text_field :end_date %>
 </li>
 <li class="select">
-  <%= f.label :end_time, :label => ft(:date) %>
-  <%= f.time_select :end_time, :include_blank => true %>
+  <%= f.label :end_time, :label => ft(:time) %>
+  <%= f.text_field :end_time %>
 </li>
 <%= f.input :content, :label => ft(:description) %>
 <%= f.submit button_label, :class => :submit %>
