@@ -85,7 +85,7 @@ div#container div#contents {
   -ms-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
-  background: black url("/images/red_moon_mizuki.png") no-repeat scroll top left;
+  background: black url("/images/red_moon_mizuki2.png") no-repeat scroll top left;
   color: white;
   position: relative;
 }
@@ -551,7 +551,7 @@ div#container div#contents div#main_container div#list div#slideshow span.image-
 }
 /* line 332, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#slideshow span.image-wrapper a img {
-  width: 260px;
+  width: 250px;
 }
 /* line 334, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#caption {
