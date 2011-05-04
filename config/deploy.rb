@@ -16,15 +16,15 @@ role :app, "sao.fir-vpc.riec.tohoku.ac.jp"
 role :web, "sao.fir-vpc.riec.tohoku.ac.jp"
 role :db,  "sao.fir-vpc.riec.tohoku.ac.jp", :primary => true
 
-set :rake, "~/.rvm/rubies/ruby-1.9.2-head/bin/rake"
-set :default_environment, { 
-  'PATH' => "/home/aurora/.rvm/rubies/ruby-1.9.2-head/bin:/home/aurora/.rvm/gems/ruby-1.9.2-head/bin:/home/aurora/.rvm/bin:$PATH",
-  'RUBY_VERSION' => 'ruby 1.9.2',
-  'GEM_HOME' => '/home/aurora/.rvm/gems/ruby-1.9.2-head',
-  'GEM_PATH' => '/home/aurora/.rvm/gems/ruby-1.9.2-head' 
-}
+#set :rake, "~/.rvm/rubies/ruby-1.9.2-head/bin/rake"
+#set :default_environment, { 
+#  'PATH' => "/home/aurora/.rvm/rubies/ruby-1.9.2-head/bin:/home/aurora/.rvm/gems/ruby-1.9.2-head/bin:/home/aurora/.rvm/bin:$PATH",
+#  'RUBY_VERSION' => 'ruby 1.9.2',
+#  'GEM_HOME' => '/home/aurora/.rvm/gems/ruby-1.9.2-head',
+#  'GEM_PATH' => '/home/aurora/.rvm/gems/ruby-1.9.2-head' 
+#}
 
-
+#
 # If you are using Passenger mod_rails uncomment this:
 # if you're still using the script/reapear helper you will need
 # these http://github.com/rails/irs_process_scripts
