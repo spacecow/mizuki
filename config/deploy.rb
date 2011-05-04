@@ -1,3 +1,5 @@
+require "whenever/capistrano"
+
 default_run_options[:pty] = true
 set :repository,  "git@github.com:spacecow/mizuki.git"
 set :scm, "git"
