@@ -1,4 +1,4 @@
-every 1.minute do
+every 10.minutes do
   runner "Tweet.save_tweet"
 end
 
