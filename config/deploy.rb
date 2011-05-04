@@ -1,5 +1,3 @@
-require "whenever/capistrano"
-
 default_run_options[:pty] = true
 set :repository,  "git@github.com:spacecow/mizuki.git"
 set :scm, "git"
@@ -39,6 +37,11 @@ namespace :deploy do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
     run "ln -nfs #{shared_path}/uploads_public #{release_path}/public/uploads"
     run "ln -nfs #{shared_path}/config/twitter.rb #{release_path}/config/initializers/twitter.rb" 
+  end
+
+  desc "Update the crontab file"
+    task :update_crontab, :roles => :app, :except => { :no_release => true } do
+      run "cd #{release_path} && bundle exec whenever --update-crontab #{application}"
   end
 end
 
