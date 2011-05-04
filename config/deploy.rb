@@ -16,6 +16,7 @@ role :app, "sao.fir-vpc.riec.tohoku.ac.jp"
 role :web, "sao.fir-vpc.riec.tohoku.ac.jp"
 role :db,  "sao.fir-vpc.riec.tohoku.ac.jp", :primary => true
 
+
 #set :default_environment, { 
 #  'PATH' => "/usr/local/bin:/usr/bin"
 #}
