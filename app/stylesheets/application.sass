@@ -144,19 +144,20 @@ h1
   line-height: 30px
   text-shadow: 3px 3px 3px $title_colour
               
-
-div#flash_notice
-  float: left  
+div#flash_container
+  display: block
+  height: 35px
   margin-bottom: 5px
-  padding: 3px 10px
-  border: 1px solid black
-  +custom_gradient($notice_light,$notice_dark)
-div#flash_alert
-  float: left
-  margin-bottom: 5px
-  padding: 3px 10px
-  border: 1px solid black
-  +custom_gradient($alert_light,$alert_dark)
+  div#flash_notice
+    float: left
+    height: 23px
+    border: 1px solid black
+    +custom_gradient($notice_light,$notice_dark)
+  div#flash_alert
+    float: left
+    height: 23px
+    border: 1px solid black
+    +custom_gradient($alert_light,$alert_dark)
 
 $star_base_y: 0px
 $star_base_x: 40px
@@ -181,7 +182,7 @@ div#container
     font-size: $a_size
   font: normal $font_size "Helvetica Neue", Arial, Helvetica, sans-serif
   width: $main_width
-  margin: 4*$spacing auto
+  margin: 2*$spacing auto
   div#contents
     height: $main_height
     padding: $main_spacing_top $main_spacing_side

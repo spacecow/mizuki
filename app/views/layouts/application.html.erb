@@ -16,18 +16,13 @@
   </head>
   <body>
     <div id="container">
-      <% flash.each do |name, msg| %>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      <% end %>
+      <div id="flash_container">
+        <% flash.each do |name, msg| %>
+          <%= content_tag :div, msg, :id => "flash_#{name}" %>
+        <% end %>
+      </div>
       <div class="clear"></div>
       <div id="contents">
-        <div id="site_nav">
-          <% if god? && iphone? %>
-            <%= link_to "Full Site", :iphone => 0 %>
-          <% elsif god? %>
-            <%= link_to "Mobile Site", :iphone => 1 %>
-          <% end %>
-        </div>
         <% unless @void %>
         <%= render "/operator/side_menu_container" %>
         <% end %>
