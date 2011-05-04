@@ -17,7 +17,7 @@ role :web, "sao.fir-vpc.riec.tohoku.ac.jp"
 role :db,  "sao.fir-vpc.riec.tohoku.ac.jp", :primary => true
 
 set :default_environment, { 
-  'PATH' => "/usr/local/bin"
+  'PATH' => "/usr/local/bin:/usr/bin"
 }
 #set :rake, "~/.rvm/rubies/ruby-1.9.2-head/bin/rake"
 #set :default_environment, { 
