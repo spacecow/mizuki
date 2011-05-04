@@ -8,11 +8,23 @@ Then /^I should see "([^"]*)" as title$/ do |txt|
   Then %(I should see "#{txt}" within "h1")
 end
 
-Then /^I should see "([^"]*)" within the (.+) section$/ do |txt,div|
+Then /^I should see "([^"]*)" within the "([^"]*)" section$/ do |txt,div|
   Then %(I should see "#{txt}" within "div##{underscore div}")
 end
-Then /^I should not see "([^"]*)" within the (.+) section$/ do |txt,div|
+Then /^I should not see "([^"]*)" within the "([^"]*)" section$/ do |txt,div|
   Then %(I should not see "#{txt}" within "div##{underscore div}")
+end
+
+# AND --------------------------
+
+Then /^I should see "([^"]*)" but no "([^"]*)" within the "([^"]*)" section$/ do |txt1,txt2,div|
+  Then %(I should see "#{txt1}" within the "#{div}" section)
+  But %(I should not see "#{txt2}" within the "#{div}" section)
+end
+
+Then /^I should see "([^"]*)" and "([^"]*)" within the "([^"]*)" section$/ do |txt1,txt2,div|
+  Then %(I should see "#{txt1}" within the "#{div}" section)
+  And %(I should see "#{txt2}" within the "#{div}" section)
 end
 
 # EXISTENCE --------------------
@@ -46,11 +58,6 @@ end
 Then /^I should see links "([^"]*)" at the (\w+) of the page$/ do |lnks,pos|
   all("div##{pos}_links a").map(&:text).join(", ").should eq lnks
 end
-
-Then /^I should see a "([^"]*)" tooltip$/ do |tooltip|
-  page.should have_css("img", :title => tooltip)
-end
-
 
 When /^I follow "([^"]*)" at the bottom of the page$/ do |lnk|
   When %(I follow "#{lnk}" within the "bottom links" section)

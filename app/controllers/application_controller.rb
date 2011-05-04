@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   end
   protect_from_forgery
 
-  #before_filter :get_tweet
+  before_filter :get_tweet
   before_filter :set_language
   before_filter :prepare_for_iphone
   
@@ -51,7 +51,7 @@ class ApplicationController < ActionController::Base
     def current_user_affiliation; current_user && current_user.affiliation end
 
     def get_tweet
-      @tweet ||= Twitter.user_timeline("rymdtjuren").first
+      @tweet = Tweet.last
     end
 
     def iphone?

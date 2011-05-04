@@ -17,6 +17,12 @@ module ApplicationHelper
   def sure?; t('message.sure?') end
   def t2(s1,s2); t(lbl(s1), :obj => t(s2)) end
   def tp2(s1,s2); t(lbl(s1), :obj => pl(s2)) end
+  def tweet_ago
+    @tweet.nil? ? 
+      "never" : 
+      distance_of_time_in_words_to_now(@tweet.created_at)+t(:ago)
+  end
+  def tweet_content; @tweet.nil? ? "default tweet" : @tweet.content end
   def update(s); t2(:update,s) end
   def update_p(s); tp2(:update,s) end
   def verify(s); t2(:verify,s) end

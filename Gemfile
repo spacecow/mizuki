@@ -12,6 +12,7 @@ gem 'cancan' #rails g cancan:ability
 gem "bcrypt-ruby", :require => "bcrypt"
 gem "annotate"
 gem "twitter"
+gem 'whenever', :require => false
 
 group :development do
   gem 'jquery-rails'
@@ -25,8 +26,9 @@ group :test do
   gem 'cucumber-rails' #rails g cucumber:install --capybara --rspec
   gem 'capybara'
   gem 'database_cleaner'
-#  gem 'pickle', :git => "https://github.com/spacecow/pickle.git" #rails g pickle --paths --email
+  gem 'pickle', :git => "https://github.com/spacecow/pickle.git" #rails g pickle --paths --email
   gem 'launchy'
   gem 'factory_girl'
   gem 'gherkin'
+  gem 'mocha'
 end
