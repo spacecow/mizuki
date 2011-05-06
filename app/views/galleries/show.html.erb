@@ -79,7 +79,7 @@
     </div>
     <div class="clear"></div>
       <% @pictures.each do |pic| %>
-      <li><%= link_to((image_tag pic.file_url(:thumb), :title => pic.caption), pic.file_url(:slideshow), :class => :thumb) %>
+      <li><%= link_to((image_tag pic.file_url(:thumb), :title => pic.caption), "/mizuki#{pic.file_url(:slideshow)}", :class => :thumb) %>
         <div class="caption">
           <%= pic.caption %><br />
           <% if can? :edit, pic %>

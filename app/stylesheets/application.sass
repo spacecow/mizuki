@@ -188,7 +188,7 @@ div#container
     padding: $contents_padding_vertical $contents_padding_horizontal
     border: 1px solid black
     +border-radius($spacing)
-    background: black url('/images/red_moon_mizuki2.png') no-repeat scroll top left
+    background: black url('/mizuki/images/red_moon_mizuki2.png') no-repeat scroll top left
     position: relative
     div#star1
       +star-base($star1_x,$star1_y)
@@ -333,17 +333,17 @@ div#container
           ul
             float: right
             li
-              padding-right: 5px
+              padding: 1px 6px 1px 1px
               text-align: right
               position: relative
               list-style-type: none
-              border: 1px solid black
               width: 180px
               a
                 color: white
                 text-shadow: 2px 2px 2px $link_colour
                 font-size: 25px
             li.selected
+              padding: 0 5px 0 0
               background: black
               border: 1px solid white
               +border-radius(10px)

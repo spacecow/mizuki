@@ -1,18 +1,15 @@
-<div id="star1"><img border="0" width="100%"
-                                              height="100%"
-                                              src="/images/star1.png"></div>
+<div data-role="header">
+  <h1>Listing posts</h1>
+</div>
+ 
+<div data-role="content">
+  <ul data-role="listview">
+    <% @events.each do |post| %>
+    <li>
+      <%= link_to post.name, post %>
+      <%= link_to 'edit post', edit_event_path(post), "data-icon" => "gear" %>
+    </li>
+    <% end %>
+  </ul>
+</div>
 
-<div id="star2"><img border="0" width="100%"
-                                              height="100%"
-                                              src="/images/star2.png"></div>
-
-<div id="star3"><img border="0" width="100%"
-                                              height="100%"
-                                              src="/images/star3.png"></div>
-
-<div id="star4"><img border="0" width="100%"
-                                              height="100%"
-                                              src="/images/star4.png"></div>
-
-<%= link_to "Sign up", login_path, :class => "back" %>
-<%= link_to "Log in", login_path, :class => "button" %>
