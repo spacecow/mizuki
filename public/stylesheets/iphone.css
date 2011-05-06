@@ -1,8 +1,8 @@
-/* line 34, ../../app/stylesheets/iphone.sass */
+/* line 36, ../../app/stylesheets/iphone.sass */
 div#container {
   width: 480px;
 }
-/* line 36, ../../app/stylesheets/iphone.sass */
+/* line 38, ../../app/stylesheets/iphone.sass */
 div#container div#contents {
   width: 474px;
   padding: 2px 2px;
@@ -12,4 +12,16 @@ div#container div#contents {
   -ms-border-radius: 0;
   -khtml-border-radius: 0;
   border-radius: 0;
+}
+/* line 44, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#side_menu_container div#side_bar_container {
+  width: 140px;
+}
+/* line 48, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li {
+  width: 150px;
+}
+/* line 50, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#side_menu_container div#tweet_container {
+  width: 140px;
 }

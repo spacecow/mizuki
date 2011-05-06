@@ -2,8 +2,10 @@
 
 $spacing: 10px
 $container_width: 480px
+$contents_height: 800px
 $contents_padding_vertical: 2px
 $contents_padding_horizontal: 2px
+$side_bar_container_width: 140px
 @import "variables.sass"
 
 $star_base_x: 10%
@@ -37,3 +39,13 @@ div#container
     width: $contents_width
     padding: $contents_padding_vertical $contents_padding_horizontal
     +border-radius(0)
+    div#main_container
+    div#side_menu_container
+      div#side_bar_container
+        width: $side_bar_container_width
+        div#side_bar
+          ul
+            li
+              width: $side_bar_container_width + $spacing
+      div#tweet_container
+        width: $tweet_container_width

@@ -3,8 +3,10 @@
 
 $spacing: 10px
 $container_width: 900px
+$contents_height: 500px
 $contents_padding_vertical: 2*$spacing
 $contents_padding_horizontal: 4*$spacing
+$side_bar_container_width: 170px
 @import "variables.sass"
 
 $label_width: 65px
@@ -183,12 +185,12 @@ div#container
   color: white
   padding: $spacing 0 0 0
   div#contents
-    height: $contents_height
+    min-height: $contents_height
     width: $contents_width
     padding: $contents_padding_vertical $contents_padding_horizontal
     border: 1px solid black
     +border-radius($spacing)
-    background: black url('/mizuki/images/red_moon_mizuki2.png') no-repeat scroll top left
+    background: black url('/images/red_moon_mizuki2.png') no-repeat scroll top left
     position: relative
     div#star1
       +star-base($star1_x,$star1_y)
@@ -229,7 +231,7 @@ div#container
               font-size: 12px
     div#main_container
       width: $main_container_width
-      height: $main_container_height 
+      min-height: $main_container_height 
       +border-radius(10px)
       background: rgba(20,20,20,0.5)
       border: 1px solid white
@@ -337,7 +339,7 @@ div#container
               text-align: right
               position: relative
               list-style-type: none
-              width: 180px
+              width: $side_bar_container_width + $spacing
               a
                 color: white
                 text-shadow: 2px 2px 2px $link_colour
