@@ -2,7 +2,24 @@
 @import "compass/css3/gradient"
 
 $spacing: 10px
-$main_width: 900px
+$container_width: 900px
+$contents_padding_vertical: 2*$spacing
+$contents_padding_horizontal: 4*$spacing
+$contents_height: 500px
+$contents_width: $container_width - 2*$contents_padding_horizontal - 2px
+$main_container_height: $contents_height - 2*$spacing
+$main_container_width: 320px
+$side_menu_container_width: 190px
+$side_bar_container_width: 170px
+$tweet_container_width: $side_bar_container_width
+$thumbnails_container_height: 150px
+$thumbnails_container_padding: 5px
+$thumbnails_pusher_height: $main_container_height - $thumbnails_container_height - 2*$thumbnails_container_padding
+$thumbnails_pusher_width: $contents_width - $main_container_width - $side_menu_container_width - 2px
+$thumbnails_container_right_margin: 2px
+$thumbnails_container_width: $thumbnails_pusher_width - 2*$thumbnails_container_padding - $thumbnails_container_right_margin - 2px
+
+
 $label_width: 65px
 $label_margin: $spacing
 $label_full_width: $label_width + $label_margin
@@ -21,13 +38,6 @@ $notice_dark: #396
 $alert_light: #f33
 $notice_light: #4CC417
 
-$main_height: 500px
-$main_spacing_top: 2*$spacing
-$main_spacing_side: 4*$spacing
-$news_flow_container_width: 320px
-$news_flow_container_height: $main_height - 2*$spacing
-$side_menu_container_width: 190px
-$side_menu_container_height: $news_flow_container_height
 
 $news_flow_width: 250px
 
@@ -173,23 +183,24 @@ $star5_x: $star_base_x + 650
 $star5_y: $star_base_y + 400
 $star6_x: $star_base_x + 600
 $star6_y: $star_base_y + 400
-$side_bar_container_width: 170px
-$tweet_container_width: $side_bar_container_width
+
+
 div#container
   a
     color: $link_colour
     text-decoration: none
     font-size: $a_size
   font: normal $font_size "Helvetica Neue", Arial, Helvetica, sans-serif
-  width: $main_width
-  margin: 2*$spacing auto
+  width: $container_width
+  margin: 0 auto
+  color: white
   div#contents
-    height: $main_height
-    padding: $main_spacing_top $main_spacing_side
+    height: $contents_height
+    width: $contents_width
+    padding: $contents_padding_vertical $contents_padding_horizontal
     border: 1px solid black
     +border-radius($spacing)
     background: black url('/images/red_moon_mizuki2.png') no-repeat scroll top left
-    color: white
     position: relative
     div#star1
       +star-base($star1_x,$star1_y)
@@ -203,69 +214,16 @@ div#container
       +star-base($star5_x,$star5_y)
     div#star6
       +star-base($star6_x,$star6_y,71px,64px)
-    div#picture_container
-      width: 400px
-      height: 370px
-      float: right
-      +border-radius(10px)
-      background: rgba(20,20,20,0.5)
-      border: 1px solid white
-      div#controls
-        text-align: center
-        a
-          font-size: 14px
-      div#slideshow
-        height: 300px
-        text-align: center
-        position: relative
-        span.image-wrapper
-          height: 300px
-          position: absolute
-          top: 0
-          left: 0
-          a
-            height: 300px
-            width: 400px
-            display: block
-            text-align: center
-            img
-              height: 290px
-              top: 0
-      div#caption
-        position: relative
-        span.image-caption
-          width: 400px
-          position: absolute
-          top: 0
-          left: 0
-          div.caption
-            text-align: center
-            font-size: 12px
-            a
-              font-size: 12px
-    div#picture_thumbnails_pusher
-      width: 400px
-      height: 190px
-      float: right
-    div#picture_thumbnails_container
-      width: 380px
-      height: 160px
-      float: right
-      +border-radius(10px)
-      background: rgba(20,20,20,0.5)
-      border: 1px solid white
-      padding: $spacing
-      +thumbs-base($thumb_full_width*7)
     div#thumbnails_pusher
       float: right
-      width: 300px
-      height: 320px
+      width: $thumbnails_pusher_width
+      height: $thumbnails_pusher_height
     div#thumbnails_container
-      padding: 5px
+      padding: $thumbnails_container_padding
       float: right
-      margin-right: 2px
-      height: 150px
-      width: 290px
+      margin-right: $thumbnails_container_right_margin
+      height: $thumbnails_container_height
+      width: $thumbnails_container_width
       border: 1px solid white
       +border-radius(10px)
       +thumbs-base($thumb_full_width*5)
@@ -282,8 +240,8 @@ div#container
             a
               font-size: 12px
     div#main_container
-      width: $news_flow_container_width
-      height: $news_flow_container_height 
+      width: $main_container_width
+      height: $main_container_height 
       +border-radius(10px)
       background: rgba(20,20,20,0.5)
       border: 1px solid white
@@ -310,7 +268,7 @@ div#container
             margin-bottom: $spacing/2
             span#title            
               float: left
-              width: 150px
+              width: 140px
               font-weight: bold
               a
                 color: white
@@ -379,21 +337,20 @@ div#container
                 font-size: 12px
     div#side_menu_container
       width: $side_menu_container_width
-      //height: $side_menu_container_height
       float: right
       div#side_bar_container
         width: $side_bar_container_width
-        margin: 0 auto 0 auto
+        margin: 0 auto
         div#side_bar
           ul
             float: right
             li
               padding-right: 5px
-              width: 180px
               text-align: right
               position: relative
               list-style-type: none
               border: 1px solid black
+              width: 180px
               a
                 color: white
                 text-shadow: 2px 2px 2px $link_colour
@@ -419,7 +376,6 @@ div#container
           div#content
             text-align: right
             font-size: 14px
-    //+linear-gradient(color-stops(white, $bg_colour 33%, white), left)
     div#void
       float: right
       div#message
@@ -432,10 +388,9 @@ div#container
             margin-top: $spacing
             margin-left: 0
         +formtastic_base($void_form_label_width)
-            
     div#user_nav
-      float: right
-      margin: 0 10px 2*$spacing 0
+      text-align: right
+      margin: 0 auto 2*$spacing auto
       padding-top: 0
       a
         +border-radius($spacing)      
@@ -443,8 +398,4 @@ div#container
         padding-bottom: 3px
         border: 1px solid white
         font-size: 12px
-    div#table
-      margin-top: $spacing*2
-      color: white
-      float: right
 

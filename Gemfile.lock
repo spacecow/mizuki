@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/spacecow/pickle.git
+  revision: f00eb8707b9e679b7e9730815871def3e13b5b14
+  specs:
+    pickle (0.4.7)
+      cucumber (>= 0.8)
+      rake
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -180,6 +188,7 @@ DEPENDENCIES
   launchy
   mocha
   mysql2
+  pickle!
   rails (= 3.0.5)
   rmagick
   rspec-rails
