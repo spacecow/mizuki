@@ -2,7 +2,7 @@
   <div id="user_nav">
     <% if god? && iphone? %>
       <%= link_to "Full Site", :iphone => 0 %>
-    <% else %>
+    <% elsif god? %>
       <%= link_to "Mobile Site", :iphone => 1 %>
     <% end %>
     <% if current_user %>
