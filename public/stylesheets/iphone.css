@@ -1,8 +1,9 @@
 /* line 26, ../../app/stylesheets/iphone.sass */
 div.current {
   background: black url("/images/red_moon_mizuki_iphone.png") no-repeat fixed center center;
+  height: 300px;
 }
-/* line 28, ../../app/stylesheets/iphone.sass */
+/* line 29, ../../app/stylesheets/iphone.sass */
 div.current div#star1 {
   left: 10%;
   top: 10%;
@@ -19,7 +20,7 @@ div.current div#star1 img {
   width: 100%;
   height: 100%;
 }
-/* line 30, ../../app/stylesheets/iphone.sass */
+/* line 31, ../../app/stylesheets/iphone.sass */
 div.current div#star2 {
   left: 50%;
   top: 80%;
@@ -36,7 +37,7 @@ div.current div#star2 img {
   width: 100%;
   height: 100%;
 }
-/* line 32, ../../app/stylesheets/iphone.sass */
+/* line 33, ../../app/stylesheets/iphone.sass */
 div.current div#star3 {
   left: 20%;
   top: 70%;
@@ -53,7 +54,7 @@ div.current div#star3 img {
   width: 100%;
   height: 100%;
 }
-/* line 34, ../../app/stylesheets/iphone.sass */
+/* line 35, ../../app/stylesheets/iphone.sass */
 div.current div#star4 {
   left: 70%;
   top: 10%;

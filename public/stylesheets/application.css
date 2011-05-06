@@ -90,7 +90,7 @@ div#container div#contents {
   -ms-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
-  background: black url("/images/red_moon_mizuki2.png") no-repeat scroll top left;
+  background: black url("/mizuki/images/red_moon_mizuki2.png") no-repeat scroll top left;
   position: relative;
 }
 /* line 205, ../../app/stylesheets/application.sass */
@@ -529,21 +529,21 @@ div#container div#contents div#side_menu_container div#side_bar_container div#si
 }
 /* line 347, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li {
-  padding-right: 5px;
+  padding: 1px 6px 1px 1px;
   text-align: right;
   position: relative;
   list-style-type: none;
-  border: 1px solid black;
   width: 180px;
 }
-/* line 354, ../../app/stylesheets/application.sass */
+/* line 353, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li a {
   color: white;
   text-shadow: 2px 2px 2px #4b7399;
   font-size: 25px;
 }
-/* line 358, ../../app/stylesheets/application.sass */
+/* line 357, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li.selected {
+  padding: 0 5px 0 0;
   background: black;
   border: 1px solid white;
   -moz-border-radius: 10px;
