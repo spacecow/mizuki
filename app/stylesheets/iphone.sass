@@ -1,3 +1,11 @@
+@import "compass/css3/border-radius"
+
+$spacing: 10px
+$container_width: 480px
+$contents_padding_vertical: 2px
+$contents_padding_horizontal: 2px
+@import "variables.sass"
+
 $star_base_x: 10%
 $star_base_y: 10%
 $star1_x: $star_base_x
@@ -23,14 +31,9 @@ $star4_y: $star_base_y
     width: 100%
     height: 100%
 
-div.current
-  background: black url('/images/red_moon_mizuki_iphone.png') no-repeat fixed center center
-  div#star1
-    +star-base($star1_x,$star1_y)
-  div#star2
-    +star-base($star2_x,$star2_y)
-  div#star3
-    +star-base($star3_x,$star3_y)
-  div#star4
-    +star-base($star4_x,$star4_y)
-
+div#container
+  width: $container_width
+  div#contents
+    width: $contents_width
+    padding: $contents_padding_vertical $contents_padding_horizontal
+    +border-radius(0)

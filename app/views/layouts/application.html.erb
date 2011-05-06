@@ -9,6 +9,9 @@
     <![endif]-->   
     <%= stylesheet_link_tag "galleriffic/basic", "jquery-ui-1.8.12.custom", "jquery-ui-timepicker" %>
     <%= stylesheet_link_tag "application", "formtastic" %>
+    <!--[if !IE]>-->
+    <%= stylesheet_link_tag "iphone" %>
+    <!--<![endif]-->
     <%= stylesheet_link_tag "iphone" if iphone? %>
     <%= javascript_include_tag 'jquery', 'jquery-ui-1.8.12.custom.min', 'jquery.ui.timepicker', 'jquery.galleriffic.js', 'jquery.history.js', 'jquery.opacityrollover.js', 'rails', 'application' %>
     <%= csrf_meta_tag %>

@@ -65,3 +65,5 @@ d4673f: !ruby/object:Dooby::Task
   todo: cannot sort by start if no date exists
 59dfb9: !ruby/object:Dooby::Task 
   todo: date format kara, made may be better
+b26fdd: !ruby/object:Dooby::Task 
+  todo: cleanup css for pc and iphone :doing

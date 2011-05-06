@@ -5,20 +5,7 @@ $spacing: 10px
 $container_width: 900px
 $contents_padding_vertical: 2*$spacing
 $contents_padding_horizontal: 4*$spacing
-$contents_height: 500px
-$contents_width: $container_width - 2*$contents_padding_horizontal - 2px
-$main_container_height: $contents_height - 2*$spacing
-$main_container_width: 320px
-$side_menu_container_width: 190px
-$side_bar_container_width: 170px
-$tweet_container_width: $side_bar_container_width
-$thumbnails_container_height: 150px
-$thumbnails_container_padding: 5px
-$thumbnails_pusher_height: $main_container_height - $thumbnails_container_height - 2*$thumbnails_container_padding
-$thumbnails_pusher_width: $contents_width - $main_container_width - $side_menu_container_width - 2px
-$thumbnails_container_right_margin: 2px
-$thumbnails_container_width: $thumbnails_pusher_width - 2*$thumbnails_container_padding - $thumbnails_container_right_margin - 2px
-
+@import "variables.sass"
 
 $label_width: 65px
 $label_margin: $spacing
@@ -194,6 +181,7 @@ div#container
   width: $container_width
   margin: 0 auto
   color: white
+  padding: $spacing 0 0 0
   div#contents
     height: $contents_height
     width: $contents_width
