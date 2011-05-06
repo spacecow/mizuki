@@ -1,5 +1,10 @@
 <div id="side_menu_container">
   <div id="user_nav">
+    <% if god? && iphone? %>
+      <%= link_to "Full Site", :iphone => 0 %>
+    <% else %>
+      <%= link_to "Mobile Site", :iphone => 1 %>
+    <% end %>
     <% if current_user %>
     <%= link_to t(:log_out), logout_path %>
     <% else %>
