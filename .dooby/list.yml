@@ -69,3 +69,5 @@ d4673f: !ruby/object:Dooby::Task
   todo: cleanup css for pc and iphone :done
 6e9f0c: !ruby/object:Dooby::Task 
   todo: iphone landscape css :done
+7656a5: !ruby/object:Dooby::Task 
+  todo: iphone 480px percent layout :done

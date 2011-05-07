@@ -1,11 +1,14 @@
 @import "compass/css3/border-radius"
 
 $spacing: 10px
-$container_width: 480px
+$container_width: 100%
 $contents_height: 800px
+$contents_border: 0.2%
 $contents_padding_vertical: 2px
-$contents_padding_horizontal: 2px
-$side_bar_container_width: 140px
+$contents_padding_horizontal: 0.4%
+$main_container_width: 60%
+$right_side_width: 100%
+$side_bar_container_width: 30%
 @import "variables.sass"
 
 $star_base_x: 10%
@@ -40,12 +43,22 @@ div#container
     padding: $contents_padding_vertical $contents_padding_horizontal
     +border-radius(0)
     div#main_container
+      width: $main_container_width
+      div#list
+        position: relative
+        width: 95%
+        ul
+          li
+            span#title
+              width: 50%
     div#side_menu_container
+      width: $side_menu_container_width
       div#side_bar_container
-        width: $side_bar_container_width
+        width: 95%
         div#side_bar
           ul
+            width: 105%
             li
-              width: $side_bar_container_width + $spacing
+              width: 100%
       div#tweet_container
-        width: $tweet_container_width
+        width: 95%
