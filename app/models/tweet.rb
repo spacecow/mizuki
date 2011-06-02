@@ -10,6 +10,18 @@ class Tweet < ActiveRecord::Base
 
   private
     def self.remote_tweet
-      Twitter.user_timeline("rymdtjuren").first
+      Twitter.user_timeline("mizukisaori").first
     end
 end
+
+# == Schema Information
+#
+# Table name: tweets
+#
+#  id         :integer(4)      not null, primary key
+#  who        :string(255)
+#  content    :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
