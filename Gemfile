@@ -21,12 +21,13 @@ group :development do
 end
 
 group :test do
+  gem 'rspec-core', '2.5.1'
   gem 'cucumber', '0.10.0'
-  gem 'spork'
+  gem 'spork', '0.8.4'
   gem 'cucumber-rails' #rails g cucumber:install --capybara --rspec
   gem 'capybara'
   gem 'database_cleaner'
-  #gem 'pickle', :git => "https://github.com/spacecow/pickle.git" #rails g pickle --paths --email
+  gem 'pickle', :git => "https://github.com/spacecow/pickle.git" #rails g pickle --paths --email
   gem 'launchy'
   gem 'factory_girl'
   gem 'gherkin'
