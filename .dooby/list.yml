@@ -71,3 +71,5 @@ d4673f: !ruby/object:Dooby::Task
   todo: iphone 480px percent layout :done
 "165033": !ruby/object:Dooby::Task 
   todo: gallery link should be there if a gallery exists :done
+e0406c: !ruby/object:Dooby::Task 
+  todo: 480 iphone layout :done

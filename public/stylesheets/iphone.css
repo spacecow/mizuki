@@ -1,8 +1,3 @@
-/* line 39, ../../app/stylesheets/iphone.sass */
-body {
-  width: 100%;
-}
-
 /* line 42, ../../app/stylesheets/iphone.sass */
 div#container {
   width: 100%;
@@ -27,27 +22,39 @@ div#container div#contents div#main_container div#list {
   position: relative;
   width: 95%;
 }
-/* line 55, ../../app/stylesheets/iphone.sass */
-div#container div#contents div#main_container div#list ul li span#title {
+/* line 53, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#main_container div#list ul {
+  width: auto;
+}
+/* line 56, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#main_container div#list ul li.event h1 {
+  font-size: 60px;
+}
+/* line 58, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#main_container div#list ul li.event div#time {
+  font-size: 24px;
+}
+/* line 60, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#main_container div#list ul li.event span#title {
   width: 50%;
 }
-/* line 57, ../../app/stylesheets/iphone.sass */
+/* line 62, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container {
   width: 38.4%;
 }
-/* line 59, ../../app/stylesheets/iphone.sass */
+/* line 64, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#side_bar_container {
   width: 95%;
 }
-/* line 62, ../../app/stylesheets/iphone.sass */
+/* line 67, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul {
   width: 105%;
 }
-/* line 64, ../../app/stylesheets/iphone.sass */
+/* line 69, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li {
   width: 100%;
 }
-/* line 66, ../../app/stylesheets/iphone.sass */
+/* line 71, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#tweet_container {
   width: 95%;
 }
