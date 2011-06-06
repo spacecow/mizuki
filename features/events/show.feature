@@ -17,7 +17,6 @@ Scenario: An event with gallery & pictures displays some pictures
 Given a gallery exists with event: that event
 And a picture exists with gallery: that gallery, file: "rails.png*", caption: "rails logo"
 When I go to that event page
-Then show me the page
 Then I should see a "thumbs" section
 And I should see no "Thumb_rails" image link
 But I should see a "rails logo" tooltip
