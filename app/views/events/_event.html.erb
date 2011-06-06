@@ -1,6 +1,6 @@
 <li class="event">
   <h1><%= event.name %></h1>
-  <div id="time"><%= event.when %></div>
+  <div id="time" class="time"><%= event.when %></div>
   <% if links %>
   <div id="top_links">
     <% if can? :edit, event %>

@@ -175,6 +175,9 @@ $star5_y: $star_base_y + 400
 $star6_x: $star_base_x + 600
 $star6_y: $star_base_y + 400
 
+.time
+  font-size: 12px
+  color: $title_colour
 
 div#container
   a
@@ -187,7 +190,7 @@ div#container
   color: white
   padding: $spacing 0 0 0
   div#contents
-    min-height: $contents_height
+    min-height: 1500px //$contents_height
     width: $contents_width
     padding: $contents_padding_vertical $contents_padding_horizontal
     border: 1px solid black
@@ -307,7 +310,6 @@ div#container
             text-align: center
             margin-bottom: 0
           div#time
-            +time-base
             text-align: center
             margin: 0
             padding: 0
@@ -361,9 +363,7 @@ div#container
         div.tweet
           margin-top: $spacing
           div#ago
-            font-size: 12px
             text-align: right
-            color: $title_colour
           div#content
             text-align: right
             font-size: 14px
