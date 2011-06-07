@@ -3,11 +3,16 @@
   font-size: 24px;
 }
 
-/* line 53, ../../app/stylesheets/iphone.sass */
+/* line 52, ../../app/stylesheets/iphone.sass */
+.time {
+  font-size: 24px;
+}
+
+/* line 55, ../../app/stylesheets/iphone.sass */
 div#container {
   width: 100%;
 }
-/* line 55, ../../app/stylesheets/iphone.sass */
+/* line 57, ../../app/stylesheets/iphone.sass */
 div#container div#contents {
   width: 98.8%;
   padding: 2px 0.4%;
@@ -18,94 +23,114 @@ div#container div#contents {
   -khtml-border-radius: 0;
   border-radius: 0;
 }
-/* line 56, ../../app/stylesheets/iphone.sass */
+/* line 58, ../../app/stylesheets/iphone.sass */
 div#container div#contents a {
   font-size: 24px;
 }
-/* line 61, ../../app/stylesheets/iphone.sass */
+/* line 63, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container {
   width: 60%;
 }
-/* line 63, ../../app/stylesheets/iphone.sass */
+/* line 65, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list {
   position: relative;
   width: 95%;
 }
-/* line 66, ../../app/stylesheets/iphone.sass */
+/* line 69, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#main_container div#list div#controls a {
+  font-size: 28px;
+}
+/* line 72, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#main_container div#list div#slideshow span.image-wrapper {
+  margin-left: 5%;
+}
+/* line 75, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#main_container div#list div#slideshow span.image-wrapper a.advance-link img {
+  width: 300%;
+}
+/* line 79, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#main_container div#list ul#events li span#title {
+  width: 50%;
+}
+/* line 81, ../../app/stylesheets/iphone.sass */
+div#container div#contents div#main_container div#list ul#events li span#title a {
+  font-size: 36px;
+}
+/* line 83, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list ul#news_flow {
   width: auto;
 }
-/* line 69, ../../app/stylesheets/iphone.sass */
+/* line 86, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list ul#news_flow li.event h1 {
   font-size: 60px;
 }
-/* line 71, ../../app/stylesheets/iphone.sass */
+/* line 88, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list ul#news_flow li.event div#time {
   font-size: 24px;
 }
-/* line 73, ../../app/stylesheets/iphone.sass */
+/* line 90, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list ul#news_flow li.event div#content {
   font-size: 28px;
 }
-/* line 75, ../../app/stylesheets/iphone.sass */
+/* line 92, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list ul#news_flow li.event span#title {
   width: 50%;
 }
-/* line 78, ../../app/stylesheets/iphone.sass */
+/* line 95, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list ul#news_flow li.event div#thumbs ul.thumbs {
   width: 55%;
   text-align: center;
 }
-/* line 81, ../../app/stylesheets/iphone.sass */
+/* line 98, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list ul#news_flow li.event div#thumbs ul.thumbs li {
-  width: 24%;
+  width: 23%;
 }
-/* line 83, ../../app/stylesheets/iphone.sass */
+/* line 100, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list ul#news_flow li.event div#thumbs ul.thumbs li img {
   width: 100%;
 }
-/* line 85, ../../app/stylesheets/iphone.sass */
+/* line 102, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list ul#news_flow li.event div#thumbs ul.thumbs span#gallery {
   float: none;
   text-align: center;
 }
-/* line 88, ../../app/stylesheets/iphone.sass */
+/* line 105, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container {
   width: 38.4%;
 }
-/* line 91, ../../app/stylesheets/iphone.sass */
+/* line 108, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#user_nav a {
   font-size: 24px;
 }
-/* line 93, ../../app/stylesheets/iphone.sass */
+/* line 110, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#side_bar_container {
   width: 95%;
 }
-/* line 96, ../../app/stylesheets/iphone.sass */
+/* line 113, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul {
   width: 105%;
 }
-/* line 98, ../../app/stylesheets/iphone.sass */
+/* line 115, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li {
   width: 100%;
 }
-/* line 100, ../../app/stylesheets/iphone.sass */
+/* line 117, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li a {
   font-size: 50px;
 }
-/* line 102, ../../app/stylesheets/iphone.sass */
+/* line 119, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#tweet_container {
   width: 95%;
 }
-/* line 104, ../../app/stylesheets/iphone.sass */
+/* line 121, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#tweet_container h1 {
   font-size: 50px;
 }
-/* line 107, ../../app/stylesheets/iphone.sass */
+/* line 124, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#tweet_container div.tweet div#content {
   font-size: 28px;
 }
-/* line 109, ../../app/stylesheets/iphone.sass */
+/* line 126, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#side_menu_container div#tweet_container div.tweet div#ago {
   font-size: 24px;
 }

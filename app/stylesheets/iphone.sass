@@ -49,6 +49,8 @@ $arrow_font_size: 12px * $font_size_multiplier
 
 .arrow
   font-size: $arrow_font_size 
+.time
+  font-size: 12px * $font_size_multiplier
 
 div#container
   width: $container_width
@@ -63,6 +65,21 @@ div#container
       div#list
         position: relative
         width: 95%
+        div#controls
+          a
+            font-size: 14px * $font_size_multiplier
+        div#slideshow
+          span.image-wrapper
+            margin-left: 5% 
+            a.advance-link
+              img
+                width: 300%
+        ul#events
+          li
+            span#title
+              width: 50%
+              a
+                font-size: 18px * $font_size_multiplier
         ul#news_flow
           width: auto
           li.event
@@ -79,7 +96,7 @@ div#container
                 width: 55%
                 text-align: center
                 li
-                  width: 24%
+                  width: 23%
                   img
                     width: 100%
                 span#gallery

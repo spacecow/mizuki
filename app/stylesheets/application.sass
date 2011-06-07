@@ -71,9 +71,6 @@ $main_subcontainer_width: 260px
   width: $main_subcontainer_width
   margin: 0 auto
   padding: 20px 0      
-@mixin time-base
-  font-size: 12px
-  color: $title_colour
 
 @mixin red-gradient
   color: white
@@ -264,11 +261,6 @@ div#container
               font-weight: bold
               a
                 color: white
-            span#links
-              a
-                font-size: 12px
-            span#time
-              +time-base
         +thumbs-base($thumb_full_width*4)
         div#controls
           text-align: center
