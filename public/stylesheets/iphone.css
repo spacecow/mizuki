@@ -42,11 +42,11 @@ div#container div#contents div#main_container div#list div#controls a {
 }
 /* line 72, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list div#slideshow span.image-wrapper {
-  margin-left: 5%;
+  width: 100%;
 }
 /* line 75, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list div#slideshow span.image-wrapper a.advance-link img {
-  width: 300%;
+  width: 100%;
 }
 /* line 79, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container div#list ul#events li span#title {
