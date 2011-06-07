@@ -40,13 +40,21 @@ $font_size_multiplier: 2
 $title_font_size: 30px * $font_size_multiplier
 $time_font_size: 12px * $font_size_multiplier
 $content_font_size: 14px * $font_size_multiplier
-$continue_font_size: 12px * $font_size_multiplier
+$link_font_size: 12px * $font_size_multiplier
+$user_nav_font_size: 12px * $font_size_multiplier
 $side_bar_font_size: 25px * $font_size_multiplier
 $tweet_title_font_size: $side_bar_font_size
 $ago_font_size: $time_font_size
+$arrow_font_size: 12px * $font_size_multiplier
+
+.arrow
+  font-size: $arrow_font_size 
+
 div#container
   width: $container_width
   div#contents
+    a
+      font-size: $link_font_size
     width: $contents_width
     padding: $contents_padding_vertical $contents_padding_horizontal
     +border-radius(0)
@@ -55,7 +63,7 @@ div#container
       div#list
         position: relative
         width: 95%
-        ul
+        ul#news_flow
           width: auto
           li.event
             h1
@@ -64,13 +72,22 @@ div#container
               font-size: $time_font_size
             div#content
               font-size: $content_font_size
-              span#continue
-                a
-                  font-size: $continue_font_size
             span#title
               width: 50%
+            div#thumbs
+              ul.thumbs
+                width: 55%
+                li
+                  img
+                    width: 100px
+                span#gallery
+                  float: none
+                  text-align: center
     div#side_menu_container
       width: $side_menu_container_width
+      div#user_nav
+        a
+          font-size: $user_nav_font_size
       div#side_bar_container
         width: 95%
         div#side_bar
