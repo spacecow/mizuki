@@ -11,7 +11,7 @@
           <%= link_to t(:gallery), event.gallery if event.gallery && can?(:show, event.gallery) %>
         </span>
         <div class="clear"></div>
-        <span id="time"><%= event.when %></span>
+        <span id="time" class="time"><%= event.when %></span>
       </li>
       <% end %>
     </ul>

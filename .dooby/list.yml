@@ -57,8 +57,6 @@ d4673f: !ruby/object:Dooby::Task
   todo: alternative gallery :done
 03cafd: !ruby/object:Dooby::Task 
   todo: visual notification of events|gallery :done
-2ae519: !ruby/object:Dooby::Task 
-  todo: gallery link should be there if a gallery exists
 23695f: !ruby/object:Dooby::Task 
   todo: random pictures in pre-gallery :done
 00611d: !ruby/object:Dooby::Task 
@@ -69,3 +67,9 @@ d4673f: !ruby/object:Dooby::Task
   todo: cleanup css for pc and iphone :done
 6e9f0c: !ruby/object:Dooby::Task 
   todo: iphone landscape css :done
+7656a5: !ruby/object:Dooby::Task 
+  todo: iphone 480px percent layout :done
+"165033": !ruby/object:Dooby::Task 
+  todo: gallery link should be there if a gallery exists :done
+e0406c: !ruby/object:Dooby::Task 
+  todo: 480 iphone layout :done
