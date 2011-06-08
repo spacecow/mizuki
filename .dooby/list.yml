@@ -73,3 +73,5 @@ d4673f: !ruby/object:Dooby::Task
   todo: gallery link should be there if a gallery exists :done
 e0406c: !ruby/object:Dooby::Task 
   todo: 480 iphone layout :done
+6d7d1f: !ruby/object:Dooby::Task 
+  todo: height inheritence for 480 :done

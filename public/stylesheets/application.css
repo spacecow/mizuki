@@ -235,7 +235,6 @@ div#container div#contents div#thumbnails_container div#thumbs ul div#bottom_lin
 /* line 232, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container {
   width: 320px;
-  min-height: 480px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   -o-border-radius: 10px;
@@ -246,20 +245,20 @@ div#container div#contents div#main_container {
   border: 1px solid white;
   float: right;
 }
-/* line 239, ../../app/stylesheets/application.sass */
+/* line 240, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#form {
   text-align: left;
   padding: 10px;
   color: white;
 }
-/* line 243, ../../app/stylesheets/application.sass */
+/* line 244, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#form div#bottom_links {
   margin-top: 10px;
   text-align: right;
   margin-right: 20px;
   font-size: 12px;
 }
-/* line 248, ../../app/stylesheets/application.sass */
+/* line 249, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#form div#bottom_links a {
   font-size: 12px;
 }
@@ -357,24 +356,24 @@ div#container div#contents div#main_container div#form form input.submit {
   background-image: linear-gradient(top, #808080, #000000);
   margin: 10px 0 0 75px;
 }
-/* line 252, ../../app/stylesheets/application.sass */
+/* line 253, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list {
   width: 260px;
   margin: 0 auto;
   padding: 20px 0;
 }
-/* line 255, ../../app/stylesheets/application.sass */
+/* line 256, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list ul li {
   list-style-type: none;
   margin-bottom: 5px;
 }
-/* line 258, ../../app/stylesheets/application.sass */
+/* line 259, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list ul li span#title {
   float: left;
   width: 140px;
   font-weight: bold;
 }
-/* line 262, ../../app/stylesheets/application.sass */
+/* line 263, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list ul li span#title a {
   color: white;
 }
@@ -405,106 +404,106 @@ div#container div#contents div#main_container div#list div#thumbs ul span#galler
   width: 216px;
   font-size: 12px;
 }
-/* line 265, ../../app/stylesheets/application.sass */
+/* line 266, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#controls {
   text-align: center;
 }
-/* line 267, ../../app/stylesheets/application.sass */
+/* line 268, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#controls a {
   font-size: 14px;
 }
-/* line 269, ../../app/stylesheets/application.sass */
+/* line 270, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#slideshow {
   height: 380px;
   position: relative;
 }
-/* line 272, ../../app/stylesheets/application.sass */
+/* line 273, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#slideshow span.image-wrapper {
   position: absolute;
 }
-/* line 275, ../../app/stylesheets/application.sass */
+/* line 276, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#slideshow span.image-wrapper a img {
   width: 250px;
 }
-/* line 277, ../../app/stylesheets/application.sass */
+/* line 278, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#caption {
   position: relative;
 }
-/* line 279, ../../app/stylesheets/application.sass */
+/* line 280, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#caption span.image-caption {
   position: absolute;
   width: 260px;
 }
-/* line 282, ../../app/stylesheets/application.sass */
+/* line 283, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#caption span.image-caption div.caption {
   text-align: center;
   font-size: 12px;
 }
-/* line 285, ../../app/stylesheets/application.sass */
+/* line 286, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#caption span.image-caption div.caption a {
   font-size: 12px;
 }
-/* line 287, ../../app/stylesheets/application.sass */
+/* line 288, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#bottom_links {
   margin-top: 5px;
   text-align: right;
 }
-/* line 290, ../../app/stylesheets/application.sass */
+/* line 291, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container div#list div#bottom_links a {
   font-size: 14px;
 }
-/* line 293, ../../app/stylesheets/application.sass */
+/* line 294, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container ul#news_flow {
   width: 250px;
   margin: 0 auto;
 }
-/* line 296, ../../app/stylesheets/application.sass */
+/* line 297, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container ul#news_flow li.event {
   list-style-type: none;
   margin-bottom: 10px;
 }
-/* line 299, ../../app/stylesheets/application.sass */
+/* line 300, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container ul#news_flow li.event h1 {
   text-align: center;
   margin-bottom: 0;
 }
-/* line 302, ../../app/stylesheets/application.sass */
+/* line 303, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container ul#news_flow li.event div#time {
   text-align: center;
   margin: 0;
   padding: 0;
 }
-/* line 306, ../../app/stylesheets/application.sass */
+/* line 307, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container ul#news_flow li.event div#top_links {
   text-align: center;
   font-size: 12px;
 }
-/* line 309, ../../app/stylesheets/application.sass */
+/* line 310, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container ul#news_flow li.event div#content {
   text-align: center;
   font-size: 14px;
 }
-/* line 312, ../../app/stylesheets/application.sass */
+/* line 313, ../../app/stylesheets/application.sass */
 div#container div#contents div#main_container ul#news_flow li.event div#content span#continue {
   display: block;
   text-align: right;
   margin-right: 10px;
 }
-/* line 316, ../../app/stylesheets/application.sass */
+/* line 317, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container {
   width: 152px;
   float: right;
 }
-/* line 319, ../../app/stylesheets/application.sass */
+/* line 320, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container {
   width: 170px;
   margin: 0 auto;
 }
-/* line 323, ../../app/stylesheets/application.sass */
+/* line 324, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul {
   float: right;
 }
-/* line 325, ../../app/stylesheets/application.sass */
+/* line 326, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li {
   padding: 1px 6px 1px 1px;
   text-align: right;
@@ -512,13 +511,13 @@ div#container div#contents div#side_menu_container div#side_bar_container div#si
   list-style-type: none;
   width: 180px;
 }
-/* line 331, ../../app/stylesheets/application.sass */
+/* line 332, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li a {
   color: white;
   text-shadow: 2px 2px 2px #4b7399;
   font-size: 25px;
 }
-/* line 335, ../../app/stylesheets/application.sass */
+/* line 336, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#side_bar_container div#side_bar ul li.selected {
   padding: 0 5px 0 0;
   background: black;
@@ -530,40 +529,40 @@ div#container div#contents div#side_menu_container div#side_bar_container div#si
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 340, ../../app/stylesheets/application.sass */
+/* line 341, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#tweet_container {
   width: 170px;
   margin: 100px auto 0 auto;
 }
-/* line 343, ../../app/stylesheets/application.sass */
+/* line 344, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#tweet_container h1 {
   text-align: right;
   font-size: 25px;
   margin: 0;
   text-shadow: 3px 3px 3px #cd7f12;
 }
-/* line 348, ../../app/stylesheets/application.sass */
+/* line 349, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#tweet_container div.tweet {
   margin-top: 10px;
 }
-/* line 350, ../../app/stylesheets/application.sass */
+/* line 351, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#tweet_container div.tweet div#ago {
   text-align: right;
 }
-/* line 352, ../../app/stylesheets/application.sass */
+/* line 353, ../../app/stylesheets/application.sass */
 div#container div#contents div#side_menu_container div#tweet_container div.tweet div#content {
   text-align: right;
   font-size: 14px;
 }
-/* line 355, ../../app/stylesheets/application.sass */
+/* line 356, ../../app/stylesheets/application.sass */
 div#container div#contents div#void {
   float: right;
 }
-/* line 357, ../../app/stylesheets/application.sass */
+/* line 358, ../../app/stylesheets/application.sass */
 div#container div#contents div#void div#message {
   float: right;
 }
-/* line 361, ../../app/stylesheets/application.sass */
+/* line 362, ../../app/stylesheets/application.sass */
 div#container div#contents div#void form p input {
   color: white;
   font-weight: bold;
@@ -580,7 +579,7 @@ div#container div#contents div#void form p input {
   background-image: -o-linear-gradient(top, #808080, #000000);
   background-image: linear-gradient(top, #808080, #000000);
 }
-/* line 363, ../../app/stylesheets/application.sass */
+/* line 364, ../../app/stylesheets/application.sass */
 div#container div#contents div#void form p input.submit {
   margin-top: 10px;
   margin-left: 0;
@@ -679,13 +678,13 @@ div#container div#contents div#void form input.submit {
   background-image: linear-gradient(top, #808080, #000000);
   margin: 10px 0 0 160px;
 }
-/* line 367, ../../app/stylesheets/application.sass */
+/* line 368, ../../app/stylesheets/application.sass */
 div#container div#contents div#user_nav {
   text-align: right;
   margin: 0 auto 20px auto;
   padding-top: 0;
 }
-/* line 371, ../../app/stylesheets/application.sass */
+/* line 372, ../../app/stylesheets/application.sass */
 div#container div#contents div#user_nav a {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
