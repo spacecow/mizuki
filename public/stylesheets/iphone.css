@@ -56,7 +56,7 @@ div#container div#contents div#thumbnails_container div#thumbs ul.thumbs li a im
 /* line 79, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container.no-border {
   border: none;
-  background: black;
+  background: rgba(20, 20, 20, 0);
 }
 /* line 82, ../../app/stylesheets/iphone.sass */
 div#container div#contents div#main_container {
