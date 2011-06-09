@@ -4,6 +4,9 @@
 $spacing: 10px
 $container_width: 900px
 $contents_height: 500px
+$contents_border: 1px
+$main_container_width: 320px
+$right_side_width: 480px
 $contents_padding_vertical: 2*$spacing
 $contents_padding_horizontal: 4*$spacing
 $side_bar_container_width: 170px
@@ -14,7 +17,7 @@ $label_margin: $spacing
 $label_full_width: $label_width + $label_margin
 
 $font_size: 18px
-$a_size: $font_size - 2px
+$a_size: 12px
 $h1_size: $font_size * 1.7
 
 $menu_colour: #932710
@@ -62,17 +65,12 @@ $thumb_full_width: $thumb_width + $thumb_horizontal_margin
         text-align: center
         width: $width
         font-size: 12px
-        a
-          font-size: 12px
         
 $main_subcontainer_width: 260px
 @mixin main-subcontainer-base
   width: $main_subcontainer_width
   margin: 0 auto
   padding: 20px 0      
-@mixin time-base
-  font-size: 12px
-  color: $title_colour
 
 @mixin red-gradient
   color: white
@@ -140,7 +138,6 @@ body
 h1
   font-size: $h1_size
   color: white
-  line-height: 30px
   text-shadow: 3px 3px 3px $title_colour
               
 div#flash_container
@@ -173,6 +170,9 @@ $star5_y: $star_base_y + 400
 $star6_x: $star_base_x + 600
 $star6_y: $star_base_y + 400
 
+.time
+  font-size: 12px
+  color: $title_colour
 
 div#container
   a
@@ -185,7 +185,7 @@ div#container
   color: white
   padding: $spacing 0 0 0
   div#contents
-    min-height: $contents_height
+    min-height: 2000px //$contents_height
     width: $contents_width
     padding: $contents_padding_vertical $contents_padding_horizontal
     border: 1px solid black
@@ -227,11 +227,10 @@ div#container
             float: right  
             line-height: 15px
             margin-right: 5px
-            a
-              font-size: 12px
     div#main_container
       width: $main_container_width
       min-height: $main_container_height 
+      //height: auto
       +border-radius(10px)
       background: rgba(20,20,20,0.5)
       border: 1px solid white
@@ -254,7 +253,6 @@ div#container
         ul
           li          
             list-style-type: none
-            line-height: 16px
             margin-bottom: $spacing/2
             span#title            
               float: left
@@ -262,11 +260,6 @@ div#container
               font-weight: bold
               a
                 color: white
-            span#links
-              a
-                font-size: 12px
-            span#time
-              +time-base
         +thumbs-base($thumb_full_width*4)
         div#controls
           text-align: center
@@ -293,8 +286,6 @@ div#container
         div#bottom_links
           margin-top: $spacing/2
           text-align: right
-          a
-            font-size: 14px
 
       ul#news_flow
         width: $news_flow_width
@@ -306,25 +297,19 @@ div#container
             text-align: center
             margin-bottom: 0
           div#time
-            +time-base
             text-align: center
             margin: 0
             padding: 0
           div#top_links
             text-align: center
             font-size: 12px
-            a
-              font-size: 12px
           div#content
             text-align: center
-            line-height: 20px
             font-size: 14px
             span#continue
               display: block
               text-align: right
               margin-right: $spacing
-              a
-                font-size: 12px
     div#side_menu_container
       width: $side_menu_container_width
       float: right
@@ -360,9 +345,7 @@ div#container
         div.tweet
           margin-top: $spacing
           div#ago
-            font-size: 12px
             text-align: right
-            color: $title_colour
           div#content
             text-align: right
             font-size: 14px

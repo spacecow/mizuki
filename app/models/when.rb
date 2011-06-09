@@ -24,7 +24,7 @@ module When
         ret += end_time.hour.hour + end_time.min.minutes
       end
     else
-      ret = "まだ発表されていません"
+      ret = Time.zone.parse("2001-01-01 00:00")
     end
     ret
   end

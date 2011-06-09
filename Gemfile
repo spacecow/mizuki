@@ -21,8 +21,9 @@ group :development do
 end
 
 group :test do
+  gem 'rspec-core', '2.5.1'
   gem 'cucumber', '0.10.0'
-  gem 'spork'
+  gem 'spork', '0.8.4'
   gem 'cucumber-rails' #rails g cucumber:install --capybara --rspec
   gem 'capybara'
   gem 'database_cleaner'

@@ -56,13 +56,13 @@ describe Event do
       event.start.to_s.should eq "2011-04-29 16:46:00 UTC"
 
       event = event("16:47")
-      event.start.to_s.should eq "まだ発表されていません"       
+      event.start.to_s.should eq "2001-01-01 00:00:00 UTC"       
 
       event = event(nil,"16:48")
-      event.start.to_s.should eq "まだ発表されていません"
+      event.start.to_s.should eq "2001-01-01 00:00:00 UTC"       
 
       event = event(nil,nil)
-      event.start.to_s.should eq "まだ発表されていません"             
+      event.start.to_s.should eq "2001-01-01 00:00:00 UTC"       
     end
   end
   

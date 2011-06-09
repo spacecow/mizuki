@@ -5,13 +5,13 @@
       <% @galleries.each do |gallery| %>
       <li>
         <span id="title"><%= link_to gallery.title, gallery if can? :show, gallery %></span>
+        <div class="clear"></div>
+        <span id="time" class="time"><%= gallery.event ? gallery.event.when : "" %></span>
         <span id="links">
           <%= link_to t(:edit), edit_gallery_path(gallery) if can? :edit, gallery %>
           <%= link_to t(:del), gallery, :confirm => sure?, :method => :delete if can? :destroy, gallery %>
           <%= link_to t(:event), gallery.event if gallery.event %>
-          <%= link_to 2, show2_gallery_path(gallery) if can? :show2, gallery %>
         </span>
-        <span id="description"><%= gallery.description %></span>
       </li>
       <% end %>
     </ul>

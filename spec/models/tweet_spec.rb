@@ -51,3 +51,15 @@ describe Tweet do
     Tweet.last.who.should eq "username"
   end
 end
+
+# == Schema Information
+#
+# Table name: tweets
+#
+#  id         :integer(4)      not null, primary key
+#  who        :string(255)
+#  content    :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+

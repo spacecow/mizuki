@@ -6,11 +6,12 @@
     <%= stylesheet_link_tag 'print.css', :media => 'print' %>
     <!--[if lt IE 8]>
       <%= stylesheet_link_tag 'ie.css', :media => 'screen, projection' %>
-    <![endif]-->   
+    <![endif]-->
     <%= stylesheet_link_tag "galleriffic/basic", "jquery-ui-1.8.12.custom", "jquery-ui-timepicker" %>
     <%= stylesheet_link_tag "application", "formtastic" %>
     <!--[if !IE]>-->
-    <%= stylesheet_link_tag "iphone", :media => "only screen and (max-device-width: 480px)" %>
+    <%= stylesheet_link_tag "iphone" %>
+<!--, :media => "only screen and (max-device-width: 480px)" %> -->
     <!--<![endif]-->
     <%= stylesheet_link_tag "iphone" if iphone? %>
     <%= javascript_include_tag 'jquery', 'jquery-ui-1.8.12.custom.min', 'jquery.ui.timepicker', 'jquery.galleriffic.js', 'jquery.history.js', 'jquery.opacityrollover.js', 'rails', 'application' %>
