@@ -84,11 +84,11 @@ div#container div#contents div#main_container div#list div#slideshow span.image-
   width: 100%;
 }
 /* line 99, ../../app/stylesheets/iphone.sass */
-div#container div#contents div#main_container div#list ul#events li span#title {
-  width: 50%;
+div#container div#contents div#main_container div#list ul#events li span#title, div#container div#contents div#main_container div#list ul#galleries li span#title {
+  width: 100%;
 }
 /* line 101, ../../app/stylesheets/iphone.sass */
-div#container div#contents div#main_container div#list ul#events li span#title a {
+div#container div#contents div#main_container div#list ul#events li span#title a, div#container div#contents div#main_container div#list ul#galleries li span#title a {
   font-size: 36px;
 }
 /* line 103, ../../app/stylesheets/iphone.sass */

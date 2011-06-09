@@ -75,3 +75,5 @@ e0406c: !ruby/object:Dooby::Task
   todo: 480 iphone layout :done
 6d7d1f: !ruby/object:Dooby::Task 
   todo: height inheritence for 480 :done
+a815b7: !ruby/object:Dooby::Task 
+  todo: event and gallery index 480 :done

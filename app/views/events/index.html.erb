@@ -5,13 +5,13 @@
       <% for event in @events %>
       <li>
         <span id="title"><%= link_to event.name, event if can? :show, event %></span>
+        <div class="clear"></div>
+        <span id="time" class="time"><%= event.when %></span>
         <span id="links">
           <%= link_to t(:edit), edit_event_path(event) if can? :edit, event %>
           <%= link_to t(:del), event, :confirm => sure?, :method => :delete if can? :destroy, event %>
           <%= link_to t(:gallery), event.gallery if event.gallery && can?(:show, event.gallery) %>
         </span>
-        <div class="clear"></div>
-        <span id="time" class="time"><%= event.when %></span>
       </li>
       <% end %>
     </ul>
