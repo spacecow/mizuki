@@ -60,6 +60,25 @@ div#container
     width: $contents_width
     padding: $contents_padding_vertical $contents_padding_horizontal
     +border-radius(0)
+    div#thumbnails_pusher
+      position: absolute
+    div#thumbnails_container
+      height: 320px
+      width: $side_menu_container_width
+      div#thumbs
+        ul.thumbs
+          width: 100%
+          float: left
+          div#bottom_links
+            margin-bottom: 10px
+          li
+            width: 19%
+            a
+              img
+                width: 100%
+    div#main_container.no-border
+      border: none
+      background: black
     div#main_container
       width: $main_container_width
       div#list
@@ -69,7 +88,7 @@ div#container
           a
             font-size: 14px * $font_size_multiplier
         div#slideshow
-          height: inherit
+          min-height: inherit
           span.image-wrapper
             width: 100%
             a.advance-link
