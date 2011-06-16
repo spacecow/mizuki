@@ -11,7 +11,7 @@ class OperatorController < ApplicationController
   end
 
   def sao_tweet
-    Tweet.save if god?
+    Tweet.save_tweet if god?
     redirect_to :back
   end
 end
