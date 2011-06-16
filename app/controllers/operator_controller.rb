@@ -9,4 +9,9 @@ class OperatorController < ApplicationController
 
     @events = Event.all.sort_by(&:when).reverse
   end
+
+  def sao_tweet
+    Tweet.save if god?
+    redirect_to :back
+  end
 end

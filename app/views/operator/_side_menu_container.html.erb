@@ -34,6 +34,7 @@
       <div id="ago" class="time">
         <%= tweet_ago %>
       </div>
+      <%= link_to "Update", sao_tweet_path if god? %>
     </div>
   </div>
   <% end %>
