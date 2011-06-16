@@ -77,3 +77,5 @@ e0406c: !ruby/object:Dooby::Task
   todo: height inheritence for 480 :done
 a815b7: !ruby/object:Dooby::Task 
   todo: event and gallery index 480 :done
+9931f4: !ruby/object:Dooby::Task 
+  todo: caption on picture 480 :doing
