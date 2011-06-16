@@ -79,5 +79,5 @@ a815b7: !ruby/object:Dooby::Task
   todo: event and gallery index 480 :done
 400b54: !ruby/object:Dooby::Task 
   todo: caption on picture 480
-cc5e66: !ruby/object:Dooby::Task 
-  todo: s3 storage :doing
+0fc9d0: !ruby/object:Dooby::Task 
+  todo: s3 storage :done
