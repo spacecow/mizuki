@@ -184,13 +184,16 @@ div#container
   margin: 0 auto
   color: white
   padding: $spacing 0 0 0
+  div#contents.background
+    background: black url('/images/red_moon_mizuki2.png') no-repeat scroll top left
+  div#contents.no_background
+    background: black
   div#contents
     min-height: $contents_height
     width: $contents_width
     padding: $contents_padding_vertical $contents_padding_horizontal
     border: 1px solid black
     +border-radius($spacing)
-    background: black url('/images/red_moon_mizuki2.png') no-repeat scroll top left
     position: relative
     div#star1
       +star-base($star1_x,$star1_y)
@@ -315,6 +318,7 @@ div#container
     div#side_menu_container
       width: $side_menu_container_width
       float: right
+      margin-bottom: 20px
       div#side_bar_container
         width: $side_bar_container_width
         margin: 0 auto

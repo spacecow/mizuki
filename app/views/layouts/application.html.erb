@@ -26,7 +26,7 @@
         <% end %>
       </div>
       <div class="clear"></div>
-      <div id="contents">
+      <div id="contents" class="<%= request.url =~ /galleries\/\d+$/ ? 'no_background' : 'background' %>">
         <% unless @void %>
         <%= render "/operator/side_menu_container" %>
         <% end %>
