@@ -17,7 +17,7 @@
   <div id="side_bar_container">
     <div id="side_bar">
       <ul>
-        <li class="<%= request.url =~ /mizuki$/ ? "selected" : "" %>"><%= link_to "Home", root_path %></li>
+        <li class="<%= request.path =~ /^$/ ? "selected" : "" %>"><%= link_to "Home", root_path %></li>
         <li class="<%= request.url =~ /events/ ? "selected" : "" %>"><%= link_to "Events", events_path %></li>
         <li class="<%= request.url =~ /galleries/ ? "selected" : "" %>"><%= link_to "Gallery", galleries_path %></li>
       </ul>
