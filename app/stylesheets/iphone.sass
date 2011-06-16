@@ -51,9 +51,17 @@ $arrow_font_size: 12px * $font_size_multiplier
   font-size: $arrow_font_size 
 .time
   font-size: 12px * $font_size_multiplier
+div.clear_on_iphone
+  clear: both
+  height: 0
+  overflow: hidden
 
 div#container
   width: $container_width
+  div#contents.background
+    background: black url('/images/red_moon_mizuki2.png') no-repeat scroll top left
+  div#contents.no_background
+    background: black
   div#contents
     min-height: 2000px 
     a
