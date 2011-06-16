@@ -98,7 +98,7 @@ div#container div#contents {
   -ms-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
-  background: black url("/mizuki/images/red_moon_mizuki2.png") no-repeat scroll top left;
+  background: black url("/images/red_moon_mizuki2.png") no-repeat scroll top left;
   position: relative;
 }
 /* line 195, ../../app/stylesheets/application.sass */
