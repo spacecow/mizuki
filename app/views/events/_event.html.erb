@@ -9,9 +9,6 @@
     <% if can? :destroy, event %>
     <%= link_to t(:delete), event, :confirm => sure?, :method => :delete %> |
     <% end %>
-    <% if can? :index, event %>
-    <%= link_to all(:event), events_path %>
-    <% end %>
   </div>
   <% end %>
   <% if truncate %>

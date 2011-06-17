@@ -13,6 +13,7 @@ gem "bcrypt-ruby", :require => "bcrypt"
 gem "annotate"
 gem "twitter"
 gem 'whenever', :require => false
+gem 'fog'
 
 group :development do
   gem 'jquery-rails'

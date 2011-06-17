@@ -10,8 +10,7 @@
     <%= stylesheet_link_tag "galleriffic/basic", "jquery-ui-1.8.12.custom", "jquery-ui-timepicker" %>
     <%= stylesheet_link_tag "application", "formtastic" %>
     <!--[if !IE]>-->
-    <%= stylesheet_link_tag "iphone" %>
-<!--, :media => "only screen and (max-device-width: 480px)" %> -->
+    <%= stylesheet_link_tag "iphone", :media => "only screen and (max-device-width: 480px)" %>
     <!--<![endif]-->
     <%= stylesheet_link_tag "iphone" if iphone? %>
     <%= javascript_include_tag 'jquery', 'jquery-ui-1.8.12.custom.min', 'jquery.ui.timepicker', 'jquery.galleriffic.js', 'jquery.history.js', 'jquery.opacityrollover.js', 'rails', 'application' %>
@@ -26,7 +25,7 @@
         <% end %>
       </div>
       <div class="clear"></div>
-      <div id="contents">
+      <div id="contents" class="<%= request.url =~ /galleries\/\d+$/ ? 'no_background' : 'background' %>">
         <% unless @void %>
         <%= render "/operator/side_menu_container" %>
         <% end %>

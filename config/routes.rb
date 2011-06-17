@@ -1,11 +1,13 @@
 Mizuki::Application.routes.draw do
   get "operator/welcome"
+  get "operator/sao_tweet"
 
   match 'user/edit' => 'users#edit', :as => :edit_current_user
   match 'signup' => 'users#new', :as => :signup
   match 'logout' => 'sessions#destroy', :as => :logout
   match 'login' => 'sessions#new', :as => :login
   match 'welcome' => 'operator#welcome'
+  match 'sao_tweet' => 'operator#sao_tweet'
 
   resources :maintenances, :only => [:index,:edit,:update,:destroy]
   resources :sessions
