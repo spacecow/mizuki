@@ -6,7 +6,7 @@ And a gallery: "akiko" exists with title: "Akiko's Birthday", event: that event
 
 Scenario: View of gallery index for anonymous
 When I go to the galleries page
-Then I should see "Opening Day" and "There were many customers." within the first "galleries" listing
+Then I should see "Opening Day" within the first "galleries" listing
 And I should see an "Event" link within the second "galleries" listing
 But I should see no "Event" link within the first "galleries" listing
 And I should see no links at the bottom of the page

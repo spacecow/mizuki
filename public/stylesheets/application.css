@@ -86,7 +86,7 @@ div#container a {
 }
 /* line 187, ../../app/stylesheets/application.sass */
 div#container div#contents {
-  min-height: 2000px;
+  min-height: 500px;
   width: 818px;
   padding: 20px 40px;
   border: 1px solid black;

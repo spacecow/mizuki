@@ -177,6 +177,11 @@ When /^I follow "([^"]*)" within the (\w+) "([^"]*)" (\w+)$/ do |lnk,order,id,ca
   When %(I follow "#{lnk}" within "#{cat_id(cat,id,order)}")
 end
 
+When /^I follow "([^"]*)" and press "OK"$/ do |lbl|
+  page.evaluate_script('window.confirm = function() { return true; }')
+  page.click_link(lbl)
+end
+
 # FUNCTIONS -------------------
 
 def list_no(lst=nil,order)
